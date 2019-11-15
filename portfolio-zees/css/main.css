@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Yellowtail&display=swap');
+
+html { height: 100%;}
+body { height: 100%; width: 100%; overflow-x:hidden; overflow: hidden;}
+body section {height: 100%;}
+.wrap {width: 1000px; margin: 0 auto;}
+.aboutme2, .work3, .contact4 { display: flex; align-items: center; justify-content: center;}
+
+/* 메인 */
+.main1 { position: relative; height: 100%;}
+	.main1 .tops {display: flex; justify-content:space-between; align-items:center; }
+	.main1 .logo { width: 150px; margin: 0 0 0 2rem; cursor: pointer;}
+
+
+	.tag-fix {
+		position: fixed; top: 9%; right: 2.5%; z-index: 99999;}
+
+	.tags {
+		width: 150px;
+		height: 46px;
+		text-align: center;
+		transition: all 0.3s;
+		transform: translateX(150px);
+	}
+	.tag {
+		border-top: 23px solid rgb(190, 39, 39);
+		border-right: 23px solid rgb(190, 39, 39);
+		border-bottom: 23px solid rgb(190, 39, 39);
+		border-left: 23px solid  transparent;
+		border-radius: 5px;
+	}
+	.tag-bar {color: #fff; position: absolute; top: 5%; right: 48%; z-index: 99999; font-size: 1.05rem; padding: 0.5rem;}
+
+	.navis-hidden {position: fixed;  width: 320px; height: 100%; overflow: hidden; background-color: #FFF;
+		 right: 0; top:0; z-index:99999; padding: 0.5rem;
+		 transform: translateX(320px); transition: all 1s;}
+	.navis-dash { border: 1.5px dashed #666; height: 100%; border-radius: 30px;}
+	.closing { width: 40px; height: 40px; background-color: rgb(190, 39, 39); margin: 1rem; border-radius: 30%; 
+		line-height: 40px; text-align: center; color: #fff;}
+	.main1 .navis { color: #888; padding:2rem;  cursor: pointer; text-align: right; line-height: 34rem; font-size: 1.25rem;  }
+	.main1 .nav-bts {  cursor: pointer;}
+	.main1 .nav-tit {font-size: 1rem; line-height: 4rem; transition: all 0.3s; width: 100px;}
+	/* .main1 .nav-bar {width: 1.5px; height: 80px; background-color: #bbb; position: absolute; top: -70%; right: 3%; z-index: -1;} */
+	.main1 .navs { display: flex; justify-content:flex-end; align-items:center; text-align: right; position: relative; }
+	/* .main1 .nav { width: 9px; height: 9px; background-color: #bbb; border-radius: 50%; transition: all 0.3s; margin-left: 1rem;} */
+	.main1 .nav:not(:last-child) {margin-bottom: 3.5rem;}
+	/* .main1 .nav:hover { width: 15px; height: 15px; background-color: #333;} */
+	.main1 .main-gifs { position: absolute; top: 0; width: 100%; height: 100%;}
+	.main1 .gifs { height: 100%;}
+	.main1 .gif { display: flex; align-items: center; justify-content: center; height: 100%;}
+	.main1 .gif img {transition: all 0.4s; filter: contrast(120%) brightness(0.95); width: 40%; min-width: 350px;}
+	.main1 .gif img:hover {filter: contrast(95%) brightness(1.1);}
+	.pager-prev,
+	.pager-next {z-index: 9999; cursor: pointer; position: absolute; width: 60px; height: 60px; color: #666; font-size: 2.5rem; line-height: 60px; text-align: center; top: 52%; transform: translateY(-50%); font-family: 'Poppins', sans-serif; }
+	.pager-prev {left: 23%;}
+	.pager-next {right: 23%;}
+
+/* 내 소개 */
+.aboutme2 { height: 100%; position: relative;}
+.aboutme2-all {width: 1200px;}
+	.aboutme2 .sides { width: 100%;  }
+	.aboutme2 .si1 {position: absolute; top: 50%; left: -2%;}
+		.aboutme2 .si1 .pic1 {position: absolute; z-index: 99; top: -15%; left: -15%;}
+
+	.aboutme2 .si2 {position: absolute; right: -9%; top: 10%; }
+		.aboutme2 .si2 .pic1 {position: absolute; z-index: 99; top: 5%; right: 50%;}
+
+	.aboutme2 .about-me {height: 100%; width: 100%;}
+	.aboutme2 .mes {position: relative; width: 100%;}
+	.aboutme2 .me-1-2 {position: relative; width: 100%; display: flex; align-items: flex-start; justify-content: space-between;}
+	.aboutme2 .Name { line-height: 7.5rem; font-family: 'Yellowtail', cursive; letter-spacing: 4px; font-size:6rem; padding-right: 1rem; color: rgb(139, 23, 23);}
+	.aboutme2 .Job { font-size:1.5rem; padding-right: 1rem; color: #888888; letter-spacing: 1.3px; }
+	.aboutme2 .SubTit {font-size:1.2rem; padding-right: 1rem; color: #c77474;}
+	.abouts {text-align: center; width: 100%; margin-bottom: 8rem;}
+	.about-main {padding-left: 1rem; margin-top: 2rem;}
+	.about-conts { text-align: left; line-height: 2.5rem; width: 40%; display: flex; align-items: flex-start; justify-content: flex-start;}
+	.about-conts .about-cont1 { padding-right: 2rem;}
+
+	.aboutme2 .me-1  { width: 95%;}
+	.aboutme2 .me-1position  {height: 100%;}
+	.aboutme2 .me-1 .about-main {padding-top: 5rem;}
+
+	.aboutme2 .me-2  { width: 90%; flex: 100% 1 1; margin: 0 4rem 0 2rem;}
+	.aboutme2 .me-2 .skills {margin-bottom: 2.5rem;}
+	.aboutme2 .me-2 .program { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 2.5rem;}
+	.aboutme2 .me-2 .prog { position: relative; width: 55px; padding: 0 0.6rem;}
+	.aboutme2 .me-2 .prog span {color: #666; position:absolute; left: 0%; right: 0; bottom: -60%; font-size: 0.7em; text-align: center;}
+	.aboutme2 .me-2 .prog img {filter: opacity(0.8) saturate(0.7); transition: all 0.2s;}
+	.aboutme2 .me-2 .prog:hover img {filter: opacity(1) saturate(0.6); transform: scale(1.1);}
+
+	.aboutme2 .me-3  { width: 80%;}
+	.aboutme2 .me-3 .edus {margin-bottom: 3.5rem; font-size: 0.97rem;}
+	.aboutme2 .me-3 .edu { display: flex; align-items: flex-start; justify-content: space-between; line-height: 2rem;}
+	
+	.aboutme2 .me-3 .certi {font-size: 0.97rem; display: flex; align-items: flex-start; justify-content: space-between; line-height: 2rem;}
+	.aboutme2 .ski-tit,.aboutme2 .prog-tit, .aboutme2 .edu-tit, .aboutme2 .certi-tit 
+	{font-size: 3rem;  font-family: 'Yellowtail', cursive; margin-bottom: 1rem; color: #aaa; transition: all 0.3s;}
+
+
+	.aboutme2 .about-skill:hover .ski-tit,
+	.aboutme2 .about-prog:hover .prog-tit, 
+	.aboutme2 .about-edu:hover .edu-tit, 
+	.aboutme2 .about-certi:hover .certi-tit 
+	{color: #698b7a;}
+
+	/* 작업 */
+.work3 { position: relative;}
+.works-all {margin-bottom: 4rem;}
+.work-pager {width: 900px; height: 600px; margin: 0 auto; overflow: hidden;}
+	.work3 .works { width: 200%; position: relative; display: flex; overflow: hidden; }
+	.work3 .work {flex: 100% 1 1; position: relative; }
+	.work3 .works-img {width: 100%; height: 100%;}
+	.work3 .work-img {width: 100%; transition: all 0.5s;}
+	.work3 .work-img:hover {filter: brightness(0.9);}
+	.work3 .works-tit {position: relative; margin-bottom: 3.5rem;}
+	.work3 .tit-1 {font-size: 4rem; margin-right: 1rem; font-weight: 600; color: #ddd; letter-spacing:3px;}
+	.work3 .tit-2 {font-size: 4.5rem; font-weight: 500; color: rgba(150, 29, 29, 0.945); font-family: 'Yellowtail', cursive; letter-spacing:1.5px;
+	position: absolute; top: 5%; left: 0; right: -20%; transform: rotate(-3deg);}
+
+
+	.work3 .side-rot-flower {transform: rotate(-10deg); transition: all 5s;}
+	.work3 .si1 {position: absolute; top: 30%; right: -4%;}
+	.work3 .si1 .pic1 {position: absolute; z-index: 99; top: -15%; right: 13%;}
+	.work3 .si2 {position: absolute; top: 20%; left: 4%;}
+
+/* 연락 */
+.contact4 {position: relative; width: 100%;}
+.contact4 .contact-all {display: flex; align-items: flex-start; justify-content: space-between; padding: 2rem 3rem;}
+.contact4 .cont-mails { width: 100%; margin-right: 1rem;}
+.contact4 .cont-mail { margin-bottom: 1rem;}
+.contact4 .cont-infors { width: 80%;}
+.contact4 .infor-num {width: 100%; border: 1px solid #eee; padding: 1.5rem; margin-bottom: 1rem;}
+.contact4 .infor-addr {width: 100%; border: 1px solid #eee; padding: 1.5rem;}
+.contact4 .send-bts { text-align: right; margin-top: 1rem;}
+.contact4 .send-bts  button{ margin-left: 0.5rem;}
+.contact4 .contact-tit {font-size: 5rem; font-weight: 500; color: #578f6a; font-family: 'Yellowtail', cursive; letter-spacing:1.5px;}
+.contact4 .contact-sides img { width: 90%;}
+.contact4 .side-lt,
+.contact4 .side-rt {position: absolute; }
+.contact4 .side-lt {left: -3%;}
+.contact4 .side-rt {right: -3%;}
+#side-lt1-0 {top: 40%; left: -2%; z-index: 2;}
+#side-lt1-1 {top: 5%; z-index: 2;}
+#side-lt1-2 {top: 7%;}
+#side-lt2 {bottom: -5%; left: -2%;}
+
+#side-rt1-1 {bottom: 25%;  z-index: 2;}
+#side-rt1-2 {top: 10%; right: -5%;}
+#side-rt2-1 {bottom: -5%; right: 8%; z-index: 2;}
+#side-rt2-2 {bottom: 0%; right: -5%;}
+
+.bt-top {position:fixed; border-radius: 50%; background-color: #aaa; bottom: -4.5rem; right: 1.6rem; z-index: 9999; color: white; transition: all 0.5s; cursor: pointer; padding: 1rem 1.5rem 1rem 1.5rem; }
+.bt-top:hover {background-color: #ee705f; padding:0.8rem 1.5rem 1.2rem 1.5rem;}
+.bt-top-show {bottom: -3rem; transform: translateY(-5rem)}
+
+/* 애니메이션 */
+.side-left-ani1-1 {
+	animation-name: leftAni1-1;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	transform-origin: left bottom;
+}
+.side-left-ani1-2 {
+	animation-name: leftAni1-2;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	transform-origin: left bottom;
+}
+
+.side-right-ani1-1 {
+	animation-name: rightAni1-1;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	transform-origin: right bottom;
+}
+.side-right-ani1-2 {
+	animation-name: rightAni1-2;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	transform-origin: right bottom;
+}
+
+.side-right-ani2-1 {
+	animation-name: rightAni2-1;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	transform-origin: right bottom;
+}
+.side-right-ani2-2 {
+	animation-name: rightAni2-2;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	transform-origin: right bottom;
+}
+
+.side-left-ani2 {
+	animation-name: leftAni2;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	transform-origin: center bottom;
+}
+
+@keyframes leftAni1-1 {
+	0% {transform: rotate(0deg);}
+	50% {transform: rotate(5deg);}
+	100% {transform: rotate(-2deg);}
+}
+@keyframes leftAni1-2 {
+	0% {transform: rotate(15deg);}
+	100% {transform: rotate(0deg);}
+}
+
+@keyframes rightAni1-1 {
+	0% {transform: rotate(4deg);}
+	50% {transform: rotate(-4deg);}
+	100% {transform: rotate(0deg);}
+}
+@keyframes rightAni1-2 {
+	0% {transform: rotate(3deg);}
+	50% {transform: rotate(-3deg);}
+	100% {transform: rotate(0deg);}
+}
+
+@keyframes rightAni2-1 {
+	0% {transform: rotate(3deg);}
+	100% {transform: rotate(-2deg);}
+}
+@keyframes rightAni2-2 {
+	0% {transform: rotate(-5deg);}
+	100% {transform: rotate(0deg);}
+
+}
+@keyframes leftAni2 {
+	0% {transform: rotate(-6deg);}
+	100% {transform: rotate(2deg);}
+}

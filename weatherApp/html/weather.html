@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>날씨정보</title>
+	<link rel="stylesheet" href="../css/fa.min.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/base-bootstrap.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/weather.css">
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script src="../js/jquery.cookie.js"></script>
+	<script src="../js/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/wow.min.js"></script>
+</head>
+<body>
+	<div class="wraps">
+		<div class="wrap">
+			<div class="launch">
+				<div class="launch-tit">
+				    <div class="f-3 font-b">Hello</div>
+    				<div class="f-15">Choose the city <br>you want,<li>I will show you the weather</div>
+				</div>
+				<div class="citys form-group">
+					<select id="city" class="form-control form-control-lg"></select>
+				</div>
+			</div>
+			<div class="daily">
+				<div class="time"></div>
+				<div class="icon w-100"></div>
+					<ul>
+						<li class="city"><span></span></li>
+						<li class="temp"><span></span>º</li>
+						<li class="temp-sub"><span></span>º - <span></span>º</li>
+						<li class="main-desc"><span class="main"></span>|<span class="desc"></span></li>
+					</ul>
+					<div class="bts">
+						<button type="button" class="btn bt_city">Main</button>
+						<button type="button" class="btn btn2" id="bt_weekly">Forecast</button>
+					</div>
+			</div>
+			<ul class="weekly">
+				<li class="city"><span></span> <span></span></li>
+				<li class="forecast"></li>
+					<div class="bts">
+						<button type="button" class="btn bt_city">Main</button>
+						<button type="button" class="btn btn2" id="bt_daily">Details</button>
+					</div>
+			</ul>
+		</div>
+	</div>
+	<script src="../js/util.js"></script>
+	<script src="../js/weather.js"></script>
+</body>
+</html>

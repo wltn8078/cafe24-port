@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="380px" height="820px" viewBox="0 0 380 820" enable-background="new 0 0 380 820" xml:space="preserve">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="189.9995" y1="-2.4688" x2="189.9995" y2="335.3869">
+	<stop  offset="0" style="stop-color:#527F96"/>
+	<stop  offset="0.0891" style="stop-color:#618C9E"/>
+	<stop  offset="0.3686" style="stop-color:#89AFB4"/>
+	<stop  offset="0.6233" style="stop-color:#A7C8C4"/>
+	<stop  offset="0.8422" style="stop-color:#B9D7CE"/>
+	<stop  offset="1" style="stop-color:#BFDDD1"/>
+</linearGradient>
+<path fill="url(#SVGID_1_)" d="M380,331.14V0H0v331.14c56.271-17.261,121.053-25.915,190-25.915S323.729,313.879,380,331.14z"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="190.0005" y1="903.2251" x2="190.0005" y2="285.2184">
+	<stop  offset="0" style="stop-color:#6C9C99"/>
+	<stop  offset="0.1899" style="stop-color:#6F9E9B"/>
+	<stop  offset="0.3539" style="stop-color:#7AA5A3"/>
+	<stop  offset="0.5085" style="stop-color:#8CB1AF"/>
+	<stop  offset="0.6572" style="stop-color:#A5C2C0"/>
+	<stop  offset="0.8018" style="stop-color:#C5D8D7"/>
+	<stop  offset="0.9414" style="stop-color:#ECF2F2"/>
+	<stop  offset="1" style="stop-color:#FFFFFF"/>
+</linearGradient>
+<path fill="url(#SVGID_2_)" d="M380,820V331.14c-56.271-17.261-121.053-25.915-190-25.915S56.271,313.879,0,331.14V820H380z"/>
+<circle opacity="0.6" fill="#F2F2F2" cx="134.345" cy="92.088" r="55.655"/>
+<circle opacity="0.7" fill="#F2F2F2" cx="190" cy="115.96" r="21.026"/>
+<circle opacity="0.6" fill="#F2F2F2" cx="322.875" cy="246.092" r="17.031"/>
+<circle opacity="0.8" fill="#F2F2F2" cx="265.93" cy="201.382" r="45.371"/>
+<circle opacity="0.6" fill="#F2F2F2" cx="66.614" cy="165.57" r="31.783"/>
+<circle opacity="0.6" fill="#F2F2F2" cx="308.592" cy="80.122" r="29.074"/>
+<circle opacity="0.6" fill="#F2F2F2" cx="190.001" cy="214.122" r="8.09"/>
+<circle opacity="0.9" fill="#F2F2F2" cx="55.079" cy="115.96" r="11.535"/>
+<circle opacity="0.7" fill="#F2F2F2" cx="280.057" cy="67.409" r="15.422"/>
+<circle opacity="0.8" fill="#F2F2F2" cx="178.465" cy="230.669" r="15.422"/>
+<circle opacity="0.6" fill="#F2F2F2" cx="331.335" cy="44.893" r="8.461"/>
+<circle opacity="0.9" fill="#F2F2F2" cx="336.183" cy="168.343" r="6.319"/>
+<circle opacity="0.9" fill="#F2F2F2" cx="110.684" cy="218.466" r="6.319"/>
+</svg>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="380px" height="820px" viewBox="0 0 380 820" enable-background="new 0 0 380 820" xml:space="preserve">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="189.9995" y1="-11.7749" x2="189.9995" y2="450.6578">
+	<stop  offset="0" style="stop-color:#686897"/>
+	<stop  offset="0.495" style="stop-color:#86BAFF"/>
+	<stop  offset="1" style="stop-color:#FFFFF5"/>
+</linearGradient>
+<path fill="url(#SVGID_1_)" d="M380,331.14V0H0v331.14c56.271-17.261,121.053-25.915,190-25.915S323.729,313.879,380,331.14z"/>
+<circle opacity="0.3" fill="#FFFFFF" cx="227.858" cy="157.458" r="58.497"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="190.0005" y1="903.2251" x2="190.0005" y2="285.2178">
+	<stop  offset="0" style="stop-color:#A5B3E1"/>
+	<stop  offset="0.3825" style="stop-color:#97BEF5"/>
+	<stop  offset="0.675" style="stop-color:#90C4FF"/>
+	<stop  offset="0.7272" style="stop-color:#96C7FF"/>
+	<stop  offset="0.7943" style="stop-color:#A6D0FF"/>
+	<stop  offset="0.8696" style="stop-color:#C0DEFF"/>
+	<stop  offset="0.9502" style="stop-color:#E5F1FF"/>
+	<stop  offset="1" style="stop-color:#FFFFFF"/>
+</linearGradient>
+<path fill="url(#SVGID_2_)" d="M380,820V331.14c-56.271-17.261-121.053-25.915-190-25.915S56.271,313.879,0,331.14V820H380z"/>
+<g>
+	<circle fill="#FFFFFF" cx="227.857" cy="157.458" r="45.265"/>
+	<circle fill="#E6E6E6" cx="241.802" cy="160.664" r="15.028"/>
+	<circle fill="#E6E6E6" cx="206.925" cy="136.661" r="9.774"/>
+	<circle fill="#E6E6E6" cx="254.276" cy="135.719" r="6.716"/>
+	<circle fill="#E6E6E6" cx="231.068" cy="183.313" r="4.891"/>
+</g>
+<circle fill="#D5E6FF" cx="252.535" cy="208.813" r="43.448"/>
+<circle fill="#D5E6FF" cx="171.771" cy="200.935" r="57.962"/>
+<circle fill="#D5E6FF" cx="220.455" cy="233.669" r="33.187"/>
+<circle fill="#D5E6FF" cx="108.872" cy="208.813" r="30.802"/>
+<circle fill="#FFFFFF" cx="340.928" cy="55.417" r="2.604"/>
+<circle fill="#FFFFFF" cx="65.834" cy="247.471" r="2.604"/>
+<circle fill="#FFFFFF" cx="229.421" cy="58.021" r="2.604"/>
+<circle fill="#FFFFFF" cx="52.523" cy="120.468" r="1.752"/>
+<circle fill="#FFFFFF" cx="302.963" cy="175.693" r="1.752"/>
+</svg>

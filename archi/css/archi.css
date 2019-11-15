@@ -1,0 +1,51 @@
+body {height: 3000px;} 
+.wrap {width: 100%; max-width: 1500px; margin: 0px auto;}
+
+
+/* top */
+.tops {float: left; width: 100%; 
+	padding: 10px 15px; position: fixed; 
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.192);
+background-color: white; z-index: 100;  letter-spacing: 3px;}
+.tops > .top-logo {float: left; padding:8px 16px; cursor: pointer; }
+.tops > .top-logo:hover { background-color: rgba(217, 219, 230, 0.692)}
+.tops > .top-navi {float: right; padding:8px 16px; cursor: pointer;}
+.tops > .top-navi:hover {background-color: rgba(217, 219, 230, 0.692)}
+
+
+/* bans */
+.bans img {width: 100%; position: relative; }
+.ban {  letter-spacing: 3px; position: absolute; bottom: 50%; 
+	left: 0; right: 0; margin: auto; text-align: center;}
+.ban-sp { background-color: rgba(255, 255, 255, 0.692); 
+	padding: 0px 15px 5px 15px; margin-right: 10px; }
+
+	/* 사진 */
+	.protit { padding :65px 0 20px 0; color: #333; border-bottom:1px solid #EEE; margin-bottom: 20px;}
+	.pics { margin-bottom:1.333%; margin-top: 45px; }
+ .pic {float: left; width: 24%; position: relative;}
+ .pic:not(:last-child) {margin-right:1.333% }
+ .pic-tit {position: absolute; top:0; left: 0; padding: 5px 10PX; background-color: #000; color: white; z-index: 5;}
+
+ /* 프로필 */
+ .profils { margin-bottom:1.333%; margin-top: 45px; }
+ .profil {float: left; width: 24%; position: relative;}
+ .profil:not(:last-child) {margin-right:1.333% }
+ .profil .pro-tit {padding-top: 15px;}
+ .profil .pro-tit:nth-child(3) {color: #666;}
+ .profil .pro-bt {padding: 8px; margin-top: 20px; width: 100%; background-color: #EEE;}
+ .profil .pro-bt:hover {background-color: #CCC;}
+ .profil img { filter: grayscale(70%);}
+
+
+ /* 컨택 */
+ .inp { padding: 12px; border: 1px solid #CCC; margin-top: 20px; font-size: 15px;}
+ .submit-bt { cursor: pointer; margin-top: 25px; padding: 10px 18px; background-color: #000; color: white;}
+ .submit-bt:hover {  background-color: rgb(173, 173, 173); color: #000;}
+
+
+ /* 지도 */
+ .map {margin-top: 50px; }
+
+ /* 푸터 */
+ .tooter {background-color: black; padding: 30px; width: 100%; color: white; margin-top: 10px;}

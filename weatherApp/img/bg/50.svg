@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="800px" height="1280px" viewBox="0 0 800 1280" enable-background="new 0 0 800 1280" xml:space="preserve">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="399.4761" y1="218" x2="399.476" y2="680.4327">
+	<stop  offset="0" style="stop-color:#FFFFFF"/>
+	<stop  offset="0.505" style="stop-color:#A9E9FF"/>
+	<stop  offset="1" style="stop-color:#8AAAFF"/>
+</linearGradient>
+<path fill="url(#SVGID_1_)" d="M589.477,560.915v-331.14h-380v331.14c56.271-17.261,121.053-25.915,190-25.915
+	S533.206,543.654,589.477,560.915z"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="399.4771" y1="1133" x2="399.477" y2="514.9927">
+	<stop  offset="0" style="stop-color:#FFFFFF"/>
+	<stop  offset="0.0032" style="stop-color:#FEFFFF"/>
+	<stop  offset="0.0975" style="stop-color:#D9F5FF"/>
+	<stop  offset="0.1855" style="stop-color:#BFEFFF"/>
+	<stop  offset="0.264" style="stop-color:#AFEAFF"/>
+	<stop  offset="0.325" style="stop-color:#A9E9FF"/>
+	<stop  offset="0.5045" style="stop-color:#9FE0FF"/>
+	<stop  offset="0.8089" style="stop-color:#84C9FF"/>
+	<stop  offset="1" style="stop-color:#70B8FF"/>
+</linearGradient>
+<path fill="url(#SVGID_2_)" d="M589.477,1049.774V560.915C533.206,543.654,468.424,535,399.477,535s-133.729,8.654-190,25.915
+	v488.859H589.477z"/>
+<circle opacity="0.4" fill="#FFFFFF" cx="403.857" cy="410" r="79.619"/>
+<circle opacity="0.5" fill="#FFFFFF" cx="403.857" cy="410" r="57.962"/>
+<circle opacity="0.7" fill="#FFCC00" cx="403.857" cy="410" r="37.59"/>
+<circle opacity="0.5" fill="#FFFFFF" cx="539.821" cy="491.625" r="26.868"/>
+<circle opacity="0.6" fill="#FFFFFF" cx="289.821" cy="320.625" r="22.868"/>
+<circle opacity="0.7" fill="#FFFFFF" cx="308.041" cy="336.863" r="7.649"/>
+<circle opacity="0.7" fill="#FFFFFF" cx="512.953" cy="473.222" r="12.477"/>
+<circle opacity="0.7" fill="#FFFFFF" cx="486.035" cy="450.718" r="4.836"/>
+</svg>

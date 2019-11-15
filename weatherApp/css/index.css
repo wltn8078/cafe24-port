@@ -1,0 +1,29 @@
+html, body {width: 100%; height: 100%;}
+body { background: url(../img/bg/01d.jpg) no-repeat center; background-size: cover;}
+
+.container { padding: 0}
+.wrap { height: 100%; width: 100%; max-width: 800px;}
+.navi {height: 80px; line-height: 80px;} 
+.navi > li {flex: 1 0 33.3333%; cursor: pointer;  color: rgba(255, 255, 255, 0.363); letter-spacing: 3px;}
+.navi > .navi-sel { color: rgb(255, 255, 255); font-weight: 500 }
+
+.wrap > .conts {height: calc(100% - 80px); color: rgb(28, 62, 82); 
+	background-color: rgba(222, 233, 236, 0.521); box-shadow:rgba(42, 48, 53, 0.247) 1px 1px 10px;
+overflow: auto; border-radius: 10px;}
+.wrap-daily > .conts { padding: 32px 25px;}
+
+.wrap-weekly > .conts { display: flex; align-items: flex-start; align-content: flex-start; flex-wrap:wrap; }
+.w-item { padding: 10px; display: flex; align-items: center; border-bottom: 1px solid rgba(255, 255, 255, 0.801); flex:0 0 100%}
+.w-item > div {flex: 0 0 25%; padding: 1.25rem;}
+.w-item > div > img {max-width: 150px;}
+.w-item > ul { flex: 0 0 75%}
+.w-item .w-temp > span {font-weight: bold; font-size: 1.25rem;}
+.w-item .w-desc > :first-child {font-weight: 500; font-size: 1.125rem}
+.w-item .w-desc > :last-child {color:rgba(24, 58, 78, 0.774); }
+.w-item .w-date {font-size: 0.875rem; color:rgba(78, 78, 78, 0.726); }
+
+
+@media screen and (min-width: 768px) {
+	
+	.w-item {flex: 0 0 50%}
+}

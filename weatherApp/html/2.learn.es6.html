@@ -1,0 +1,82 @@
+<script>
+//JS의 중요 객체와 메서드 - Array, String, Date, Math
+//메소드(method) - 객체(Object) 안에서 선언 된 함수
+const log = console.log;
+const clear = console.clear;
+
+//ES5객체
+const human = {
+	age:25,
+	name:"윤지수",
+	speak: function() {
+		log(this.name + "이(가) 말한다. ")
+	}
+}
+const human2 = {
+	age:25,
+	name:"윤지",
+	speak: function() {
+		log(this.name + "이(가) 말한다. ")
+	}
+}
+
+log(human.age);
+human.age = 30;
+log(human.age);
+log(human.name);
+human.speak();
+
+log(human2.name);
+human2.speak();
+
+clear();
+log(Array);
+
+//IIFE
+ const Human = (function(){
+	 this.age;
+	 this.name;
+function Human(_age,_name){
+	this.age = _age;
+	 this.name = _name;
+}
+Human.prototype.speak = function(){
+	log(this.name + "이(가)" +this.age+"세 라고 말한다.");
+}
+return Human;
+
+ }());
+
+ var hong = new Human(30, "홍길동");
+ var hong2 = new Human(20, "홍길순");
+ hong.speak();
+ hong2.speak();
+
+const Slide = (function(){
+	function Slide(_obj, _type, duration, delay) {
+
+		}
+		return Slide;
+}());
+
+//ES6 객체
+class HumanES6 {
+	 constructor (_age, _name){
+ this.age = _age;
+ this.name = _name;
+	 }
+	 speak() {
+		 log(this.name + "이(가)" + this.age + "세 라고 외칩니다.");
+	 }
+}
+
+const hong3 = new HumanES6(40, "홍길동");
+const hong4 = new HumanES6(45, "홍길동");
+hong3.speak();
+ hong4.speak();
+
+
+
+
+
+</script>

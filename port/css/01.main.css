@@ -1,0 +1,200 @@
+html, body {height: 100%; background-color: rgb(230, 231, 240)}
+.wrap {
+	height: 100%;
+	width: 100%;
+	max-width: 1600px;
+	margin: 0px auto;
+	color: #222;
+}
+
+.prof-img img{ border-radius: 8px;}
+
+.font20 { font-size: 20px;}
+
+/* 날개 */
+.lt-navi {
+	width: 300px;
+	float: left;
+	height: 100%;
+	position: fixed;
+	background-color: rgb(255, 255, 255)
+}
+.prof-img{ width: 120px; margin: 16px;}
+
+.prof {width: 100%;}
+.pro-name {padding: 12px 16px;}
+.pro-icon .i2 {display: none;}
+.pro-name > div {padding: 10px 0px;}
+.pro-name .logo { font-size: 20px;}
+.pro-name .name { color: #666;}
+
+
+/* 날개 메뉴 */
+.pro-icon {width: 100%;}
+.pro-icon i {padding: 10px 15px 15px 16px;}
+.pro-icon li { width: 100%;}
+.pro-icon li:first-child { color: cadetblue;}
+.pro-icon li:first-child:hover {background-color: rgb(184, 184, 184); color: rgb(255, 255, 255);}
+.pro-icon li:hover {background-color: #555; color: #fff;}
+
+.fabs { margin-top: 10px; padding-left: 16px;}
+.fab:hover {color: rgb(52, 81, 121);}
+
+
+/* 내용 */
+.non { display: none; } 
+.nonbar {margin: 15px; font-size: 25px;}
+.nonpro {position: absolute; width: 70px; right: 10px;}
+.nonpro img {border-radius: 50px; margin-top: 10px; }
+
+.rt-cont {
+	background-color: rgb(230, 231, 240);
+	width: calc(100% - 300px);
+	float: right;
+	height: 3500px;
+font-size: 15px;}
+
+.rt-cont2 {padding: 15px;}
+
+	.rt-cont .logo {font-size: 35px; font-weight: bold; margin-bottom: 28px;} 
+	.filter{ float: left; width:100%; border-bottom: 6px solid rgba(255, 255, 255, 0.925); }
+	.filter button { padding: 12px 20px;  font-size: 15px; background-color: #FFF; cursor: pointer; margin-bottom: 20px;}
+	.filter button:hover {background-color: rgb(166, 156, 180); color: #FFF;}
+	.filter .all {background-color: rgb(166, 156, 180); color: #FFF;}
+	.filter .all:hover {background-color: rgb(255, 255, 255); color: rgb(166, 156, 180);}
+	.fil {padding: 0px 15px 0px 0px ;}
+	.bt2 { padding: 0px 7px 0px 0px;} 
+
+	/* 사진 */
+	.pics {margin: 10px 0px 20px 0px; display: flex; flex-wrap: wrap;
+	justify-content: space-between;}
+	.pic { flex: 32.3% 0 1; } 
+	.pic .pic-cont{ padding: 16px; background-color: #fff;}
+	.pic .img { margin-top: 8px; cursor: pointer;}
+	.pic .img:hover { opacity: 0.5;}
+	.pic-cont { font-size: 14px;}
+	.pic-conttit { font-weight: bold; padding-bottom: 10px;}
+	
+
+
+	/* 페이지 */
+	.pages {width: 240px; margin: 0px auto;}
+	.page {float: left; padding: 8px 15px; cursor: pointer;}
+	.page:hover {background-color: black; color: #FFF;}
+	.page:nth-child(2) {background-color: black; color: #FFF;}
+	.page:nth-child(2):hover {background-color: rgb(255, 255, 255); color: rgb(166, 156, 180);}
+
+	/* 어바웃 미 */
+	.about-me{ margin-top: 50px;}
+	.me{width: 49.5%; float: left;}
+	.me:first-child {margin: 0px 1% 0px 0px;}
+	.me2 { padding: 40px 10px;}
+	.me-tit { font-size:20px; padding-bottom: 15px;}
+
+	/* 스킬 */
+	.skills { padding: 0px 10px;}
+	.ski-tit {padding-bottom: 20px; }
+	.ski-con {margin-bottom: 10px;}
+	.ski-bars { margin: 15px 0;}
+	.ski-bar1 { background-color: #555; width: 95%; padding: 8px; color: white;}
+	.ski-bar2 { background-color: #999; width: 5%; padding: 8px;}
+	.ski-bar3 { background-color: #555; width: 85%; padding: 8px; color: white;}
+	.ski-bar4 { background-color: #999; width: 15%; padding: 8px;}
+	.ski-bar5 { background-color: #555; width: 80%; padding: 8px; color: white;}
+	.ski-bar6 { background-color: #999; width: 20%; padding: 8px;}
+
+	.ski-bar { background-color: #555; width: 17%; 
+		margin: 35px 0; padding: 9px 15px; color: white;}
+		.down { padding: 8px;}
+		.ski-bar:hover { background-color: #aaa; color: #222;}
+
+
+/*  회원 */
+.How-much { padding: 10px;}
+.hows-all {padding: 10px 0px;}
+.hows { opacity: 0.7; width:32.4%; border: 1px solid rgb(204, 204, 204); margin: 10px 0px; }
+.hows:hover { opacity:1;}
+.how {  padding: 17px 10px; color: #666; border-bottom: 1px solid rgb(204, 204, 204); background-color: #FFF;}
+.how:first-child { color: #FFF; background-color: rgb(0, 0, 0); padding: 35px;}
+.how2 { color: #FFF; background-color: rgb(64, 168, 154); padding: 35px;}
+.how:nth-child(6) { color: #666; background-color: #FFF; padding: 20px;}
+.how:last-child { color: #666; background-color: #eee; padding: 25px;}
+.how-f { font-size: 30px; padding: 20px;}
+.how-bt {font-size: 16px; padding: 14px 22px; background-color: rgb(64, 168, 154); color: white;}
+.hows:nth-child(2) { margin: 10px 1.4%;}
+
+
+/* 컨택 */
+.contacts {background-color: rgb(151, 154, 155); padding: 16px}
+.contact .me-tit { padding: 8px 10px;}
+.conta { background-color:#666; width: 33.3%; padding: 15px 10px;  color: white; margin: 30px 0; }
+.conta i {padding-bottom: 10px; font-size: 35px;}
+.con2 { background-color:rgb(64, 168, 154); width: 33.3%; padding: 15px 10px;  color: white;}
+
+/* 폼 */
+.line { border-top: 1px solid #FFF; width: 99%; margin: 10px auto;}
+.forms { padding: 5px; margin-top:14px; }
+.form {padding: 10px 0px; margin-top: 3px;}
+.form-bar { background-color: rgb(0, 0, 0); 
+ padding: 5px 20px; color: white; margin: 15px 0 0 5px;}
+ .form-bar:hover { background-color: rgb(192, 192, 192); color: #000;}
+
+ /* 푸터 */
+ .footers-all {background-color: rgb(99, 101, 102); padding: 16px; color: white;}
+ .footer {width: 33%; padding: 15px 10px;}
+ .footer-name { font-size: 25px; padding-bottom: 15px;}
+ .footer-name { font-size: 20px; padding-bottom: 15px;}
+ .post2 { border-bottom: 1px solid #FFF;}
+ .post:hover {background-color: rgba(255, 255, 255, 0.616); cursor: pointer;}
+ .post-img { width: 50px; margin: 15px;}
+ .post-con {   margin: 15px 0px;}
+
+ .tags-all{margin: 15px 0;}
+ .tags { padding: 4px 10px; background-color:#999; color: #000; font-size: 12px; display: inline-block; margin: 3px;}
+ .tags:first-child { 
+	background-color:rgb(0, 0, 0); 
+	color: rgb(255, 255, 255); font-size: 14px;}
+
+	.end {
+		color: rgb(255, 255, 255); 
+		height: 70; padding: 24px;background-color:rgb(0, 0, 0);}
+
+
+		@media screen and (max-width:900px){
+			.lt-navi {width: 10%; transition-duration: 0.5s;
+				transition-property: all; transition-timing-function: ease-in-out;}
+			.rt-cont {width: 90%; margin: 0 auto;}
+			.fabs {display: none;}
+
+			.prof-img {width: 70%; margin:16%; text-align: center; transition-duration: 0.5s;
+				transition-property: all;  border-radius: 50px; }
+			.pro-name {display: none;}
+			.pic {flex: 48% 0 1; margin: 1%;} 
+			.pic img {overflow: hidden; }
+			.hows{flex: 90%} 
+			.pro-icon .i1 {display: none; }
+			.pro-icon .i2 {color: #666;}
+			.pro-icon { text-align: center; transition-duration: 0.5s;
+				transition-property: all; transition-timing-function: ease-in-out; }
+			.ski-bar { width: 100%; padding: 15px;}
+			.footer {width: 96%; margin: 2%; }
+			.filter button { padding: 10px 15px;  font-size: 15px; }
+
+		@media screen and (max-width:640px){
+			.non { display:flex; opacity: 1; } 
+			.non img:hover {opacity: 0.5;}
+			.lt-navi {width: 0%; transition-duration: 0.5s;
+				transition-property: all; transition-timing-function: ease-in-out; opacity: 0;}
+			.rt-cont {width: 100%;}
+			.pro-icon {  opacity: 0; transition-duration: 0.2s;
+				transition-property: all; transition-timing-function: ease-in-out;}
+			.prof-img  {  opacity: 0; transition-duration: 0.2s;
+				transition-property: all; transition-timing-function: ease-in-out;}
+			.pic {flex: 100%; margin: 2%;} 
+			.pic img {overflow: hidden;}
+			.hows{ width: 96%; flex: 100%; margin: 2%;} 
+			.ski-bar { width: 100%; padding: 15px;}
+			.footer {width: 96%; margin: 2%; }
+			.filter button { padding: 10px 10px;  font-size: 12px; }
+		
+		.fil {padding: 0px 7px 0px 0px;} }
