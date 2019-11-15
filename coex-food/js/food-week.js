@@ -20,7 +20,7 @@ function wheelAni(pos, prePage, nowPage) {
 
 $(window).scroll(function(){
 	var scTop = $(this).scrollTop();
-	if(scTop > 400) {
+	if(scTop > 850) {
 		$(".bt-top").addClass("bt-top-show");}
 else{
 		$(".bt-top").removeClass("bt-top-show");}
@@ -37,13 +37,49 @@ var workSlide = new FxSlide({
 	pager: $(".pagers")
 });
 
-$(".navi").mouseenter(function(){
+var noticeSlide = new FxSlide({
+	slides : $(".main-imgs"), 
+	cnt:1, 
+	speed : 1000,
+	delay : 4000,
+	pager: $(".pagers")
+});
+
+var sponSlide1 = new FxSlide({
+	slides : $(".manag-imgs"), 
+	cnt:1, 
+	speed : 1000,
+	delay : 4000,
+});
+var sponSlide2 = new FxSlide({
+	slides : $(".kor-spon-imgs"), 
+	cnt:1, 
+	speed : 1000,
+	delay : 4000,
+});
+var sponSlide3 = new FxSlide({
+	slides : $(".en-spon-imgs"), 
+	cnt:1, 
+	speed : 1000,
+	delay : 4000,
+});
+
+$(".navi > span").mouseover(function(e){
+	e.stopPropagation(e);
 $(".subs, .sub-navi").css({"visibility" : "visible", "opacity": 1});
-$(this).find(".angle").css({"visibility" : "visible", "opacity": 1});
+$(this).parent().find(".angle").css({"visibility" : "visible", "opacity": 1});
 });
 $(".navi").mouseleave(function(){
 	$(".subs, .sub-navi").css({"visibility" : "hidden", "opacity": 0});
-	event.stopPropagation();
-	$(this).find(".angle").css({"visibility" : "hidden", "opacity": 0});
+	$(this).parent().find(".angle").css({"visibility" : "hidden", "opacity": 0});
+});
+
+
+$(".phone-bar").mouseover(function(){
+$(".nav-phone").css({"opacity" : 1, "top": "95px"});
+});
+$(".phone-bar").mouseleave(function(e){
+	e.stopPropagatione(e);
+	$(".nav-phone").css({"opacity" : 0, "top": "0%"});
 });
 

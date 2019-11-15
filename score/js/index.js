@@ -225,8 +225,8 @@ function delData(bt, id) {
 
 // 페이저 생성
 function pagerMaker(total, page) {
-	var div = 3; // 세트당 나올 페이지 수
-	var cnt = Math.ceil(total / 10); // 전체 페이지 개수
+	var div = 5; // 세트당 나올 페이지 수
+	var cnt = Math.ceil(total / 5); // 전체 페이지 개수
 	var stn = 0; // 세트중에 시작페이지
 	var edn = 0; // 세트중에 마지막페이지
 	var prev = 0; // < 를 클릭시 나타날 페이지 
