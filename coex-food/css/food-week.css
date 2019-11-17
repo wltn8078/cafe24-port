@@ -145,7 +145,7 @@ transition: all 0.5s;
 	flex: 100% 0 0; width: 100%; height: 550px;
 	position: absolute;
 	background-color: brown;
-	right: 0%; bottom: -170px;
+	right: 0%; bottom: -180px;
 	color: white;
 	padding: 3rem 2rem;
 	font-size: 2rem;
@@ -174,21 +174,18 @@ flex: 100% 0 0; padding-bottom: 2rem;
 .bands {margin-bottom: 5rem; flex: 100% 0 0;}
 
 
-.band-main { text-align: left; width:100%; padding: 0 5vw; margin-top: 3rem;}
+.band-main { text-align: left; width:100%; padding: 0 5vw; margin-top: 6rem;}
 
 .band-squre { width: 100%; height: 100%; position: relative;}
 
-.main-wrap { padding: 0 10vw; position: relative; height: 100%; margin-top: 2rem;}
-.main-imgs { height: 100%; display: flex; align-items: flex-start; width: 100%; font-size: 4vw; }
-.main-imgs .photo  {height: 100%; flex: 100% 1 1; overflow: hidden; min-height: 350px; max-height: 410px; border: 1px solid #ddd; padding: 0.3rem; margin: 0 3vw; text-align: center; transition: all 0.5s;}
+.main-imgs { height: 100%; width: 100%; font-size: 1rem; padding: 0 1rem;}
+.main-imgs .photo  {width: 100%; margin: 1rem auto; border: 1px solid #ddd; padding: 0.3rem; text-align: center; transition: all 0.5s;}
+.main-imgs .photo img  { display: none;}
 .main-imgs .photo:hover  { box-shadow: 3px 3px 4px rgba(51, 51, 51, 0.226);}
-.main-imgs .photo:hover img  {filter: brightness(0.9); }
-.main-imgs .photo span {line-height: 3rem;}
+.main-imgs .photo:hover img  { filter: brightness(0.9); }
+.main-imgs .photo .post-tit {line-height: 3rem;}
 
-.pager-prev,
-	.pager-next {z-index: 99999; cursor: pointer; position: absolute; width: 60px; height: 60px; color: #FFF; font-size: 2.5rem; line-height: 60px; text-align: center; top: 52%; transform: translateY(-50%); font-family: 'Poppins', sans-serif; }
-	.pager-prev {left: 0%;}
-	.pager-next {right: 0%;}
+
 
 .main-bts {background-color: rgba(255, 255, 255, 0.425); padding: 0.5rem 0; width: 100%; display: flex; justify-content:space-around; align-items: center; font-size: 3vw; line-height: 4rem;
 	color: #777; font-weight: 400; text-align: center; position: absolute; color: #FFF; bottom:15vh}
@@ -197,7 +194,7 @@ flex: 100% 0 0; padding-bottom: 2rem;
 
 /* 맵 */
 .maps { border: 1px solid #ddd; padding: 3rem; width: 100%; text-align: center;}
-.maps-title {text-align: center; margin: 2rem auto;}
+.maps-title {text-align: center; margin: 0 auto; margin-top: 6rem;}
 .map {flex: 100% 0 0}
 .map img { width: 100%;}
 /* 주최 */
@@ -209,7 +206,7 @@ flex: 100% 0 0; padding-bottom: 2rem;
 .spons-imgs div {width: 100%;}
 
 .newsletter {width: 100%; height: 300px; background-color: rgba(24, 24, 24, 0.39); padding: 2rem; text-align: center;}
-.mail-bt {display: flex; justify-content:space-between; align-items: flex-start; width: 700px; margin: 0 auto;
+.mail-bt {display: flex; justify-content:space-between; align-items: flex-start; width: 100%; margin: 0 auto;
 background-color: white; border: 1px solid #999; padding: 1rem; border-radius: 5px;}
 
 .mail-bt .btn { background-color: rgb(202, 76, 72); color: white; transition: all 0.5s;}
@@ -219,7 +216,10 @@ background-color: white; border: 1px solid #999; padding: 1rem; border-radius: 5
 /* 576 ~ 767 - sm - 스마트폰 가로 */
 @media screen and (min-width: 576px) {
 	.navi-bar { display: flex;}
-	.main-imgs .photo  {flex: 49% 1 1;}
+	.main-imgs { display: flex; align-items: flex-start; justify-content: space-between; }
+	.main-imgs .photo  {margin: 0 0.5rem;}
+	.main-imgs .photo .post-tit {width: 27vw; padding: 0 1rem; margin: 0 auto; overflow:hidden; 
+		text-overflow:ellipsis; white-space:nowrap; word-wrap:break-word; word-break:break-all;}
 	.maps {display: flex;}
 	.map {flex: 49% 0 0;}
 	
@@ -228,19 +228,25 @@ background-color: white; border: 1px solid #999; padding: 1rem; border-radius: 5
 @media screen and (min-width: 768px) {
 	.LOGO { width: 300px;}
 	.navi-icon { top: 3%;}
-	
+	.main-imgs .photo img {display: block;}
+	.main-imgs .photo .post {width: 100%; max-height: 400px; overflow: hidden;}
+	.main-imgs .photo {width: 100%;}
+	.main-imgs {padding: 0; width: 100%;}
 }
 /* 992 ~ 1199 - lg - 태블릿 가로 */
 @media screen and (min-width: 992px) {
+	.main-bts {display: none;}
 	.banners { display: block;}
+	.pagers { display: flex;}
 	.phone-banner { display: none;}
 	.fix-icons {display: flex;}
 	.navis {display: none;}
 	.icons {display: none}
 	.ban-tit {max-height: 300px;}
-	.band { margin-top: 13rem;
-		display: flex; justify-content:space-between; align-items: flex-start; padding-bottom: 2rem; 
+	.band { margin-top: 8rem;
+		 padding-bottom: 2rem; 
 		}
+	.maps-title { margin-top: 8rem;}
 	
 }
 /* 1200 ~ - xl - PC */
@@ -248,9 +254,18 @@ background-color: white; border: 1px solid #999; padding: 1rem; border-radius: 5
 	.nav-phone {display: none;}
 	.fix-icons {display: flex;}
 	.navis {display: flex;}
+	.phone-banners {display: none;}
+	.phone-bar {display: none;}
 	.icons {display: flex;}
 	.navi-icon {display: none;}
 	.squer {display: block; }
+	.main-imgs .photo .post-tit {width: 100%; max-width: 400px;}
 	.pagers { display: flex;}
 	.ban-tit {top: 25%!important;}
+	.map {flex: 45% 0 0; margin: 0 auto;}
+	.maps-title { margin-top: 10rem;}
+	.band { margin-top: 10rem;
+		display: flex; justify-content:space-between; align-items: flex-start; 
+		}
+	.band-main {padding-left: 1.5rem; padding-right: 0;}
 }

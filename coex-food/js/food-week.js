@@ -1,4 +1,5 @@
 window.addEventListener("wheel", wheelFn, {passive: false});
+
 function wheelFn(){
 	event.preventDefault();
 	event.stopPropagation();
@@ -29,6 +30,8 @@ $(".bt-top").click(function(){
 	$("html, body").stop().animate({"scrollTop":0},500);
 })
 
+
+
 var workSlide = new FxSlide({
 	slides : $(".bans"), 
 	cnt:1, 
@@ -37,13 +40,7 @@ var workSlide = new FxSlide({
 	pager: $(".pagers")
 });
 
-var noticeSlide = new FxSlide({
-	slides : $(".main-imgs"), 
-	cnt:1, 
-	speed : 1000,
-	delay : 4000,
-	pager: $(".pagers")
-});
+
 
 var sponSlide1 = new FxSlide({
 	slides : $(".manag-imgs"), 
