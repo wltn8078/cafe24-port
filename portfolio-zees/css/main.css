@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Yellowtail&display=swap');
 
-html { height: 100%;}
-body { height: 100%; width: 100%; overflow-x:hidden; overflow: hidden;}
+html { height: 100%; width: 100%;}
+body { height: 100%; width: 100%;  cursor:context-menu;}
+/* overflow-x:hidden; */
 body section {height: 100%;}
-.wrap {width: 1000px; margin: 0 auto;}
+.wrap {max-width: 1000px; width: 100%; margin: 0 auto;}
 .aboutme2, .work3, .contact4 { display: flex; align-items: center; justify-content: center;}
 
 /* 메인 */
 .main1 { position: relative; height: 100%;}
 	.main1 .tops {display: flex; justify-content:space-between; align-items:center; }
-	.main1 .logo { width: 150px; margin: 0 0 0 2rem; cursor: pointer;}
+	.main1 .logo { width: 150px; margin: 2rem 0 0 2rem; cursor: pointer;}
 
 
-	.tag-fix {
-		position: fixed; top: 9%; right: 2.5%; z-index: 99999;}
+	.tag-fix { cursor: pointer;
+		position: fixed; top: 9%; right: 10%; z-index: 99999;}
 
 	.tags {
 		width: 150px;
@@ -51,36 +52,45 @@ body section {height: 100%;}
 	.main1 .gif img {transition: all 0.4s; filter: contrast(120%) brightness(0.95); width: 40%; min-width: 350px;}
 	.main1 .gif img:hover {filter: contrast(95%) brightness(1.1);}
 	.pager-prev,
-	.pager-next {z-index: 9999; cursor: pointer; position: absolute; width: 60px; height: 60px; color: #666; font-size: 2.5rem; line-height: 60px; text-align: center; top: 52%; transform: translateY(-50%); font-family: 'Poppins', sans-serif; }
-	.pager-prev {left: 23%;}
-	.pager-next {right: 23%;}
+	.pager-next {z-index: 9999; cursor: pointer; position: absolute; width: 60px; height: 60px; color: #666; font-size: 2.5rem; line-height: 60px; text-align: center; top: 54%; transform: translateY(-50%); font-family: 'Poppins', sans-serif; }
+	.pager-prev {left: 33.5%;}
+	.pager-next {right: 23.2%;}
 
 /* 내 소개 */
 .aboutme2 { height: 100%; position: relative;}
-.aboutme2-all {width: 1200px;}
+.aboutme2-all { max-width: 1200px; width: 100%;}
 	.aboutme2 .sides { width: 100%;  }
 	.aboutme2 .si1 {position: absolute; top: 50%; left: -2%;}
-		.aboutme2 .si1 .pic1 {position: absolute; z-index: 99; top: -15%; left: -15%;}
+		.aboutme2 .si1 .pic1 {max-width: 230px; width: 80%; position: absolute; z-index: 99; top: -15%; left: -15%;}
+		.aboutme2 .si1 .pic2 {max-width: 210px; width: 80%;}
 
-	.aboutme2 .si2 {position: absolute; right: -9%; top: 10%; }
-		.aboutme2 .si2 .pic1 {position: absolute; z-index: 99; top: 5%; right: 50%;}
+	.aboutme2 .si2 {position: absolute; right: 0%; top: 10%; }
+		.aboutme2 .si2 .pic1 {max-width: 155px; width: 42%; position: absolute; z-index: 99; top: 5%; right: 50%;}
+		.aboutme2 .si2 .pic2 {max-width: 310px; width: 80%;}
 
 	.aboutme2 .about-me {height: 100%; width: 100%;}
 	.aboutme2 .mes {position: relative; width: 100%;}
-	.aboutme2 .me-1-2 {position: relative; width: 100%; display: flex; align-items: flex-start; justify-content: space-between;}
-	.aboutme2 .Name { line-height: 7.5rem; font-family: 'Yellowtail', cursive; letter-spacing: 4px; font-size:6rem; padding-right: 1rem; color: rgb(139, 23, 23);}
-	.aboutme2 .Job { font-size:1.5rem; padding-right: 1rem; color: #888888; letter-spacing: 1.3px; }
+	.aboutme2 .me-1-2 { margin: 0 auto; background-color: rgba(255, 255, 255, 0.664); position: relative; width: 90%; z-index: 9999; padding: 3rem 0;}
+	.aboutme2 .Name {max-width: 450px; width: 100%; margin: 0 auto; transition: all 0.4s; line-height: 20vw; font-family: 'Yellowtail', cursive; letter-spacing: 2px; font-size:20vw; padding: 0 3vw; color: rgb(139, 23, 23);}
+	.aboutme2 .Job { font-size:4vw; padding-right: 1rem; color: #888888; letter-spacing: 1.3px; }
 	.aboutme2 .SubTit {font-size:1.2rem; padding-right: 1rem; color: #c77474;}
-	.abouts {text-align: center; width: 100%; margin-bottom: 8rem;}
-	.about-main {padding-left: 1rem; margin-top: 2rem;}
-	.about-conts { text-align: left; line-height: 2.5rem; width: 40%; display: flex; align-items: flex-start; justify-content: flex-start;}
+	.abouts {text-align: center; width: 100%;}
+	.about-main {margin-top: 1rem;} 
+	.about-conts { text-align: left; line-height: 2.5rem; width: 80%; margin: 0 auto; display: flex; align-items: center; justify-content: space-evenly;}
+	.about-cont1 {font-family: 'Yellowtail', cursive; font-size: 2.4vh}
 	.about-conts .about-cont1 { padding-right: 2rem;}
+	.click {display: none; background-color: #ddd; border-radius: 50%; width: 50px; height: 50px;
+	color: #fff; font-size: 0.65rem; line-height: 50px; margin: 0 auto;
+position: absolute; bottom: -15%; left: 0; right: 0; text-align: center; cursor: pointer;
+transition: all 0.4s;}
+	.click:hover {transform: scale(1.15); background-color: #bbb;}
+	#abme-prev {display: none;}
 
-	.aboutme2 .me-1  { width: 95%;}
+	.aboutme2 .me-1  { width: 100%; z-index: 9999; transition: all 1s;}
 	.aboutme2 .me-1position  {height: 100%;}
 	.aboutme2 .me-1 .about-main {padding-top: 5rem;}
 
-	.aboutme2 .me-2  { width: 90%; flex: 100% 1 1; margin: 0 4rem 0 2rem;}
+	.aboutme2 .me-2  {display: none;  transition: all 1s; width: 100%;}
 	.aboutme2 .me-2 .skills {margin-bottom: 2.5rem;}
 	.aboutme2 .me-2 .program { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 2.5rem;}
 	.aboutme2 .me-2 .prog { position: relative; width: 55px; padding: 0 0.6rem;}
@@ -88,7 +98,7 @@ body section {height: 100%;}
 	.aboutme2 .me-2 .prog img {filter: opacity(0.8) saturate(0.7); transition: all 0.2s;}
 	.aboutme2 .me-2 .prog:hover img {filter: opacity(1) saturate(0.6); transform: scale(1.1);}
 
-	.aboutme2 .me-3  { width: 80%;}
+	.aboutme2 .me-3  {display: none; transition: all 1s; width: 80%;}
 	.aboutme2 .me-3 .edus {margin-bottom: 3.5rem; font-size: 0.97rem;}
 	.aboutme2 .me-3 .edu { display: flex; align-items: flex-start; justify-content: space-between; line-height: 2rem;}
 	
@@ -104,9 +114,15 @@ body section {height: 100%;}
 	{color: #698b7a;}
 
 	/* 작업 */
-.work3 { position: relative;}
-.works-all {margin-bottom: 4rem;}
-.work-pager {width: 900px; height: 600px; margin: 0 auto; overflow: hidden;}
+.work3 { position: relative; width: 100%;}
+.works-all { background-color: rgba(255, 255, 255, 0.664); width: 90%; margin-bottom: 4rem; position: relative;  z-index: 99999;}
+.work-pager {max-width: 1000px; width: 100%; height: 495px; margin: 0 auto;  }
+	.works-chart {max-width: 350px; width: 100%; margin: 0 auto;}
+	.charts {display: flex; justify-content: space-around;} 
+	.chart {padding: 0.5rem 1rem; line-height: 3rem; } 
+	.chart:hover {background-color: #eee;}
+	.chart:not(:last-child) {border-left: 1px solid #ddd;}
+	.works-cont { max-width: 350px; width: 100%; margin: 0 auto;}
 	.work3 .works { width: 200%; position: relative; display: flex; overflow: hidden; }
 	.work3 .work {flex: 100% 1 1; position: relative; }
 	.work3 .works-img {width: 100%; height: 100%;}
@@ -119,9 +135,13 @@ body section {height: 100%;}
 
 
 	.work3 .side-rot-flower {transform: rotate(-10deg); transition: all 5s;}
-	.work3 .si1 {position: absolute; top: 30%; right: -4%;}
-	.work3 .si1 .pic1 {position: absolute; z-index: 99; top: -15%; right: 13%;}
+	.work3 .si1 {position: absolute; top: 30%; right: 0%;}
+	.work3 .si1 .pic1 { max-width: 315px; width: 80%; position: absolute; z-index: 99; top: -15%; right: 13%;}
+	.work3 .si1 .pic2 { max-width: 300px; width: 80%;}
 	.work3 .si2 {position: absolute; top: 20%; left: 4%;}
+	.work3 .si2 .pic1 { max-width: 240px; width: 50%;}
+
+
 
 /* 연락 */
 .contact4 {position: relative; width: 100%;}
@@ -138,20 +158,53 @@ body section {height: 100%;}
 .contact4 .side-lt,
 .contact4 .side-rt {position: absolute; }
 .contact4 .side-lt {left: -3%;}
-.contact4 .side-rt {right: -3%;}
+.contact4 .side-rt {right: 0%;}
 #side-lt1-0 {top: 40%; left: -2%; z-index: 2;}
 #side-lt1-1 {top: 5%; z-index: 2;}
 #side-lt1-2 {top: 7%;}
 #side-lt2 {bottom: -5%; left: -2%;}
 
 #side-rt1-1 {bottom: 25%;  z-index: 2;}
-#side-rt1-2 {top: 10%; right: -5%;}
+#side-rt1-2 {top: 10%; right: 0%;}
 #side-rt2-1 {bottom: -5%; right: 8%; z-index: 2;}
-#side-rt2-2 {bottom: 0%; right: -5%;}
+#side-rt2-2 {bottom: 0%; right: 0%;}
 
 .bt-top {position:fixed; border-radius: 50%; background-color: #aaa; bottom: -4.5rem; right: 1.6rem; z-index: 9999; color: white; transition: all 0.5s; cursor: pointer; padding: 1rem 1.5rem 1rem 1.5rem; }
 .bt-top:hover {background-color: #ee705f; padding:0.8rem 1.5rem 1.2rem 1.5rem;}
 .bt-top-show {bottom: -3rem; transform: translateY(-5rem)}
+
+
+/* 576 ~ 767 - sm - 스마트폰 가로 */
+@media screen and (min-width: 576px) {
+.aboutme2 .Name {font-size:5rem; padding: 0 2vw;}	
+.aboutme2 .Job {font-size:1.5rem; padding: 0 2vw;}	
+	
+}
+/* 768 ~ 991 - md - 태블릿 세로 */
+@media screen and (min-width: 768px) {
+	
+}
+/* 992 ~ 1199 - lg - 태블릿 가로 */
+@media screen and (min-width: 992px) {
+.aboutme2 .me-1 {transform: translateX(400px);}
+.aboutme2 .me-1-2 {position: relative; width: 100%; display: flex; align-items: flex-start; justify-content: space-between;}
+.aboutme2 .Name {letter-spacing: 6px; font-size:6.3rem; padding: 0; line-height: 8rem;}
+.aboutme2 .Job { font-size: 1.5rem;}
+.click { display: block;}
+.aboutme2 .me-2  {background-color: rgba(255, 255, 255, 0); transform: translateX(-60px); opacity: 0; width: 85%; flex: 100% 1 1; margin: 0 4rem 0 2rem;}
+.aboutme2 .me-3  { transform: translateX(-500px); opacity: 0; transition: all 1s; width: 80%;}
+.about-cont1 {font-family: 'Yellowtail', cursive; font-size: 1.5rem;}
+.works-chart { width: 150px; margin-right: 1.5rem;}
+.chart {padding: 0.5rem 1rem; line-height: 3rem; }
+.work-pager{display: flex; justify-content: space-between; overflow: hidden; }
+}
+/* 1200 ~ - xl - PC */
+@media screen and (min-width: 1300px) {
+	
+}
+
+
+
 
 /* 애니메이션 */
 .side-left-ani1-1 {
@@ -201,7 +254,7 @@ body section {height: 100%;}
 
 .side-left-ani2 {
 	animation-name: leftAni2;
-	animation-duration: 6s;
+	animation-duration: 4s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 	transform-origin: center bottom;
@@ -241,3 +294,5 @@ body section {height: 100%;}
 	0% {transform: rotate(-6deg);}
 	100% {transform: rotate(2deg);}
 }
+
+

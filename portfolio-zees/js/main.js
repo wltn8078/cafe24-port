@@ -58,6 +58,26 @@ $(".tags").mouseleave(function(){
 });
 
 
+$("#abme-next").click(function(){
+	$(this).hide();
+	$("#abme-prev").show();
+	$(".Name").css({"letter-spacing": "4px", "font-size":"6rem"})
+	$(".me-1").css({"transform": "translateX(0px)", "width": "95%"})
+	$(".me-2, .me-3").show("fast", function(){
+	$(".me-2, .me-3").css({"transform": "translateX(0)","opacity": 1});
+	})
+});
+
+$("#abme-prev").click(function(){
+	$(this).hide();
+	$("#abme-next").show();
+	$(".me-1").css({"transform": "translateX(400px)", "width": "97%"})
+	$(".Name").css({"letter-spacing": "6px", "font-size":"6.3rem"})
+	$(".me-2").css({"opacity": 0, "transform": "translateX(-35px)"});
+	$(".me-3").css({"opacity": 0, "transform": "translateX(-500px)"});
+});
+
+
 
 $(".tag-bar").click(function(){
 	$(".navis-hidden").stop().css({"transform": "translateX(35px)"});
