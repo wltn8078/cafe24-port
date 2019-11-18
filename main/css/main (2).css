@@ -1,0 +1,26 @@
+body { height: 100%; width: 100%; overflow-x:hidden}
+.wrap {width: 1000px; margin: 0 auto;}
+.main1 { height: 1080px; position: relative;}
+.tops {display: flex; justify-content:space-between; align-items:center; }
+.logo { width: 150px; margin: 1.5rem 0 0 4rem; cursor: pointer;}
+.navis {margin: 2rem 4rem 0 0; cursor: pointer; }
+.main-gifs { position: absolute; top: 0; width: 100%; height: 100%;}
+.gifs { height: 100%;}
+.gif { display: flex; align-items: center; justify-content: center; height: 100%;}
+.gif img {transition: all 0.4s; filter: contrast(155%) brightness(0.93); width: 40%; min-width: 350px;}
+.gif img:hover {filter: contrast(95%) brightness(1.1);}
+
+
+.aboutme2 { height: 1080px; position: relative;}
+.sides { width: 100%; }
+.side1 img {position: absolute; left: -4%;  top: 25%;}
+.side2 img {position: absolute; height: 400px; right: -5%; top: 0; }
+.side-rot-lef {transform: rotate(-10deg);}
+.side-rot-rig {transform: rotate(20deg);}
+
+.abouts-1 { display: flex; align-items: flex-start; justify-content: space-between;}
+.abouts-1 .about-1-main {width: 55%;}
+.abouts-1 .about-1-img img {width: 350px; height: 250px; margin-bottom: 2rem;}
+
+.abouts-2 { display: flex; align-items: flex-start; justify-content: space-between;}
+.abouts-2 .about-2-img img {width: 300px; height: 250px; margin-right: 1.65rem; margin-bottom: 2rem;}

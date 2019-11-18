@@ -44,19 +44,19 @@ var workSlide = new FxSlide({
 
 var sponSlide1 = new FxSlide({
 	slides : $(".manag-imgs"), 
-	cnt:1, 
+	cnt:2, 
 	speed : 1000,
 	delay : 4000,
 });
 var sponSlide2 = new FxSlide({
 	slides : $(".kor-spon-imgs"), 
-	cnt:1, 
+	cnt:2, 
 	speed : 1000,
 	delay : 4000,
 });
 var sponSlide3 = new FxSlide({
 	slides : $(".en-spon-imgs"), 
-	cnt:1, 
+	cnt:2, 
 	speed : 1000,
 	delay : 4000,
 });
@@ -75,8 +75,8 @@ $(".navi").mouseleave(function(){
 $(".phone-bar").mouseover(function(){
 $(".nav-phone").css({"opacity" : 1, "top": "95px"});
 });
-$(".phone-bar").mouseleave(function(e){
-	e.stopPropagatione(e);
+$(".phone-bar").mouseleave(function(){
+	event.stopPropagatione();
 	$(".nav-phone").css({"opacity" : 0, "top": "0%"});
 });
 
