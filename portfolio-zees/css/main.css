@@ -38,9 +38,9 @@ body section {height: 100%;}
 	.navis-dash { border: 1.5px dashed #666; height: 100%; border-radius: 30px;}
 	.closing { width: 40px; height: 40px; background-color: rgb(190, 39, 39); margin: 1rem; border-radius: 30%; 
 		line-height: 40px; text-align: center; color: #fff;}
-	.main1 .navis { color: #888; padding:2rem;  cursor: pointer; text-align: right; line-height: 34rem; font-size: 1.25rem;  }
+	.main1 .navis { color: #888; padding:2rem;  cursor: pointer; text-align: right; line-height: 34rem; font-size: 2rem;  }
 	.main1 .nav-bts {  cursor: pointer;}
-	.main1 .nav-tit {font-size: 1rem; line-height: 4rem; transition: all 0.3s; width: 100px;}
+	.main1 .nav-tit {line-height: 4rem; transition: all 0.3s; width: 100px;}
 	/* .main1 .nav-bar {width: 1.5px; height: 80px; background-color: #bbb; position: absolute; top: -70%; right: 3%; z-index: -1;} */
 	.main1 .navs { display: flex; justify-content:flex-end; align-items:center; text-align: right; position: relative; }
 	/* .main1 .nav { width: 9px; height: 9px; background-color: #bbb; border-radius: 50%; transition: all 0.3s; margin-left: 1rem;} */

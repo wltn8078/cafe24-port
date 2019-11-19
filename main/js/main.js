@@ -18,6 +18,7 @@ function wheelAni(pos, prePage, nowPage) {
 	});
 }
 
+	
 
 $("#abme").click(function(){
 	$("html, body").stop().animate({"scrollTop": 900}, 300, function(){
@@ -91,12 +92,26 @@ $(window).resize(function() {
 
 
 
-// $(".tag-bar").click(function(){
-// 	$(".navis-hidden").stop().css({"transform": "translateX(35px)"});
-// });
-// $(".navis-overlay).click(function(){
-// 	$(".navis-hidden").stop().css({"transform": "translateX(320px)"});
-// });
+$(".tag-bar").click(function(){
+	$(".navis-overlay").stop().css({"transform": "translateX(0%)"});
+	$("body").css({ "overflow-y": "hidden"})
+	setTimeout(function(){
+		$(".navis-wrap").css({"transform": "translateX(0%)"})},200);
+	$(".navis-overlay, .navis-wrap").on('scroll touchmove mousewheel', function(e){
+		e.preventDefault();
+		e.stopPropagation(); 
+		return false;
+		})
+	});
+	
+	$(".navis-overlay , .close-bt").click(function(){
+		$(".navis-wrap").stop().css({"transform": "translateX(100%)"});
+		setTimeout(function(){
+			$(".navis-overlay").css({"transform": "translateX(100%)"})
+			$("body").css({ "overflow-y": "scroll"})},200);
+			$(".navis-overlay").off('scroll touchmove mousewheel'); 
+});
+
 
 // $(".navis-hidden").mouseleave(function(){
 // 	$(this).stop().css({"transform": "translateX(320px)"});
@@ -177,11 +192,6 @@ $(window).scroll(function(){
 	}
 });
 
-
-// WOW 시동
-new WOW().init();
-
-// tooltip 시동
-$(".tooltip-bt").tooltip();
-
  */
+
+new WOW().init();
