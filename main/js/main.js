@@ -51,10 +51,10 @@ $(".navs").mouseleave(function(){
 
 
 $(".tags").mouseover(function(){
-	$(this).stop().css({"transform": "translateX(100px)"});
+	$(this).stop().css({"transform": "translateX(50px)"});
 });
 $(".tags").mouseleave(function(){
-	$(this).stop().css({"transform": "translateX(150px)"});
+	$(this).stop().css({"transform": "translateX(100px)"});
 });
 
 $("#abme-next").click(function(){
@@ -91,16 +91,16 @@ $(window).resize(function() {
 
 
 
-$(".tag-bar").click(function(){
-	$(".navis-hidden").stop().css({"transform": "translateX(35px)"});
-});
-$(".closing").click(function(){
-	$(".navis-hidden").stop().css({"transform": "translateX(320px)"});
-});
+// $(".tag-bar").click(function(){
+// 	$(".navis-hidden").stop().css({"transform": "translateX(35px)"});
+// });
+// $(".navis-overlay).click(function(){
+// 	$(".navis-hidden").stop().css({"transform": "translateX(320px)"});
+// });
 
-$(".navis-hidden").mouseleave(function(){
-	$(this).stop().css({"transform": "translateX(320px)"});
-});
+// $(".navis-hidden").mouseleave(function(){
+// 	$(this).stop().css({"transform": "translateX(320px)"});
+// });
 
 
 
@@ -140,8 +140,7 @@ var workSlide = new FxSlide({
 	speed : 1000,
 	delay : 4000,
 	prev: $("#work-prev"),
-	next: $("#work-next"),
-	autoplay: false
+	next: $("#work-next")
 });
 
 

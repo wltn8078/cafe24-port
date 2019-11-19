@@ -14,14 +14,14 @@ body section {height: 100%;}
 
 
 	.tag-fix { cursor: pointer;
-		position: fixed; top: 9%; right: 10%; z-index: 99999;}
+		position: absolute; top: 9%; right: 0%; z-index: 99995; overflow: hidden;}
 
 	.tags {
 		width: 150px;
 		height: 46px;
 		text-align: center;
 		transition: all 0.3s;
-		transform: translateX(150px);
+		transform: translateX(100px);
 	}
 	.tag {
 		border-top: 23px solid rgb(190, 39, 39);
@@ -30,22 +30,27 @@ body section {height: 100%;}
 		border-left: 23px solid  transparent;
 		border-radius: 5px;
 	}
-	.tag-bar {color: #fff; position: absolute; top: 5%; right: 48%; z-index: 99999; font-size: 1.05rem; padding: 0.5rem;}
+	.tag-bar {color: #fff; position: absolute; top: 5%; right: 48%; z-index: 9999; font-size: 1.05rem; padding: 0.5rem;}
 
-	.navis-hidden {position: fixed;  width: 320px; height: 100%; overflow: hidden; background-color: #FFF;
-		 right: 0; top:0; z-index:99999; padding: 0.5rem;
-		 transform: translateX(320px); transition: all 1s;}
-	.navis-dash { border: 1.5px dashed #666; height: 100%; border-radius: 30px;}
-	.closing { width: 40px; height: 40px; background-color: rgb(190, 39, 39); margin: 1rem; border-radius: 30%; 
-		line-height: 40px; text-align: center; color: #fff;}
-	.main1 .navis { color: #888; padding:2rem;  cursor: pointer; text-align: right; line-height: 34rem; font-size: 1.25rem;  }
+	.navis-hidden {position: absolute;  width: 100%; height: 100%; overflow: hidden; right: 0; left: 0; top:0; z-index:99995;  }
+	.navis-overlay {cursor: url(../img/close.cur), pointer; background-color: rgba(44, 23, 23, 0.404); width: 100%; height: 100%; z-index:99996;}
+		 /* transform: translateX(320px); transition: all 1s; border-top-left-radius:100px; border-bottom-left-radius: 100px;} */
+	.navis-wrap {position: absolute; height: 100%; width: 500px; background-color: rgb(255, 147, 139); 
+		 z-index:99997; right: 0; top:0; overflow: hidden; padding: 3rem;}
+	.main1 .navis { color: #888; margin:4rem;  cursor: pointer; line-height: 34rem; 
+		position: absolute; top: 13%; left: 5%;}
 	.main1 .nav-bts {  cursor: pointer;}
-	.main1 .nav-tit {font-size: 1rem; line-height: 4rem; transition: all 0.3s; width: 100px;}
+	.main1 .icons { display: flex; align-items: center; justify-content: space-between; 
+		position: absolute; bottom: 15%; color: #fff; margin: 3rem; }
+		.main1 .icon {margin-right: 1rem; transition: all 0.3s; cursor: pointer;}
+		.main1 .icon:hover { color: rgb(180, 45, 45); }
+	.main1 .nav-tit { font-size: 1.75rem; font-weight: 600; line-height: 4rem; transition: all 0.3s; width: 100%; color: #FFF; }
 	/* .main1 .nav-bar {width: 1.5px; height: 80px; background-color: #bbb; position: absolute; top: -70%; right: 3%; z-index: -1;} */
-	.main1 .navs { display: flex; justify-content:flex-end; align-items:center; text-align: right; position: relative; }
-	/* .main1 .nav { width: 9px; height: 9px; background-color: #bbb; border-radius: 50%; transition: all 0.3s; margin-left: 1rem;} */
-	.main1 .nav:not(:last-child) {margin-bottom: 3.5rem;}
-	/* .main1 .nav:hover { width: 15px; height: 15px; background-color: #333;} */
+	.main1 .navs { position: relative; right: 0; margin: 3rem 0;}
+	.main1 .navs:hover .nav-tit { color: rgb(180, 45, 45); text-shadow: 1px 1px 1px rgb(255, 255, 255);}
+	.main1 .wrap-img {position: absolute; width: 55%; top: -6%; right: -5%; transform: rotate(5deg); opacity: 0.5;}
+	.main1 .wrap-img2 {position: absolute; width: 80%; bottom: -10%; left: -15%; transform: rotate(25deg); opacity: 0.13;}
+
 	.main1 .main-gifs { position: absolute; top: 0; width: 100%; height: 100%;}
 	.main1 .gifs { height: 100%;}
 	.main1 .gif { display: flex; align-items: center; justify-content: center; height: 100%;}
@@ -67,15 +72,15 @@ body section {height: 100%;}
 
 	.aboutme2 .about-me {height: 100%; width: 100%;}
 	.aboutme2 .mes {position: relative; width: 100%;}
-	.aboutme2 .me-1-2 { margin: 0 auto; background-color: rgba(255, 255, 255, 0.664); position: relative; width: 90%; z-index: 9999; padding: 3rem 0;}
+	.aboutme2 .me-1-2 { margin: 0 auto; background-color: rgba(255, 255, 255, 0.664); position: relative; width: 90%; z-index: 999; padding: 3rem 0;}
 	.aboutme2 .Name {max-width: 450px; width: 100%; margin: 0 auto; transition: all 0.4s; line-height: 20vw; font-family: 'Yellowtail', cursive; letter-spacing: 2px; font-size:20vw; padding: 0 3vw; color: rgb(139, 23, 23);}
 	.aboutme2 .Job { font-size:4vw; padding-right: 1rem; color: #888888; letter-spacing: 1.3px; }
 	.aboutme2 .SubTit {font-size:1.2rem; padding-right: 1rem; color: #c77474;}
 	.abouts {text-align: center; width: 100%;}
 	.about-main {margin-top: 1rem;} 
-	.about-conts { text-align: left; line-height: 2.5rem; width: 80%; margin: 0 auto; display: flex; align-items: center; justify-content: space-evenly;}
+	.about-conts { text-align: left; line-height: 2.5rem; width: 80%; margin: 0 auto; display: flex; align-items: center; justify-content: space-between;}
 	.about-cont1 {font-family: 'Yellowtail', cursive; font-size: 2.4vh}
-	.about-conts .about-cont1 { padding-right: 2rem;}
+	.about-conts .about-cont1 { padding-right: 3rem;}
 	.click {display: none; background-color: #ddd; border-radius: 50%; width: 50px; height: 50px;
 	color: #fff; font-size: 0.65rem; line-height: 50px; margin: 0 auto;
 position: absolute; bottom: -15%; left: 0; right: 0; text-align: center; cursor: pointer;
@@ -83,7 +88,7 @@ transition: all 0.4s;}
 	.click:hover {transform: scale(1.15); background-color: #bbb;}
 	#abme-prev {display: none;}
 
-	.aboutme2 .me-1  { width: 100%; z-index: 9999; transition: all 1s;}
+	.aboutme2 .me-1  { width: 100%; z-index: 999; transition: all 1s;}
 	.aboutme2 .me-1position  {height: 100%;}
 	.aboutme2 .me-1 .about-main {padding-top: 5rem;}
 
@@ -113,17 +118,17 @@ transition: all 0.4s;}
 	/* 작업 */
 .work3 { position: relative; width: 100%; height: 100%;}
 .work3-all { width: 100%;}
-.works-all { background-color: rgba(255, 255, 255, 0.664); width: 90%; margin: 0 auto; position: relative;  z-index: 99999;}
+.works-all { background-color: rgba(255, 255, 255, 0.664); width: 90%; margin: 0 auto; position: relative;  z-index: 9999;}
 .work-pager {max-width: 1000px; width: 100%; height: 400px; margin: 0 auto;  }
 	.works-chart { width: 100%; margin: 0 auto;}
 	.charts {display: flex; justify-content: space-around; align-items: center;} 
 	.chart {text-align: center; padding: 0.25rem; line-height: 1rem; min-height: 50px; font-size: 3vw; min-width:50px} 
 	.chart:hover {background-color: #eee;}
 	.works-cont { width: 100%; margin: 0 auto; max-height: 500px;}
-	.work3 .works { width: 200%; position: relative; display: flex; overflow: hidden; }
-	.work3 .work {flex: 100% 1 1; position: relative; }
+	.work3 .works { width: 200%; position: relative; display: flex;  }
+	.work3 .work {flex: 100% 1 1; position: relative; overflow: hidden;}
 	.pager-prev,
-	.pager-next {display: none; z-index: 9999; cursor: pointer; position: absolute; width: 60px; height: 60px; color: #fff; text-shadow: 0 0 5px rgb(63, 63, 63); font-size: 2.5rem; line-height: 60px; text-align: center; top: 54%; transform: translateY(-50%); font-family: 'Poppins', sans-serif; }
+	.pager-next {display: none; z-index: 999; cursor: pointer; position: absolute; width: 60px; height: 60px; color: #fff; text-shadow: 0 0 5px rgb(63, 63, 63); font-size: 2.5rem; line-height: 60px; text-align: center; top: 54%; transform: translateY(-50%); font-family: 'Poppins', sans-serif; }
 	.pager-prev {left: 29%;}
 	.pager-next {right: 20%;}
 
@@ -172,7 +177,7 @@ transition: all 0.4s;}
 #side-rt2-1 {bottom: -5%; right: 8%; z-index: 2;}
 #side-rt2-2 {bottom: 0%; right: 0%;}
 
-.bt-top {position:fixed; border-radius: 50%; background-color: #aaa; bottom: -4.5rem; right: 1.6rem; z-index: 9999; color: white; transition: all 0.5s; cursor: pointer; padding: 1rem 1.5rem 1rem 1.5rem; }
+.bt-top {position:fixed; border-radius: 50%; background-color: #aaa; bottom: -4.5rem; right: 1.6rem; z-index: 999; color: white; transition: all 0.5s; cursor: pointer; padding: 1rem 1.5rem 1rem 1.5rem; }
 .bt-top:hover {background-color: #ee705f; padding:0.8rem 1.5rem 1.2rem 1.5rem;}
 .bt-top-show {bottom: -3rem; transform: translateY(-5rem)}
 
@@ -194,9 +199,6 @@ transition: all 0.4s;}
 }
 /* 992 ~ 1199 - lg - 태블릿 가로 */
 @media screen and (min-width: 992px) {
-.aboutme2 .me-1-2 {position: relative; width: 100%; display: flex; align-items: flex-start; justify-content: space-between;}
-.aboutme2 .Name {letter-spacing: 6px; font-size:6.3rem; padding: 0; line-height: 8rem;}
-.aboutme2 .Job { font-size: 1.5rem; width: 385px; margin: 0 auto;}
 .about-cont1 {font-family: 'Yellowtail', cursive; font-size: 1.5rem;}
 .works-chart { width: 150px; margin-right: 1.5rem;}
 .chart {padding: 0.5rem 1rem; line-height: 3rem;}
@@ -210,6 +212,12 @@ transition: all 0.4s;}
 /* 1200 ~ - xl - PC */
 @media screen and (min-width: 1300px) {
 .click { display: block;}
+.aboutme2 .me-1-2 {position: relative; width: 100%; display: flex; align-items: flex-start; justify-content: space-between;}
+.aboutme2 .me-1-2 > div {height: 100%; min-height: 520px;}
+.aboutme2 .Name {letter-spacing: 6px; font-size:6.3rem; padding: 0; line-height: 8rem;}
+.aboutme2 .Job { font-size: 1.5rem; width: 385px; margin: 0 auto;}
+.aboutme2 .me-1  {background-color: rgb(255, 255, 255); height: 100%; position: relative;}
+.aboutme2 .about-main  {position: absolute; bottom: 0; width: 100%;}
 .aboutme2 .me-2  {background-color: rgba(255, 255, 255, 0); transform: translateX(-60px); opacity: 0; width: 85%; flex: 100% 1 1; margin: 0 4rem 0 2rem;}
 .aboutme2 .me-3  { transform: translateX(-500px); opacity: 0; transition: all 1s; width: 80%;}
 }
@@ -217,7 +225,18 @@ transition: all 0.4s;}
 
 
 
+
 /* 애니메이션 */
+
+.wrap-img {
+	animation-name: wrapImg;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	transform-origin: right top;
+} 
+
+
 .side-left-ani1-1 {
 	animation-name: leftAni1-1;
 	animation-duration: 7s;
@@ -269,6 +288,12 @@ transition: all 0.4s;}
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 	transform-origin: center bottom;
+}
+
+@keyframes wrapImg {
+	0% {transform: rotate(0deg);}
+	50% {transform: rotate(3deg);}
+	100% {transform: rotate(-1deg);}
 }
 
 @keyframes leftAni1-1 {
