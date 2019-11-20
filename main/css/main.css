@@ -3,7 +3,7 @@
 html { height: 100%; width: 100%;}
 body { height: 100%; width: 100%;  cursor:context-menu;}
 /* overflow-x:hidden; */
-body section {height: 100%;}
+body section {height: 100%; min-height: 700px;}
 .wrap {max-width: 1000px; width: 100%; margin: 0 auto;}
 .aboutme2, .work3, .contact4 { height: 100%; width: 100%; margin: auto; display: flex; align-items: center; justify-content: center;}
 
@@ -24,10 +24,10 @@ body section {height: 100%;}
 		transform: translateX(100px);
 	}
 	.tag {
-		border-top: 23px solid rgb(190, 39, 39);
-		border-right: 23px solid rgb(190, 39, 39);
-		border-bottom: 23px solid rgb(190, 39, 39);
-		border-left: 23px solid  transparent;
+		border-top: 24px solid rgb(190, 39, 39);
+		border-right: 24px solid rgb(190, 39, 39);
+		border-bottom: 24px solid rgb(190, 39, 39);
+		border-left: 24px solid  transparent;
 		border-radius: 5px;
 	}
 	.tag-bar {color: #fff; position: absolute; top: 5%; right: 48%; z-index: 9999; font-size: 1.05rem; padding: 0.5rem;}
@@ -78,11 +78,13 @@ body section {height: 100%;}
 	.main1 .icon:hover { color: rgb(212, 94, 90); }
 
 	.main1 .close-bt {width: 50px; height: 50px; 
-		background-color: rgb(43, 6, 6); color: rgb(255, 255, 255);
+		background-color: rgb(43, 6, 6); 
 	position: absolute; z-index: 99998; bottom: 7%; 
 	text-align: center; border-radius: 50%; left: 0; right: 0; margin: 0 auto;
 		font-size: 1.5rem; font-weight: bold; line-height: 50px;
 }
+.side-close {margin-bottom: 0.5rem; }
+.side-close rect {fill: #FFF;}
 
 	.main1 .nav-tit { 
 		font-size: 4vh; font-weight: 600; line-height: 5vh; 
@@ -134,40 +136,40 @@ body section {height: 100%;}
 		overflow: hidden;
 		}
 		.aboutme2 .si1 .pic1 {
-			max-width: 230px; width: 55vw; 
+			max-width: 230px; min-width: 130px; width: 55vw; 
 			position: absolute; z-index: 99; 
 			top: 10%; left: -15%;
 			}
-		.aboutme2 .si1 .pic2 {max-width: 220px; width: 50vw;}
+		.aboutme2 .si1 .pic2 {max-width: 220px; min-width: 100px; width: 50vw;}
 
 
 	.aboutme2 .si2 {
 		position: absolute; 
 		max-width: 315px; max-height: 500px; 
 		width: 100%; height: 100%; 
-		right: 0%; top: 0%;  overflow: hidden;
+		right: 0%; top: -13%;  overflow: hidden;
 		}
 		.aboutme2 .si2 .pic2 {
-		max-width: 320px; width: 70vw; 
+		max-width: 320px; min-width: 220px; width: 70vw; 
 		position: relative; z-index: 98; 
 		top: 10%; right: -30%;
 		}
 		.aboutme2 .si2 .pic1 {
-			max-width: 170px; width: 35vw; 
+			max-width: 170px; min-width: 120px; width: 35vw; 
 			position: absolute; z-index: 99; 
 			top: 15%; right: 18%;
 		}
 
 	.aboutme2 .about-me {height: 100%; width: 100%;}
 	.aboutme2 .mes {position: relative; width: 100%;}
-	.aboutme2 .me-1-2 { 
-		margin: 0 auto; background-color: rgba(255, 255, 255, 0.664); 
+	.aboutme2 .me-1-2 { transition: all 1s;
+		margin: 0 auto; background-color: rgba(255, 255, 255, 0.705); 
 		position: relative; width: 90%; z-index: 999; 
 		padding: 3rem 0;
 		}
 
 	.aboutme2 .Name {
-		max-width: 450px; width: 100%; margin: 0 auto; 
+		max-width: 450px; min-width: 250px; width: 100%; margin: 0 auto; 
 		transition: all 0.4s; line-height: 20vw; 
 		font-family: 'Yellowtail', cursive; 
 		letter-spacing: 2px; font-size:20vw; 
@@ -183,21 +185,21 @@ body section {height: 100%;}
 		}
 
 	.abouts {text-align: center; width: 100%;}
-	.about-main {margin-top: 1rem;} 
+	.about-main {margin-top: 1rem; margin-bottom: 2rem;} 
 	.about-conts { 
 		text-align: left; line-height: 2.5rem; 
 		width: 80%; margin: 0 auto; 
 		display: flex; align-items: center; justify-content: space-between;
 		}
 	.about-cont1 {font-family: 'Yellowtail', cursive; font-size: 2.4vh}
-	.about-conts .about-cont1 { padding-right: 3rem;}
+	.about-conts .about-cont1 { padding-right: 2.7rem;}
 	
 	.click {
 		display: none; background-color: #ddd; 
 		border-radius: 50%; width: 50px; height: 50px;
 		color: #fff; font-size: 0.65rem; 
 		line-height: 50px; margin: 0 auto;
-		position: absolute; bottom: -15%; left: 0; right: 0; 
+		position: absolute; bottom: -8%; left: 0; right: 0; 
 		text-align: center; cursor: pointer;
 		transition: all 0.4s;
 		}
@@ -205,7 +207,7 @@ body section {height: 100%;}
 
 	#abme-prev {display: none;}
 
-	.aboutme2 .me-1  { width: 100%; z-index: 999; transition: all 1s;}
+	.aboutme2 .me-1  {margin: 0 auto;  max-width: 380px; width: 100%; z-index: 999; transition: all 1s;}
 	.aboutme2 .me-1position  {height: 100%;}
 	.aboutme2 .me-1 .about-main {padding-top: 5rem;}
 
@@ -232,38 +234,43 @@ body section {height: 100%;}
 	.aboutme2 .about-certi:hover .certi-tit 
 	{color: #698b7a;}
 
+
 	/* 작업 */
 .work3 { position: relative; width: 100%; height: 100%;}
 .work3-all { width: 100%;}
-.works-all { background-color: rgba(255, 255, 255, 0.664); width: 90%; margin: 0 auto; position: relative;  z-index: 9999;}
-.work-pager {max-width: 1000px; width: 100%; height: 400px; margin: 0 auto;  }
+.works-all { background-color: rgba(255, 255, 255, 0.664); width: 90%; margin: 0 auto; position: relative; padding: 1rem 1rem 3rem 1rem; z-index: 9999; }
+.work-pager {max-width: 1000px; width: 100%; height: 100%; margin: 0 auto;  }
 	.works-chart { width: 100%; margin: 0 auto;}
 	.charts {display: flex; justify-content: space-around; align-items: center;} 
-	.chart {text-align: center; padding: 0.25rem; line-height: 1rem; min-height: 50px; font-size: 3vw; min-width:50px} 
+	.chart {text-align: center; padding: 0.4rem; line-height: 1rem; min-height: 50px; font-size: 3vw; min-width:50px} 
 	.chart:hover {background-color: #eee;}
-	.works-cont { width: 100%; margin: 0 auto; max-height: 500px;}
-	.work3 .works { width: 200%; position: relative; display: flex;  }
+	.works-cont { width: 100%; margin: 0 auto; max-height: 500px; position: relative;}
+	.work3 .works { width: 200%; position: relative; display: flex; max-height: 500px; }
 	.work3 .work {flex: 100% 1 1; position: relative; overflow: hidden;}
 	.pager-prev,
-	.pager-next {display: none; z-index: 999; cursor: pointer; position: absolute; width: 60px; height: 60px; color: #fff; text-shadow: 0 0 5px rgb(63, 63, 63); font-size: 2.5rem; line-height: 60px; text-align: center; top: 54%; transform: translateY(-50%); font-family: 'Poppins', sans-serif; }
-	.pager-prev {left: 29%;}
-	.pager-next {right: 20%;}
+	.pager-next {display: none; z-index: 999; cursor: pointer; position: absolute; width: 60px; height: 60px; color: #fff; text-shadow: 0 0 5px rgb(63, 63, 63); font-size: 2.5rem; line-height: 60px; text-align: center; top: 50%;  }
+	.pager-prev {left: 0%;}
+	.pager-next {right: 0%;}
 
-	.work3 .works-img {width: 100%; height: 100%;}
-	.work3 .work-img {width: 100%; transition: all 0.5s;}
-	.work3 .work-img:hover {filter: brightness(0.9);}
-	.work3 .works-tit {position: relative; padding: 0.5rem; margin: 3rem auto; max-width: 400px;}
+
+	.work3 .work-img {width: 100%; transition: all 0.5s; max-height: 500px; cursor: pointer;}
+	.work3 .work-img  img {transition: all 0.5s}
+	/* .work3 .work-img:hover {filter: brightness(0.5);} */
+	.work3 .works-tit {position: relative; padding: 0.5rem; margin: 2rem auto; max-width: 400px;}
 	.work3 .tit-1 {font-size: 13vw; min-width: 300px; max-width: 400px;  width: 100%; font-weight: 600; color: #ddd; letter-spacing:3px;}
 	.work3 .tit-2 {font-size: 14vw; font-weight: 500; min-width: 200px; max-width: 250px; width: 100%; color: rgba(150, 29, 29, 0.945); font-family: 'Yellowtail', cursive; letter-spacing:1.5px;
-	position: absolute; top: 5%; right: 0%; transform: rotate(-3deg);}
-
+	position: absolute; top: 10%; right: -5%; transform: rotate(-3deg);}
+	.work3 .work-cont {opacity: 0; transition: all 0.5s; position: absolute; z-index: 99998; text-align: right;
+		bottom: 5%; right: 0%; padding: 1vw; color: #FFF; max-width: 550px; min-width: 300px;  width: 100%;}
+	.work3 .cont-tit { font-weight: bold; font-size: 3vw; margin-bottom: 0.5rem; transition: all 1s;}
+	.work3 .cont-desc { font-weight: 300; font-size: 2vw; transition: all 1s;}
 
 	.work3 .side-rot-flower {transform: rotate(-10deg); transition: all 5s;}
-	.work3 .si1 {position: absolute; max-width: 315px; max-height: 600px; width: 100%; height: 100%; top: 40%; right: 0%; overflow: hidden;}
+	.work3 .si1 {position: absolute; max-width: 315px; max-height: 600px; width: 100%; height: 100%; top: 50%; right: 0%; overflow: hidden;}
 	.work3 .si1 .pic2 { max-width: 300px; width: 50vw; position: relative; z-index: 98; top: 5%; right: -45%;}
 	.work3 .si1 .pic1 { max-width: 310px; width: 60vw; position: absolute; z-index: 99; top: 5%; right: -12%;}
 
-	.work3 .si2 {position: absolute; max-width: 270px; max-height: 180px; width: 100%; height: 100%; top: 10%; left: 4%;  overflow: hidden;}
+	.work3 .si2 {position: absolute; max-width: 270px; max-height: 180px; width: 100%; height: 100%; top: 5%; left: 4%;  overflow: hidden;}
 	.work3 .si2 .pic1 { max-width: 240px; width: 40vw; position: absolute; z-index: 99; top: 10%; left: 10%;}
 
 
@@ -323,20 +330,29 @@ body section {height: 100%;}
 .work-pager{display: flex; justify-content: space-between; overflow: hidden; }
 .pager-prev,
 .pager-next {display: block;}
-.works-all { background-color: rgba(255, 255, 255, 0);
+.works-all { background-color: rgba(255, 255, 255, 0);}
+.aboutme2 .si1 {top: 50%;}
+.aboutme2 .si2 {top: 5%;}
+.work3 .si1 {top: 30%;}
+.work3 .si2 {top: 10%;}
+.aboutme2 .me-1-2 {background-color: rgba(255, 255, 255, 0)} 
+.work3 .cont-tit { font-size: 2.2rem; margin-bottom: 1rem;}
+.work3 .cont-desc {font-size: 1.5rem;}
+.work3 .work-cont {bottom: 4%;}
 }
 
 /* 1200 ~ - xl - PC */
 @media screen and (min-width: 1300px) {
 .click { display: block;}
 .aboutme2 .me-1-2 {position: relative; width: 100%; display: flex; align-items: flex-start; justify-content: space-between;}
-.aboutme2 .me-1-2 > div {height: 100%; min-height: 520px;}
+.aboutme2 .me-1-2 > div {height: 100%; min-height: 555px;}
 .aboutme2 .Name {letter-spacing: 6px; font-size:6.3rem; padding: 0; line-height: 8rem;}
-.aboutme2 .Job { font-size: 1.5rem; width: 385px; margin: 0 auto;}
-.aboutme2 .me-1  {background-color: rgb(255, 255, 255); height: 100%; position: relative;}
+.aboutme2 .Job { font-size: 1.4rem; width: 385px; margin: 0 auto;}
+.aboutme2 .me-1  {background-color: rgba(255, 255, 255, 0.705);  position: relative; margin: 0 auto;}
 .aboutme2 .about-main  {position: absolute; bottom: 0; width: 100%;}
-.aboutme2 .me-2  {background-color: rgba(255, 255, 255, 0); transform: translateX(-60px); opacity: 0; width: 85%; flex: 100% 1 1; margin: 0 4rem 0 2rem;}
-.aboutme2 .me-3  { transform: translateX(-500px); opacity: 0; transition: all 1s; width: 80%;}
+.aboutme2 .me-2  {background-color: rgba(255, 255, 255, 0); transform: translateX(-60px); opacity: 0; width: 85%; flex: 100% 1 1; margin: 0 2.5rem 0 2rem;}
+.aboutme2 .me-3  { transform: translateX(-500px); opacity: 0; transition: all 1s; width: 85%;}
+.work3 .work-cont {bottom: 5%;}
 }
 
 
