@@ -428,7 +428,6 @@ body section {height: 100%; min-height: 700px;}
 	50% {transform: rotate(10deg);}
 	100% {transform: rotate(5deg);}
 }
-
 @keyframes leftAni1-1 {
 	0% {transform: rotate(0deg);}
 	50% {transform: rotate(5deg);}
@@ -438,7 +437,6 @@ body section {height: 100%; min-height: 700px;}
 	0% {transform: rotate(15deg);}
 	100% {transform: rotate(0deg);}
 }
-
 @keyframes rightAni1-1 {
 	0% {transform: rotate(4deg);}
 	50% {transform: rotate(-4deg);}
@@ -449,7 +447,6 @@ body section {height: 100%; min-height: 700px;}
 	50% {transform: rotate(-3deg);}
 	100% {transform: rotate(0deg);}
 }
-
 @keyframes rightAni2-1 {
 	0% {transform: rotate(3deg);}
 	100% {transform: rotate(-2deg);}
@@ -463,5 +460,6 @@ body section {height: 100%; min-height: 700px;}
 	0% {transform: rotate(-6deg);}
 	100% {transform: rotate(2deg);}
 }
+
 
 

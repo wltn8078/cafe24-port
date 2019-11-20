@@ -173,38 +173,27 @@ $("#work-prev", "#work-next").click(function(){
 })
 
 
-/*
-$(window).scroll(function(){
-	var num = $(this).scrollTop();
-	// 스크롤이 500 이상 700이하 일때만 움직이게
-	if ( num > 400 ) {
-		$(".aboutme2 .side-rot-rig2").css({"transform" : "rotate(-10deg)"});
-	}
-	else {
-		$(".aboutme2 .side-rot-rig2").css({"transform" : "rotate(10deg)"});
-	}
-	if ( num > 700) {
-		$(".aboutme2 .side-rot-lef").css({"transform" : "rotate(-3deg)"});
-		$(".aboutme2 .side-rot-lef2").css({"transform" : "rotate(20deg)"});
-		$(".aboutme2 .side-rot-rig").css({"transform" : "rotate(15deg)"});
-	}
-	else {
-		$(".aboutme2 .side-rot-lef").css({"transform" : "rotate(-10deg)"});
-		$(".aboutme2 .side-rot-lef2").css({"transform" : "rotate(5deg)"});
-		$(".aboutme2 .side-rot-rig").css({"transform" : "rotate(10deg)"});
-	}
-	if ( num > 1700) {
-		$(".work3 .side-rot-rig").css({"transform" : "rotate(-10deg)"});
-		$(".work3 .side-rot-rig2").css({"transform" : "rotate(-20deg)"});
-		$(".work3 .side-rot-flower").css({"transform" : "rotate(5deg)"});
-	}
-	else {
-		$(".work3 .side-rot-rig").css({"transform" : "rotate(0deg)"});
-		$(".work3 .side-rot-rig2").css({"transform" : "rotate(0deg)"});
-		$(".work3 .side-rot-flower").css({"transform" : "rotate(-10deg)"});
-	}
-});
 
- */
+wow = new WOW(
+	{
+	boxClass:     'lt1',      // default
+	animateClass: 'slideInRight', // default
+	offset:       5,          // default
+	mobile:       true,       // default
+	live:         true        // default
+  }
+  )
+  wow.init();
+
+wow = new WOW(
+	{
+	boxClass:     'lt2',      // default
+	animateClass: 'slideInRight', // default
+	offset:       5,          // default
+	mobile:       true,       // default
+	live:         true        // default
+  }
+  )
+  wow.init();
 
 new WOW().init();
