@@ -28,6 +28,8 @@ body {
 	font-weight: 800;
 }
 
+section { min-height: 600px; margin: auto 0; align-items: center;}
+
 .bt-top {position:fixed; border-radius: 50%; background-color: brown; bottom: -4.5rem; right: 1.6rem; z-index: 9999; color: white; transition: all 0.5s; cursor: pointer; padding: 1rem 1.5rem 1rem 1.5rem; }
 .bt-top:hover {background-color: rgb(196, 86, 86); padding:0.8rem 1.5rem 1.2rem 1.5rem;}
 .bt-top-show {bottom: -3rem; transform: translateY(-5rem)}
@@ -174,7 +176,7 @@ flex: 100% 0 0; padding-bottom: 2rem;
 .bands {margin-bottom: 5rem; flex: 100% 0 0;}
 
 
-.band-main { text-align: left; width:100%; padding: 0 5vw; margin-top: 6rem;}
+.band-main { text-align: left; width:100%; padding: 0 5vw; margin-top: 4rem;}
 
 .band-squre { width: 100%; height: 100%; position: relative;}
 
@@ -194,8 +196,8 @@ flex: 100% 0 0; padding-bottom: 2rem;
 
 /* 맵 */
 .maps { border: 1px solid #ddd; padding: 3rem; width: 100%; text-align: center;}
-.maps-title {text-align: center; margin: 0 auto; margin-top: 6rem;}
-.map {flex: 100% 0 0}
+.maps-title {text-align: center; margin: 0 auto; margin-top: 2rem;}
+.map {flex: 100% 0 0; padding: 2rem;}
 .map img { width: 100%;}
 /* 주최 */
 
@@ -222,6 +224,7 @@ background-color: white; border: 1px solid #999; padding: 1rem; border-radius: 5
 		text-overflow:ellipsis; white-space:nowrap; word-wrap:break-word; word-break:break-all;}
 	.maps {display: flex;}
 	.map {flex: 49% 0 0;}
+	section { min-height: 700px;}
 	
 }
 /* 768 ~ 991 - md - 태블릿 세로 */
@@ -232,6 +235,7 @@ background-color: white; border: 1px solid #999; padding: 1rem; border-radius: 5
 	.main-imgs .photo .post {width: 100%; max-height: 400px; overflow: hidden;}
 	.main-imgs .photo {width: 100%;}
 	.main-imgs {padding: 0; width: 100%;}
+	section { min-height: 800px;}
 }
 /* 992 ~ 1199 - lg - 태블릿 가로 */
 @media screen and (min-width: 992px) {
@@ -243,10 +247,10 @@ background-color: white; border: 1px solid #999; padding: 1rem; border-radius: 5
 	.navis {display: none;}
 	.icons {display: none}
 	.ban-tit {max-height: 300px;}
-	.band { margin-top: 8rem;
+	.band { margin-top: 6rem;
 		 padding-bottom: 2rem; 
 		}
-	.maps-title { margin-top: 8rem;}
+	section { min-height: 900px;}
 	
 }
 /* 1200 ~ - xl - PC */
@@ -263,8 +267,7 @@ background-color: white; border: 1px solid #999; padding: 1rem; border-radius: 5
 	.pagers { display: flex;}
 	.ban-tit {top: 25%!important;}
 	.map {flex: 45% 0 0; margin: 0 auto;}
-	.maps-title { margin-top: 10rem;}
-	.band { margin-top: 10rem;
+	.band { margin-top: 8rem;
 		display: flex; justify-content:space-between; align-items: flex-start; 
 		}
 	.band-main {padding-left: 1.5rem; padding-right: 0;}

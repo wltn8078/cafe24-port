@@ -44,19 +44,19 @@ var workSlide = new FxSlide({
 
 var sponSlide1 = new FxSlide({
 	slides : $(".manag-imgs"), 
-	cnt:2, 
+	cnt:3, 
 	speed : 1000,
 	delay : 4000,
 });
 var sponSlide2 = new FxSlide({
 	slides : $(".kor-spon-imgs"), 
-	cnt:2, 
+	cnt:3, 
 	speed : 1000,
 	delay : 4000,
 });
 var sponSlide3 = new FxSlide({
 	slides : $(".en-spon-imgs"), 
-	cnt:2, 
+	cnt:3, 
 	speed : 1000,
 	delay : 4000,
 });

@@ -157,6 +157,7 @@ var workSlide = new FxSlide({
 	prev: $("#work-prev"),
 	next: $("#work-next"),
 	autoplay: false,
+	pager: $(".pagers")
 	
 });
 
