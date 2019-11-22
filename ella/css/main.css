@@ -114,7 +114,7 @@ html, body {font-family: 'Nanum Gothic', sans-serif; height: 100%; background-co
 
 	.top-navis .subs .underbar:after {border-color: #000;}
 	.sub-navi a {text-decoration: none; display: inline-block;}
-	.sub-navi a:link,
+	.sub-navi a:link, 
 	.sub-navi a:visited,
 	.sub-navi a:active {color: #888;}
 	.sub-navi a:hover {color: #000;}
