@@ -45,7 +45,7 @@ $(".sch-layer").click(function(e){
 
 // 메인 네비게이션
 $(".navi-under").mouseenter(function(){
-	$(this).find(".subs").css({"visibility": "visible"}).stop().animate({"top": "43px", "opacity": 1}, 300);
+	$(this).find(".subs").css({"visibility": "visible"}).stop().animate({"top": "50px", "opacity": 1}, 300);
 });
 $(".navi-under").mouseleave(function(){
 	$(this).find(".subs").stop().animate({"top": "143px", "opacity": 0}, 300, function(){
