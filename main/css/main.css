@@ -46,7 +46,7 @@ body section {height: 100%; min-height: 700px;}
 		transform: translateX(100%); transition: all 0.5s;}
 
 		
-	.navis-wrap {
+	.navis-wrap { 
 		position: absolute; height: 100%; max-width: 500px; width: 100%;
 		background-color: rgb(138, 43, 40); 
 		z-index:99997; right: 0; top:0; overflow: hidden; padding: 3rem;
@@ -56,6 +56,46 @@ body section {height: 100%; min-height: 700px;}
 		max-width: 220px; min-width: 150px; width: 25vh; margin: 4vh 1rem 4vh 1rem;
 	}
 
+.zees-1{
+	animation: letter-animation 3s ease-in-out forwards;
+	animation-delay: 0.3s;
+}
+.zees-2{
+	animation: letter-animation 1.5s ease-in-out forwards;
+	animation-delay: 1.3s;
+}
+.zees-1-Out{
+	animation: letter-animation-Out 2s ease-in-out;
+}
+.zees-2-Out{
+	animation: letter-animation-Out 2s ease-in-out;
+}
+
+@keyframes letter-animation {
+	0% {
+			stroke-dashoffset: 2600;
+			stroke-opacity: 0;
+	}
+	40% {
+			stroke-opacity: 1;
+	}
+	100% {
+			stroke-dashoffset: 0;
+			
+	}
+}
+@keyframes letter-animation-Out {
+	0% {
+		stroke-dashoffset: 50;
+	}
+	60% {
+		stroke-dashoffset: 2600;
+	}
+	100% {
+		stroke-dashoffset: 2600;
+		stroke-opacity: 0;
+	}
+}
 	.main1 .navis {
 		color: #888; margin:4rem;  
 		cursor: pointer; line-height: 34rem; 

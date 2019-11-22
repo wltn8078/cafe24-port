@@ -1,0 +1,2008 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>ELLA 웹사이트</title>
+	<link rel="stylesheet" href="../css/fa.min.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/base-bootstrap.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script src="../js/jquery.cookie.js"></script>
+	<script src="../js/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/imagesloaded.pkgd.min.js"></script>
+	<script src="../js/masonry.pkgd.min.js"></script>
+	<script src="../js/wow.min.js"></script>
+</head>
+
+<body>
+	<header>
+<!-- 상단: 분홍색 배너 -->
+		<div class="top-banner">
+			<div class="wrap">
+				HOLLYDAY SALE UP TO 70% OFF. SHOP NOW
+				<div class="fas fa-times" id="bt-top-close"></div>
+			</div>
+		</div>
+
+<!-- 상단: 국가/통화/검색 -->
+		<div class="top-icons wrap">
+			<div>Customer Service +018 900 6690</div>
+			<div class="langs sel-top">
+				<img src="../img/i-lang-1.png" class="sel-top-img" alt="영어">
+				<span class="sel-top-txt">ENG</span>
+				<i class="fas fa-angle-down pointer"></i>
+				<ul>
+					<li class="pointer">
+						<img src="../img/i-lang-1.png" alt="영어">
+						<span>ENG</span>
+					</li>
+					<li class="pointer">
+						<img src="../img/i-lang-2.png" alt="독일어">
+						<span>GER</span>
+					</li>
+				</ul>
+			</div>
+			<div class="currency sel-top">
+				<img src="../img/i-lang-1.png" class="sel-top-img" alt="달러">
+				<span class="sel-top-txt">ENG</span>
+				<i class="fas fa-angle-down pointer"></i>
+				<ul>
+					<li class="pointer">
+						<img src="../img/i-currency-1.png" alt="달러">
+						<span>USD</span>
+					</li>
+					<li class="pointer">
+						<img src="../img/i-currency-2.png" alt="유로">
+						<span>EURO</span>
+					</li>
+					<li class="pointer">
+						<img src="../img/i-currency-3.png" alt="파운드">
+						<span>GBP</span>
+					</li>
+					<li class="pointer">
+						<img src="../img/i-currency-4.png" alt="프랑">
+						<span>CHF</span>
+					</li>
+				</ul>
+			</div>
+			<div class="schs">
+				<form action="/sch_main" method="post" name="schForm" onsubmit="return false;">
+					<input type="text" name="schTxt" class="sch-txt" placeholder="Search">
+					<button type="submit" class="sch-bt"><i class="fas fa-search"></i></button>
+				</form>
+				<div class="sch-layer">
+					<div class="sch-trending">
+						<div class="tit">TRENDING</div>
+						<ul class="tags">
+							<li class="tag">
+								<i class="fas fa-search"></i>
+								<span>dempus</span>
+							</li>
+						</ul>
+					</div>
+					<div class="sch-popular">
+						<div class="tit">POPULAR PRODUCTS</div>
+						<div class="prds">
+							<ul class="prd">
+								<li class="prd-img"><img src="../img/list-img4.jpg" class="img"></li>
+								<li class="prd-tit">Tomorrow</li>
+								<li class="prd-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+								<li class="prd-star">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="prd-price">$36.99</li>
+								<li class="prd-refs">
+									<div class="prd-ref">
+										<img src="../img/list(s)-img1.jpg" class="img">
+									</div>
+									<div class="prd-ref">
+										<img src="../img/list(s)-img2.jpg" class="img">
+									</div>
+									<div class="prd-ref">
+										<img src="../img/list(s)-img3.jpg" class="img">
+									</div>
+									<div class="prd-ref">
+										<img src="../img/list(s)-img4.jpg" class="img">
+									</div>
+									<div class="prd-ref">+2</div>
+								</li>
+							</ul>
+							<ul class="prd">
+								<li class="prd-img"><img src="../img/list-img4.jpg" class="img"></li>
+								<li class="prd-tit">Tomorrow</li>
+								<li class="prd-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+								<li class="prd-star">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="prd-price">$36.99</li>
+								<li class="prd-refs">
+									<div class="prd-ref">
+										<img src="../img/list(s)-img1.jpg" class="img">
+									</div>
+									<div class="prd-ref">
+										<img src="../img/list(s)-img2.jpg" class="img">
+									</div>
+									<div class="prd-ref">
+										<img src="../img/list(s)-img3.jpg" class="img">
+									</div>
+									<div class="prd-ref">
+										<img src="../img/list(s)-img4.jpg" class="img">
+									</div>
+									<div class="prd-ref">+2</div>
+								</li>
+							</ul>
+							<ul class="prd">
+								<li class="prd-img"><img src="../img/list-img4.jpg" class="img"></li>
+								<li class="prd-tit">Tomorrow</li>
+								<li class="prd-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+								<li class="prd-star">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="prd-price">$36.99</li>
+								<li class="prd-refs">
+									<div class="prd-ref">
+										<img src="../img/list(s)-img1.jpg" class="img">
+									</div>
+									<div class="prd-ref">
+										<img src="../img/list(s)-img2.jpg" class="img">
+									</div>
+									<div class="prd-ref">
+										<img src="../img/list(s)-img3.jpg" class="img">
+									</div>
+									<div class="prd-ref">
+										<img src="../img/list(s)-img4.jpg" class="img">
+									</div>
+									<div class="prd-ref">+2</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- 상단: 로고/카트/위시리스트/로그인 -->
+		<div class="top-links wrap">
+			<div class="logo">
+				<img src="../img2/logo.jpg" class="img">
+			</div>
+			<div class="top-link">
+				<div class="desc">FREE SHIPPING ON ALL ORDERS. NO MINIMUM PURCHASE</div>
+				<ul class="bts">
+					<li>
+						<img src="../img/shop-bag.svg" style="width: 26px;">
+						<span>Shopping Cart</span>
+						<span class="rnd-cnt">0</span>
+					</li>
+					<li>
+						<i class="fas fa-heart"></i>
+						<span class="underbar">My Wish Lists</span>
+					</li>
+					<li>
+						<span class="underbar">Sign In</span>
+						<span>or</span>
+						<span class="underbar">Create an account</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+<!-- 상단: 네비게이션-->
+		<ul class="top-navis">
+			<ul class="top-navi wrap">
+				<li class="navi underbar navi-under">
+					<span>NEW</span>
+					<div class="subs">
+						<div class="sub wrap grid-two">
+							<div class="sub-navi">
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+							</div>
+							<div class="sub-ad2">
+								<div>
+									<ul class="prd">
+										<li class="prd-tit">FEATURED PRODUCTS</li>
+										<li class="prd-img">
+											<img src="../img/list-img4.jpg" class="img">
+											<div>Sale</div>
+										</li>
+										<li class="prd-desc">
+											French connection<br>
+											Lorem ipsum, dolor
+										</li>
+										<li class="prd-price">
+											<span>$99.99</span>
+											<span>from</span>
+											<span>$36.99</span>
+										</li>
+										<li class="prd-star">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<i class="far fa-star"></i>
+										</li>
+										<li class="prd-opts">
+											<span>SELECT OPTIONS</span>
+										</li>
+									</ul>
+								</div>
+								<div class="prd-banner">
+									<img src="../img/mega-style-1.jpg" class="img">
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="navi underbar navi-under">
+					<span class="position-relative">
+						BESTSELLERS
+						<div class="tip" style="background-color: #ef6454;">SALE</div>
+					</span>
+					<div class="subs">
+						<div class="sub wrap grid-card">
+							<ul>
+								<li class="prd-tit">LOREM DE DORUS</li>
+								<li class="prd-img">
+									<img src="../img/mega-style-3-1.jpg" class="img" alt="이미지1">
+								</li>
+								<li class="prd-links">
+									<ul>
+										<li class="sub-navi"><a href="#" class="underbar">Millano</a></li>
+										<li class="sub-navi"><a href="#" class="underbar">Paris</a></li>
+										<li class="sub-navi"><a href="#" class="underbar">New York</a></li>
+										<li class="sub-navi"><a href="#" class="underbar">Sanfran Cisco</a></li>
+										<li class="sub-navi"><a href="#" class="underbar">Seoul</a></li>
+									</ul>
+								</li>
+							</ul>
+							<ul>
+								<li class="prd-tit">LOREM DE DORUS</li>
+								<li class="prd-img">
+									<img src="../img/mega-style-3-2.jpg" class="img" alt="이미지1">
+								</li>
+								<li class="prd-links">
+									<ul>
+										<li class="sub-navi"><a href="#" class="underbar">Millano</a></li>
+										<li class="sub-navi"><a href="#" class="underbar">Paris</a></li>
+										<li class="sub-navi"><a href="#" class="underbar">New York</a></li>
+										<li class="sub-navi"><a href="#" class="underbar">Sanfran Cisco</a></li>
+										<li class="sub-navi"><a href="#" class="underbar">Seoul</a></li>
+									</ul>
+								</li>
+							</ul>
+							<ul>
+								<li class="prd-tit">LOREM DE DORUS</li>
+								<li class="prd-img">
+									<img src="../img/mega-style-3-3.jpg" class="img" alt="이미지1">
+								</li>
+								<li class="prd-links">
+									<ul>
+										<li class="sub-navi"><a href="#" class="underbar">Millano</a></li>
+										<li class="sub-navi"><a href="#" class="underbar">Paris</a></li>
+										<li class="sub-navi"><a href="#" class="underbar">New York</a></li>
+										<li class="sub-navi"><a href="#" class="underbar">Sanfran Cisco</a></li>
+										<li class="sub-navi"><a href="#" class="underbar">Seoul</a></li>
+									</ul>
+								</li>
+							</ul>
+							<ul>
+								<li class="prd-tit">LOREM DE DORUS</li>
+								<li class="prd-img">
+									<img src="../img/mega-style-3-4.jpg" class="img" alt="이미지1">
+								</li>
+								<li class="prd-links">
+									<ul>
+										<li class="sub-navi"><a href="#" class="underbar">Millano</a></li>
+										<li class="sub-navi"><a href="#" class="underbar">Paris</a></li>
+										<li class="sub-navi"><a href="#" class="underbar">New York</a></li>
+										<li class="sub-navi"><a href="#" class="underbar">Sanfran Cisco</a></li>
+										<li class="sub-navi"><a href="#" class="underbar">Seoul</a></li>
+									</ul>
+								</li>
+							</ul>
+							<ul>
+								<li class="prd-tit">LOREM DE DORUS</li>
+								<li class="prd-img">
+									<img src="../img/mega-style-3-5.jpg" class="img" alt="이미지1">
+								</li>
+								<li class="prd-links">
+									<ul>
+										<li class="sub-navi"><a href="#" class="underbar">Millano</a></li>
+										<li class="sub-navi"><a href="#" class="underbar">Paris</a></li>
+										<li class="sub-navi"><a href="#" class="underbar">New York</a></li>
+										<li class="sub-navi"><a href="#" class="underbar">Sanfran Cisco</a></li>
+										<li class="sub-navi"><a href="#" class="underbar">Seoul</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="navi underbar navi-under">
+						<span>FACE</span>
+						<div class="subs">
+							<div class="sub wrap grid-two">
+								<div class="sub-navi">
+									<ul>
+										<li class="tit">LOREM DORUS</li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+									</ul>
+									<ul>
+										<li class="tit">LOREM DORUS</li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+									</ul>
+									<ul>
+										<li class="tit">LOREM DORUS</li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+									</ul>
+									<ul>
+										<li class="tit">LOREM DORUS</li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+									</ul>
+									<ul>
+										<li class="tit">LOREM DORUS</li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+									</ul>
+									<ul>
+										<li class="tit">LOREM DORUS</li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+										<li><a href="#" class="underbar">Gravidas</a></li>
+									</ul>
+								</div>
+								<div class="sub-ad2">
+									<div>
+										<ul class="prd">
+											<li class="prd-tit">FEATURED PRODUCTS</li>
+											<li class="prd-img">
+												<img src="../img/list-img4.jpg" class="img">
+												<div>Sale</div>
+											</li>
+											<li class="prd-desc">
+												French connection<br>
+												Lorem ipsum, dolor
+											</li>
+											<li class="prd-price">
+												<span>$99.99</span>
+												<span>from</span>
+												<span>$36.99</span>
+											</li>
+											<li class="prd-star">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+											</li>
+											<li class="prd-opts">
+												<span>SELECT OPTIONS</span>
+											</li>
+										</ul>
+									</div>
+									<div class="prd-banner">
+										<img src="../img/mega-style-1.jpg" class="img">
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				<li class="navi underbar navi-under">
+					<span>MAKEUP</span>
+					<div class="subs">
+						<div class="sub wrap grid-two">
+							<div class="sub-navi">
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+
+							</div>
+							<div class="sub-ad1">
+								<div>
+									<img src="../img/mega-style-2.jpg" class="img">
+									<img src="../img/mega-style-2-2.jpg" class="img">
+								</div>
+								<div>
+									<img src="../img/mega-style-2-3.jpg" class="img">
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="navi underbar navi-under">
+					<span>SKINCARE</span>
+					<div class="subs">
+						<div class="sub wrap grid-two">
+							<div class="sub-navi">
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+							</div>
+							<div class="sub-ad2">
+								<div>
+									<ul class="prd">
+										<li class="prd-tit">FEATURED PRODUCTS</li>
+										<li class="prd-img">
+											<img src="../img/list-img4.jpg" class="img">
+											<div>Sale</div>
+										</li>
+										<li class="prd-desc">
+											French connection<br>
+											Lorem ipsum, dolor
+										</li>
+										<li class="prd-price">
+											<span>$99.99</span>
+											<span>from</span>
+											<span>$36.99</span>
+										</li>
+										<li class="prd-star">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<i class="far fa-star"></i>
+										</li>
+										<li class="prd-opts">
+											<span>SELECT OPTIONS</span>
+										</li>
+									</ul>
+								</div>
+								<div class="prd-banner">
+									<img src="../img/mega-style-1.jpg" class="img">
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="navi underbar navi-under">
+					<span>LEARN</span>
+					<div class="subs">
+						<div class="sub wrap grid-two">
+							<div class="sub-navi">
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+								<ul>
+									<li class="tit">LOREM DORUS</li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+									<li><a href="#" class="underbar">Gravidas</a></li>
+								</ul>
+							</div>
+							<div class="sub-ad2">
+								<div>
+									<ul class="prd">
+										<li class="prd-tit">FEATURED PRODUCTS</li>
+										<li class="prd-img">
+											<img src="../img/list-img4.jpg" class="img">
+											<div>Sale</div>
+										</li>
+										<li class="prd-desc">
+											French connection<br>
+											Lorem ipsum, dolor
+										</li>
+										<li class="prd-price">
+											<span>$99.99</span>
+											<span>from</span>
+											<span>$36.99</span>
+										</li>
+										<li class="prd-star">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<i class="far fa-star"></i>
+										</li>
+										<li class="prd-opts">
+											<span>SELECT OPTIONS</span>
+										</li>
+									</ul>
+								</div>
+								<div class="prd-banner">
+									<img src="../img/mega-style-1.jpg" class="img">
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</ul>
+
+	</header>
+<!-- 메인: 배너-->
+	<main>
+		<section class="main-bans">
+			<ul class="main-ban">
+				<li>
+					<img src="../img2/banner (1).jpg" alt="메인배너" class="img">
+				</li>
+				<li>
+					<img src="../img2/banner (2).jpg" alt="메인배너" class="img">
+				</li>
+				<li>
+					<img src="../img2/banner (3).jpg" alt="메인배너" class="img">
+				</li>
+			</ul>
+			<div class="pager-prev">〈</div>
+			<div class="pager-next">〉</div>
+			<div class="pagers">
+				<div class="pager active">●</div>
+				<div class="pager">●</div>
+				<div class="pager">●</div>
+			</div>
+		</section>
+	</main>
+
+<!-- 메인: 배너 바로 아래의 다섯개 상품 -->
+	<section class="bests wrap">
+		<div class="best-wrap">
+		<ul class="best-items">
+			<li class="best-item">
+				<img src="../img/home-3-collections-1-compressor_300x_crop_center.jpg" alt="best" class="img">
+				<div class="underbar">SUITO</div>
+			</li>
+			<li class="best-item">
+				<img src="../img/home-3-collections-2-compressor_300x_crop_center.jpg" alt="best" class="img">
+				<div class="underbar">SUITO</div>
+			</li>
+			<li class="best-item">
+				<img src="../img/home-3-collections-3-compressor_300x_crop_center.jpg" alt="best" class="img">
+				<div class="underbar">SUITO</div>
+			</li>
+			<li class="best-item">
+				<img src="../img/home-3-collections-4-compressor_300x_crop_center.jpg" alt="best" class="img">
+				<div class="underbar">SUITO</div>
+			</li>
+			<li class="best-item">
+				<img src="../img/home-3-collections-5-compressor_300x_crop_center.jpg" alt="best" class="img">
+				<div class="underbar">SUITO</div>
+			</li>
+		</ul>
+	</div>
+	<div class="best-prev" id="best-prev">&lt;</div>
+	<div class="best-next"  id="best-next">&gt;</div>
+	</section>
+
+<!-- 중간 : 오른쪽 그림/ 왼쪽 상품 3개 -->
+	<section class="sellers">
+		<div class="seller-items">
+			<div class="seller-imgs">
+				<img src="../img/home-3-featured-1-compressor_800x.jpg" alt="ad" class="img">
+				<ul class="seller-conts">
+					<li class="seller-tit">#CAMPAIGNS</li>
+					<li class="seller-slogan">SPRING SUMMER’19</li>
+					<li class="seller-cont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.
+					</li>
+					<li class="seller-bt">
+						<span class="bt-rev invert">SHOP NOW</span>
+					</li>
+				</ul>
+			</div>
+			<div class="seller-prds">
+				<div class="best-prev" id="seller-prev">&lt;</div>
+				<div class="best-next" id="seller-next">&gt;</div>
+				<h3 class="seller-tit">BEST SELLERS</h3>
+				<p class="seller-slogan">Phasellus lorem malesuada ligula pulvinar cosmo</p>
+				<div class="common-items" id="seller">
+					<ul class="common-item">
+						<li class="common-img">
+							<img src="../img/list-img10.jpg" alt="기본" class="img img-def">
+							<img src="../img/list-img5.jpg" alt="오버" class="img img-hover">
+							<ul>
+								<li class="hearts">
+									<span class="heart fas fa-heart"></span>
+								</li>
+								<li class="bts">
+									<span class="bt-rev invert">SELECT OPTIONS</span>
+								</li>
+								<li class="stars">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="sizes">
+									<div class="size">XS</div>
+									<div class="size">S</div>
+									<div class="size">M</div>
+									<div class="size">L</div>
+									<div class="size size-more">+2</div>
+								</li>
+								<li class="quicks">QUICK VIEW</li>
+							</ul>
+						</li>
+						<li class="common-brand">Anna</li>
+						<li class="common-summary">Naminos dementus a dincidunto</li>
+						<li class="common-price">$199.99</li>
+						<li class="common-rel">
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img4.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img5.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="common-item">
+						<li class="common-img">
+							<img src="../img/list-img10.jpg" alt="기본" class="img img-def">
+							<img src="../img/list-img5.jpg" alt="오버" class="img img-hover">
+							<ul>
+								<li class="hearts">
+									<span class="heart fas fa-heart"></span>
+								</li>
+								<li class="bts">
+									<span class="bt-rev invert">SELECT OPTIONS</span>
+								</li>
+								<li class="stars">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="sizes">
+									<div class="size">XS</div>
+									<div class="size">S</div>
+									<div class="size">M</div>
+									<div class="size">L</div>
+									<div class="size size-more">+2</div>
+								</li>
+								<li class="quicks">QUICK VIEW</li>
+							</ul>
+						</li>
+						<li class="common-brand">Anna</li>
+						<li class="common-summary">Naminos dementus a dincidunto</li>
+						<li class="common-price">$199.99</li>
+						<li class="common-rel">
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img4.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img5.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="common-item">
+						<li class="common-img">
+							<img src="../img/list-img10.jpg" alt="기본" class="img img-def">
+							<img src="../img/list-img5.jpg" alt="오버" class="img img-hover">
+							<ul>
+								<li class="hearts">
+									<span class="heart fas fa-heart"></span>
+								</li>
+								<li class="bts">
+									<span class="bt-rev invert">SELECT OPTIONS</span>
+								</li>
+								<li class="stars">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="sizes">
+									<div class="size">XS</div>
+									<div class="size">S</div>
+									<div class="size">M</div>
+									<div class="size">L</div>
+									<div class="size size-more">+2</div>
+								</li>
+								<li class="quicks">QUICK VIEW</li>
+							</ul>
+						</li>
+						<li class="common-brand">Anna</li>
+						<li class="common-summary">Naminos dementus a dincidunto</li>
+						<li class="common-price">$199.99</li>
+						<li class="common-rel">
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img4.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img5.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- 중간 : 카테고리 3개 이미지 -->
+	<section class="arrivals">
+		<div class="arrival-items wrap">
+			<ul class="arrival-item">
+				<li class="arrival-img"><img src="../img/home-3-image-1-compressor_600x_crop_center.jpg" alt="사진" class="img">
+				</li>
+				<li class="arrival-slogan">NEW ARRIVALS</li>
+				<li class="arrival-tit">Da Scavelo</li>
+				<li class="arrival-cont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis in quo, impedit illum
+					saepe odit dolore.</li>
+				<li class="arrival-bt">
+					<button class="bt-rev invert">SHOP NOW</button>
+				</li>
+			</ul>
+			<ul class="arrival-item">
+				<li class="arrival-img"><img src="../img/home-3-image-2-compressor_600x_crop_center.jpg" alt="사진" class="img">
+				</li>
+				<li class="arrival-slogan">NEW ARRIVALS</li>
+				<li class="arrival-tit">Da Scavelo</li>
+				<li class="arrival-cont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis in quo, impedit illum
+					saepe odit dolore.</li>
+				<li class="arrival-bt">
+					<button class="bt-rev invert">SHOP NOW</button>
+				</li>
+			</ul>
+			<ul class="arrival-item">
+				<li class="arrival-img"><img src="../img/home-3-image-3-compressor_600x_crop_center.jpg" alt="사진" class="img">
+				</li>
+				<li class="arrival-slogan">NEW ARRIVALS</li>
+				<li class="arrival-tit">Da Scavelo</li>
+				<li class="arrival-cont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis in quo, impedit illum
+					saepe odit dolore.</li>
+				<li class="arrival-bt">
+					<button class="bt-rev invert">SHOP NOW</button>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+<!-- 중간 : 오른쪽 상품 3개 / 왼쪽 그림 -->
+	<section class="sellers invert">
+		<div class="seller-items invert">
+			<div class="seller-prds">
+				<div class="best-prev" id="seller2-prev">&lt;</div>
+				<div class="best-next" id="seller2-next">&gt;</div>
+				<h3 class="seller-tit">BEST SELLERS</h3>
+				<p class="seller-slogan">Phasellus lorem malesuada ligula pulvinar cosmo</p>
+				<div class="common-items" id="seller2">
+					<ul class="common-item">
+						<li class="common-img">
+							<img src="../img/list-img10.jpg" alt="기본" class="img img-def">
+							<img src="../img/list-img5.jpg" alt="오버" class="img img-hover">
+							<ul>
+								<li class="hearts">
+									<span class="heart fas fa-heart"></span>
+								</li>
+								<li class="bts">
+									<span class="bt-rev invert">SELECT OPTIONS</span>
+								</li>
+								<li class="stars">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="sizes">
+									<div class="size">XS</div>
+									<div class="size">S</div>
+									<div class="size">M</div>
+									<div class="size">L</div>
+									<div class="size size-more">+2</div>
+								</li>
+								<li class="quicks">QUICK VIEW</li>
+							</ul>
+						</li>
+						<li class="common-brand">Anna</li>
+						<li class="common-summary">Naminos dementus a dincidunto</li>
+						<li class="common-price">$199.99</li>
+						<li class="common-rel">
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img4.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img5.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="common-item">
+						<li class="common-img">
+							<img src="../img/list-img10.jpg" alt="기본" class="img img-def">
+							<img src="../img/list-img5.jpg" alt="오버" class="img img-hover">
+							<ul>
+								<li class="hearts">
+									<span class="heart fas fa-heart"></span>
+								</li>
+								<li class="bts">
+									<span class="bt-rev invert">SELECT OPTIONS</span>
+								</li>
+								<li class="stars">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="sizes">
+									<div class="size">XS</div>
+									<div class="size">S</div>
+									<div class="size">M</div>
+									<div class="size">L</div>
+									<div class="size size-more">+2</div>
+								</li>
+								<li class="quicks">QUICK VIEW</li>
+							</ul>
+						</li>
+						<li class="common-brand">Anna</li>
+						<li class="common-summary">Naminos dementus a dincidunto</li>
+						<li class="common-price">$199.99</li>
+						<li class="common-rel">
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img4.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img5.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="common-item">
+						<li class="common-img">
+							<img src="../img/list-img10.jpg" alt="기본" class="img img-def">
+							<img src="../img/list-img5.jpg" alt="오버" class="img img-hover">
+							<ul>
+								<li class="hearts">
+									<span class="heart fas fa-heart"></span>
+								</li>
+								<li class="bts">
+									<span class="bt-rev invert">SELECT OPTIONS</span>
+								</li>
+								<li class="stars">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="sizes">
+									<div class="size">XS</div>
+									<div class="size">S</div>
+									<div class="size">M</div>
+									<div class="size">L</div>
+									<div class="size size-more">+2</div>
+								</li>
+								<li class="quicks">QUICK VIEW</li>
+							</ul>
+						</li>
+						<li class="common-brand">Anna</li>
+						<li class="common-summary">Naminos dementus a dincidunto</li>
+						<li class="common-price">$199.99</li>
+						<li class="common-rel">
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img4.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img5.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="seller-imgs">
+				<img src="../img/home-3-featured-2-compressor_800x.jpg" alt="ad" class="img">
+				<ul class="seller-conts">
+					<li class="seller-tit">#CAMPAIGNS</li>
+					<li class="seller-slogan">SPRING SUMMER’19</li>
+					<li class="seller-cont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.
+					</li>
+					<li class="seller-bt">
+						<span class="bt-rev invert">SHOP NOW</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+<!-- 중간 : 카테고리 3개 선택 -->
+	<section class="choices wrap">
+		<ul class="choice-navis">
+			<li class="choice-navi active">NEW ARRIVALS</li>
+			<li class="choice-navi">EDITOR'S PICKS</li>
+			<li class="choice-navi">MOST POPULAR</li>
+		</ul>
+		<div class="seller-prds">
+			<div class="choice-wrap">
+				<div class="best-prev" id="choice-prev">&lt;</div>
+				<div class="best-next" id="choice-next">&gt;</div>
+				<div class="common-items five" id="choice-wrap">
+					<ul class="common-item">
+						<li class="common-img">
+							<img src="../img/list-img10.jpg" alt="기본" class="img img-def">
+							<img src="../img/list-img5.jpg" alt="오버" class="img img-hover">
+							<ul>
+								<li class="hearts">
+									<span class="heart fas fa-heart"></span>
+								</li>
+								<li class="bts">
+									<span class="bt-rev invert">SELECT OPTIONS</span>
+								</li>
+								<li class="stars">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="sizes">
+									<div class="size">XS</div>
+									<div class="size">S</div>
+									<div class="size">M</div>
+									<div class="size">L</div>
+									<div class="size size-more">+2</div>
+								</li>
+								<li class="quicks">QUICK VIEW</li>
+							</ul>
+						</li>
+						<li class="common-brand">Anna</li>
+						<li class="common-summary">Naminos dementus a dincidunto</li>
+						<li class="common-price">$199.99</li>
+						<li class="common-rel">
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img4.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img5.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="common-item">
+						<li class="common-img">
+							<img src="../img/list-img10.jpg" alt="기본" class="img img-def">
+							<img src="../img/list-img5.jpg" alt="오버" class="img img-hover">
+							<ul>
+								<li class="hearts">
+									<span class="heart fas fa-heart"></span>
+								</li>
+								<li class="bts">
+									<span class="bt-rev invert">SELECT OPTIONS</span>
+								</li>
+								<li class="stars">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="sizes">
+									<div class="size">XS</div>
+									<div class="size">S</div>
+									<div class="size">M</div>
+									<div class="size">L</div>
+									<div class="size size-more">+2</div>
+								</li>
+								<li class="quicks">QUICK VIEW</li>
+							</ul>
+						</li>
+						<li class="common-brand">Anna</li>
+						<li class="common-summary">Naminos dementus a dincidunto</li>
+						<li class="common-price">$199.99</li>
+						<li class="common-rel">
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img4.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img5.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="common-item">
+						<li class="common-img">
+							<img src="../img/list-img10.jpg" alt="기본" class="img img-def">
+							<img src="../img/list-img5.jpg" alt="오버" class="img img-hover">
+							<ul>
+								<li class="hearts">
+									<span class="heart fas fa-heart"></span>
+								</li>
+								<li class="bts">
+									<span class="bt-rev invert">SELECT OPTIONS</span>
+								</li>
+								<li class="stars">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="sizes">
+									<div class="size">XS</div>
+									<div class="size">S</div>
+									<div class="size">M</div>
+									<div class="size">L</div>
+									<div class="size size-more">+2</div>
+								</li>
+								<li class="quicks">QUICK VIEW</li>
+							</ul>
+						</li>
+						<li class="common-brand">Anna</li>
+						<li class="common-summary">Naminos dementus a dincidunto</li>
+						<li class="common-price">$199.99</li>
+						<li class="common-rel">
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img4.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img5.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="common-item">
+						<li class="common-img">
+							<img src="../img/list-img10.jpg" alt="기본" class="img img-def">
+							<img src="../img/list-img5.jpg" alt="오버" class="img img-hover">
+							<ul>
+								<li class="hearts">
+									<span class="heart fas fa-heart"></span>
+								</li>
+								<li class="bts">
+									<span class="bt-rev invert">SELECT OPTIONS</span>
+								</li>
+								<li class="stars">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="sizes">
+									<div class="size">XS</div>
+									<div class="size">S</div>
+									<div class="size">M</div>
+									<div class="size">L</div>
+									<div class="size size-more">+2</div>
+								</li>
+								<li class="quicks">QUICK VIEW</li>
+							</ul>
+						</li>
+						<li class="common-brand">Anna</li>
+						<li class="common-summary">Naminos dementus a dincidunto</li>
+						<li class="common-price">$199.99</li>
+						<li class="common-rel">
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img4.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img5.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="common-item">
+						<li class="common-img">
+							<img src="../img/list-img10.jpg" alt="기본" class="img img-def">
+							<img src="../img/list-img5.jpg" alt="오버" class="img img-hover">
+							<ul>
+								<li class="hearts">
+									<span class="heart fas fa-heart"></span>
+								</li>
+								<li class="bts">
+									<span class="bt-rev invert">SELECT OPTIONS</span>
+								</li>
+								<li class="stars">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="sizes">
+									<div class="size">XS</div>
+									<div class="size">S</div>
+									<div class="size">M</div>
+									<div class="size">L</div>
+									<div class="size size-more">+2</div>
+								</li>
+								<li class="quicks">QUICK VIEW</li>
+							</ul>
+						</li>
+						<li class="common-brand">Anna</li>
+						<li class="common-summary">Naminos dementus a dincidunto</li>
+						<li class="common-price">$199.99</li>
+						<li class="common-rel">
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img4.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img5.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="choice-wrap">
+				<div class="best-prev" id="choice-prev1">&lt;</div>
+				<div class="best-next" id="choice-next1">&gt;</div>
+				<div class="common-items five" id="choice-wrap">
+					<ul class="common-item">
+						<li class="common-img">
+							<img src="../img/list-img10.jpg" alt="기본" class="img img-def">
+							<img src="../img/list-img5.jpg" alt="오버" class="img img-hover">
+							<ul>
+								<li class="hearts">
+									<span class="heart fas fa-heart"></span>
+								</li>
+								<li class="bts">
+									<span class="bt-rev invert">SELECT OPTIONS</span>
+								</li>
+								<li class="stars">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="sizes">
+									<div class="size">XS</div>
+									<div class="size">S</div>
+									<div class="size">M</div>
+									<div class="size">L</div>
+									<div class="size size-more">+2</div>
+								</li>
+								<li class="quicks">QUICK VIEW</li>
+							</ul>
+						</li>
+						<li class="common-brand">Anna</li>
+						<li class="common-summary">Naminos dementus a dincidunto</li>
+						<li class="common-price">$199.99</li>
+						<li class="common-rel">
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img4.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img5.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="common-item">
+						<li class="common-img">
+							<img src="../img/list-img10.jpg" alt="기본" class="img img-def">
+							<img src="../img/list-img5.jpg" alt="오버" class="img img-hover">
+							<ul>
+								<li class="hearts">
+									<span class="heart fas fa-heart"></span>
+								</li>
+								<li class="bts">
+									<span class="bt-rev invert">SELECT OPTIONS</span>
+								</li>
+								<li class="stars">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="sizes">
+									<div class="size">XS</div>
+									<div class="size">S</div>
+									<div class="size">M</div>
+									<div class="size">L</div>
+									<div class="size size-more">+2</div>
+								</li>
+								<li class="quicks">QUICK VIEW</li>
+							</ul>
+						</li>
+						<li class="common-brand">Anna</li>
+						<li class="common-summary">Naminos dementus a dincidunto</li>
+						<li class="common-price">$199.99</li>
+						<li class="common-rel">
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img4.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img5.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="common-item">
+						<li class="common-img">
+							<img src="../img/list-img10.jpg" alt="기본" class="img img-def">
+							<img src="../img/list-img5.jpg" alt="오버" class="img img-hover">
+							<ul>
+								<li class="hearts">
+									<span class="heart fas fa-heart"></span>
+								</li>
+								<li class="bts">
+									<span class="bt-rev invert">SELECT OPTIONS</span>
+								</li>
+								<li class="stars">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="sizes">
+									<div class="size">XS</div>
+									<div class="size">S</div>
+									<div class="size">M</div>
+									<div class="size">L</div>
+									<div class="size size-more">+2</div>
+								</li>
+								<li class="quicks">QUICK VIEW</li>
+							</ul>
+						</li>
+						<li class="common-brand">Anna</li>
+						<li class="common-summary">Naminos dementus a dincidunto</li>
+						<li class="common-price">$199.99</li>
+						<li class="common-rel">
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img4.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img5.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="common-item">
+						<li class="common-img">
+							<img src="../img/list-img10.jpg" alt="기본" class="img img-def">
+							<img src="../img/list-img5.jpg" alt="오버" class="img img-hover">
+							<ul>
+								<li class="hearts">
+									<span class="heart fas fa-heart"></span>
+								</li>
+								<li class="bts">
+									<span class="bt-rev invert">SELECT OPTIONS</span>
+								</li>
+								<li class="stars">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="sizes">
+									<div class="size">XS</div>
+									<div class="size">S</div>
+									<div class="size">M</div>
+									<div class="size">L</div>
+									<div class="size size-more">+2</div>
+								</li>
+								<li class="quicks">QUICK VIEW</li>
+							</ul>
+						</li>
+						<li class="common-brand">Anna</li>
+						<li class="common-summary">Naminos dementus a dincidunto</li>
+						<li class="common-price">$199.99</li>
+						<li class="common-rel">
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img4.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img5.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="common-item">
+						<li class="common-img">
+							<img src="../img/list-img10.jpg" alt="기본" class="img img-def">
+							<img src="../img/list-img5.jpg" alt="오버" class="img img-hover">
+							<ul>
+								<li class="hearts">
+									<span class="heart fas fa-heart"></span>
+								</li>
+								<li class="bts">
+									<span class="bt-rev invert">SELECT OPTIONS</span>
+								</li>
+								<li class="stars">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="sizes">
+									<div class="size">XS</div>
+									<div class="size">S</div>
+									<div class="size">M</div>
+									<div class="size">L</div>
+									<div class="size size-more">+2</div>
+								</li>
+								<li class="quicks">QUICK VIEW</li>
+							</ul>
+						</li>
+						<li class="common-brand">Anna</li>
+						<li class="common-summary">Naminos dementus a dincidunto</li>
+						<li class="common-price">$199.99</li>
+						<li class="common-rel">
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img4.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img5.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="choice-wrap">
+				<div class="best-prev" id="choice-prev2">&lt;</div>
+				<div class="best-next" id="choice-next2">&gt;</div>
+				<div class="common-items five" id="choice-wrap">
+					<ul class="common-item">
+						<li class="common-img">
+							<img src="../img/list-img10.jpg" alt="기본" class="img img-def">
+							<img src="../img/list-img5.jpg" alt="오버" class="img img-hover">
+							<ul>
+								<li class="hearts">
+									<span class="heart fas fa-heart"></span>
+								</li>
+								<li class="bts">
+									<span class="bt-rev invert">SELECT OPTIONS</span>
+								</li>
+								<li class="stars">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="sizes">
+									<div class="size">XS</div>
+									<div class="size">S</div>
+									<div class="size">M</div>
+									<div class="size">L</div>
+									<div class="size size-more">+2</div>
+								</li>
+								<li class="quicks">QUICK VIEW</li>
+							</ul>
+						</li>
+						<li class="common-brand">Anna</li>
+						<li class="common-summary">Naminos dementus a dincidunto</li>
+						<li class="common-price">$199.99</li>
+						<li class="common-rel">
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img4.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img5.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="common-item">
+						<li class="common-img">
+							<img src="../img/list-img10.jpg" alt="기본" class="img img-def">
+							<img src="../img/list-img5.jpg" alt="오버" class="img img-hover">
+							<ul>
+								<li class="hearts">
+									<span class="heart fas fa-heart"></span>
+								</li>
+								<li class="bts">
+									<span class="bt-rev invert">SELECT OPTIONS</span>
+								</li>
+								<li class="stars">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="sizes">
+									<div class="size">XS</div>
+									<div class="size">S</div>
+									<div class="size">M</div>
+									<div class="size">L</div>
+									<div class="size size-more">+2</div>
+								</li>
+								<li class="quicks">QUICK VIEW</li>
+							</ul>
+						</li>
+						<li class="common-brand">Anna</li>
+						<li class="common-summary">Naminos dementus a dincidunto</li>
+						<li class="common-price">$199.99</li>
+						<li class="common-rel">
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img4.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img5.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="common-item">
+						<li class="common-img">
+							<img src="../img/list-img10.jpg" alt="기본" class="img img-def">
+							<img src="../img/list-img5.jpg" alt="오버" class="img img-hover">
+							<ul>
+								<li class="hearts">
+									<span class="heart fas fa-heart"></span>
+								</li>
+								<li class="bts">
+									<span class="bt-rev invert">SELECT OPTIONS</span>
+								</li>
+								<li class="stars">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="sizes">
+									<div class="size">XS</div>
+									<div class="size">S</div>
+									<div class="size">M</div>
+									<div class="size">L</div>
+									<div class="size size-more">+2</div>
+								</li>
+								<li class="quicks">QUICK VIEW</li>
+							</ul>
+						</li>
+						<li class="common-brand">Anna</li>
+						<li class="common-summary">Naminos dementus a dincidunto</li>
+						<li class="common-price">$199.99</li>
+						<li class="common-rel">
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img4.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img5.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="common-item">
+						<li class="common-img">
+							<img src="../img/list-img10.jpg" alt="기본" class="img img-def">
+							<img src="../img/list-img5.jpg" alt="오버" class="img img-hover">
+							<ul>
+								<li class="hearts">
+									<span class="heart fas fa-heart"></span>
+								</li>
+								<li class="bts">
+									<span class="bt-rev invert">SELECT OPTIONS</span>
+								</li>
+								<li class="stars">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="sizes">
+									<div class="size">XS</div>
+									<div class="size">S</div>
+									<div class="size">M</div>
+									<div class="size">L</div>
+									<div class="size size-more">+2</div>
+								</li>
+								<li class="quicks">QUICK VIEW</li>
+							</ul>
+						</li>
+						<li class="common-brand">Anna</li>
+						<li class="common-summary">Naminos dementus a dincidunto</li>
+						<li class="common-price">$199.99</li>
+						<li class="common-rel">
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img4.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img5.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="common-item">
+						<li class="common-img">
+							<img src="../img/list-img10.jpg" alt="기본" class="img img-def">
+							<img src="../img/list-img5.jpg" alt="오버" class="img img-hover">
+							<ul>
+								<li class="hearts">
+									<span class="heart fas fa-heart"></span>
+								</li>
+								<li class="bts">
+									<span class="bt-rev invert">SELECT OPTIONS</span>
+								</li>
+								<li class="stars">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</li>
+								<li class="sizes">
+									<div class="size">XS</div>
+									<div class="size">S</div>
+									<div class="size">M</div>
+									<div class="size">L</div>
+									<div class="size size-more">+2</div>
+								</li>
+								<li class="quicks">QUICK VIEW</li>
+							</ul>
+						</li>
+						<li class="common-brand">Anna</li>
+						<li class="common-summary">Naminos dementus a dincidunto</li>
+						<li class="common-price">$199.99</li>
+						<li class="common-rel">
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img4.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+							<div class="rel">
+								<div>
+									<img src="../img/list(s)-img5.jpg" alt="관련상품" class="img">
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- 하단 : 이미지 2개 포스트 -->
+	<section class="posts wrap">
+		<h3 class="posts-tit line-tit">
+			<span>LATEST POSTS</span>
+		</h3>
+		<div class="posts-slogan line-slogan">
+			Phasellus lorem malesuada ligula pulvinar commodo
+		</div>
+		<ul class="post-items">
+			<li class="post-item">
+				<div class="post-img hover-img">
+					<img src="../img/blog-1-2-compressor_edf2ac8e-c4dd-41a1-8de2-269861c93dd4_x370.jpg" alt="그림" class="img">
+				</div>
+				<ul class="post-desc">
+					<li class="tit">Commodo Muso Magna Cosmopolis</li>
+					<li class="date">BY HALO THEMES ON JANUARY 17, 2019</li>
+					<li class="desc">Nam tempus turpis at metus scelerisque placerat nulla deumantos sollicitudin delos felis. Pellentesque diam dolor an elementum et lobortis at mollis ut risus. Curabitur semper sagittis mi condimentum feugiat liquam ut euismod risus...</li>
+				</ul>
+			</li>
+			<li class="post-item">
+				<div class="post-img hover-img">
+					<img src="../img/blog-1-compressor_x370.jpg" alt="그림" class="img">
+				</div>
+				<ul class="post-desc">
+					<li class="tit">Commodo Muso Magna Cosmopolis</li>
+					<li class="date">BY HALO THEMES ON JANUARY 17, 2019</li>
+					<li class="desc">Nam tempus turpis at metus scelerisque placerat nulla deumantos sollicitudin delos felis. Pellentesque diam dolor an elementum et lobortis at mollis ut risus. Curabitur semper sagittis mi condimentum feugiat liquam ut euismod risus...</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+
+<!-- 하단 : 브랜드 -->
+	<section class="brands">
+		<div class="brand-wrap wrap rel">
+			<div class="best-prev" id="brand-prev">&lt;</div>
+			<div class="best-next" id="brand-next">&gt;</div>
+			<ul class="brand-items">
+				<li>
+					<img src="../img/brand-1-compressor_200x.jpg" alt="브랜드" class="img">
+				</li>
+				<li>
+					<img src="../img/brand-2-compressor_200x.jpg" alt="브랜드" class="img">
+				</li>
+				<li>
+					<img src="../img/brand-3-compressor_200x.jpg" alt="브랜드" class="img">
+				</li>
+				<li>
+					<img src="../img/brand-4-compressor_200x.jpg" alt="브랜드" class="img">
+				</li>
+				<li>
+					<img src="../img/brand-5-compressor_200x.jpg" alt="브랜드" class="img">
+				</li>
+			</ul>
+		</div>
+	</section>
+
+<!-- 하단 : 인스타 -->
+	<section class="instas">
+		<h3 class="insta-tit">
+			<i class="fab fa-instagram"></i>
+			#ELLA ON INSTAGRAM
+		</h3>
+		<div class="insta-slogan">
+			Phasellus lorem malesuada ligula pulvinar commodo maecenas
+		</div>
+		<div class="insta-wrap wrap rel">
+			<div class="best-prev" id="insta-prev">&lt;</div>
+			<div class="best-next" id="insta-next">&gt;</div>
+		<div>
+				<ul class="insta-items">
+					<li class="insta-item">
+						<img src="../img/slide-img/bottom/slide2-img4.jpg" alt="인스타" class="img">
+					</li>
+					<li class="insta-item">
+						<img src="../img/slide-img/bottom/slide2-img5.jpg" alt="인스타" class="img">
+					</li>
+					<li class="insta-item">
+						<img src="../img/slide-img/bottom/slide2-img6.jpg" alt="인스타" class="img">
+					</li>
+					<li class="insta-item">
+						<img src="../img/slide-img/bottom/slide2-img7.jpg" alt="인스타" class="img">
+					</li>
+					<li class="insta-item">
+						<img src="../img/slide-img/bottom/slide2-img8.jpg" alt="인스타" class="img">
+					</li>
+				</ul>
+		</div>
+		</div>
+		<div class="insta-bts">
+			<button class="bt-rev">VIEW GALLERY</button>
+		</div>
+	</section>
+
+<!-- 하단 : 풋터 -->
+	<footer class="footer-tops">
+		<div class="footer-items wrap">
+			<ul class="footer-item">
+				<li class="tit">SHOP</li>
+				<li class="link"><a href="#" class="underbar">New In</a></li>
+				<li class="link"><a href="#" class="underbar">Women</a></li>
+				<li class="link"><a href="#" class="underbar">Men</a></li>
+				<li class="link"><a href="#" class="underbar">Shoes</a></li>
+				<li class="link"><a href="#" class="underbar">Bags & Accessories</a></li>
+				<li class="link"><a href="#" class="underbar">Top Brands</a></li>
+				<li class="link"><a href="#" class="underbar">Sale & Special Offers</a></li>
+				<li class="link"><a href="#" class="underbar">Lookbook</a></li>
+			</ul>
+			<ul class="footer-item">
+				<li class="tit">INFORMATION</li>
+				<li class="link"><a href="#" class="underbar">About</a></li>
+				<li class="link"><a href="#" class="underbar">Customer Service</a></li>
+				<li class="link"><a href="#" class="underbar">Reward Program</a></li>
+				<li class="link"><a href="#" class="underbar">Shipping & Returns</a></li>
+				<li class="link"><a href="#" class="underbar">Privacy Policy</a></li>
+				<li class="link"><a href="#" class="underbar">Terms & Conditions</a></li>
+				<li class="link"><a href="#" class="underbar">Blog</a></li>
+			</ul>
+			<ul class="footer-item">
+				<li class="tit">CUSTOMER SERVICE</li>
+				<li class="link"><a href="#" class="underbar">Search Terms</a></li>
+				<li class="link"><a href="#" class="underbar">Advanced Search</a></li>
+				<li class="link"><a href="#" class="underbar">Orders and Returns</a></li>
+				<li class="link"><a href="#" class="underbar">Contact Us</a></li>
+				<li class="link"><a href="#" class="underbar">Theme FAQs</a></li>
+				<li class="link"><a href="#" class="underbar">Consultant</a></li>
+				<li class="link"><a href="#" class="underbar">Store Locations</a></li>
+			</ul>
+			<div class="footer-item">
+				<ul>
+					<li class="tit">STAY CONNECTED</li>
+					<li class="footer-sns">
+						<ul class="sns-brand">
+							<li><i class="fab fa-facebook-f"></i></li>
+							<li><i class="fab fa-twitter"></i></li>
+							<li><i class="fab fa-google-plus-g"></i></li>
+							<li><i class="fab fa-instagram"></i></li>
+							<li><i class="fab fa-pinterest-p"></i></li>
+							<li><i class="fab fa-snapchat-ghost"></i></li>
+						</ul>
+						<div class="sns-like">
+							<div>LIKE US ON FACEBOOK</div>
+							<div>
+								<button class="btn btn-sm btn-primary">
+									<i class="fas fa-thumbs-up"></i> 
+									<span>Like</span> 
+									<span>13k</span>
+								</button>
+								<button class="btn btn-sm btn-primary">Share</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li class="tit">SIGN UP FOR OUR NEWSLETTER</li>
+					<li class="footer-email">
+						<input type="text" class="input-email" name="email" id="email" placeholder="enter your email address">
+						<button class="bt-rev">SUBMIT</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<footer class="footer-bots">
+		<div class="wrap">
+			<div class="footer-copy">© 2018 Ella Demo. All Rights Reserved. Ecommerce Software by Shopify.</div>
+			<div class="footer-copy">Shopify Themes by HaloThemes.com.</div>
+			<ul class="footer-billing">
+				<li><img src="../img/visa.jpg" alt="카드" class="img"></li>
+				<li><img src="../img/mastercard.jpg" alt="카드" class="img"></li>
+				<li><img src="../img/american-express.jpg" alt="카드" class="img"></li>
+				<li><img src="../img/cirrus_Inverted.jpg" alt="카드" class="img"></li>
+				<li><img src="../img/discover.jpg" alt="카드" class="img"></li>
+				<li><img src="../img/paypal.jpg" alt="카드" class="img"></li>
+				<li><img src="../img/western.jpg" alt="카드" class="img"></li>
+			</ul>
+		</div>
+	</footer>
+	<script src="../js/fx-slide.js"></script>
+	<script src="../js/util.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+
+</html>

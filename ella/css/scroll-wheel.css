@@ -1,0 +1,10 @@
+html, body, .wrap{ height: 100%;}
+body {overflow: hidden;}
+.logo, .navis {cursor: pointer;}
+.page { height: 100%; color: #444; position: relative;}
+nav {z-index: 9999;}
+.page .page-tit {transform:  translate(-50%, -50%); position: absolute; left: 50%; top: 50%; color: #222;}
+.page1 {background-color: antiquewhite;}
+.page2 {background-color: bisque;}
+.page3 {background-color: brown;}
+.page4 {background-color: darkgray;}

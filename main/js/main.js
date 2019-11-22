@@ -89,10 +89,14 @@ $(window).resize(function() {
 
 
 
-
-
-
-$(".tag-bar").click(function(){
+	
+	
+	$(".tag-bar").click(function(){
+	$(".zees-logo").css({"stroke-dasharray": "2600", "stroke-dashoffset": "2600"})
+	$("#zees1").removeClass('zees-1-Out');
+	$("#zees2").removeClass('zees-2-Out');
+	$("#zees1").addClass('zees-1');
+	$("#zees2").addClass('zees-2');
 	$(".navis-overlay").stop().css({"transform": "translateX(0%)"});
 	$("body").css({ "overflow-y": "hidden"})
 	setTimeout(function(){
@@ -105,11 +109,16 @@ $(".tag-bar").click(function(){
 	});
 	
 	$(".navis-overlay , .close-bt").click(function(){
-		$(".navis-wrap").stop().css({"transform": "translateX(100%)"});
+		$(".zees-logo").css({"stroke-dasharray": "2600", "stroke-dashoffset": "0"})
+		$("#zees1").removeClass('zees-1');
+		$("#zees2").removeClass('zees-2');
+		$("#zees1").addClass('zees-1-Out');
+		$("#zees2").addClass('zees-2-Out');
 		setTimeout(function(){
-			$(".navis-overlay").css({"transform": "translateX(100%)"})
-			$("body").css({ "overflow-y": "scroll"})},200);
-			$(".navis-overlay").off('scroll touchmove mousewheel'); 
+		$(".navis-wrap").stop().css({"transform": "translateX(100%)"})
+		$(".navis-overlay").css({"transform": "translateX(100%)"})
+		$("body").css({ "overflow-y": "scroll"});
+		$(".navis-overlay").off('scroll touchmove mousewheel')},1400);
 });
 
 
