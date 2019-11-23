@@ -43,12 +43,22 @@ $(".sch-layer").click(function(e){
 	e.stopPropagation();
 });
 
+$(window).scroll(function(){
+	var scTop = $(this).scrollTop();
+	if(scTop > 200) {
+	$(".top-navis-slide").addClass("top-2")
+	}
+	else {
+	$(".top-navis-slide").removeClass("top-2")
+}
+});
+
 // 메인 네비게이션
 $(".navi-under").mouseenter(function(){
-	$(this).find(".subs").css({"visibility": "visible"}).stop().animate({"top": "50px", "opacity": 1}, 300);
+	$(this).find(".subs").css({"visibility": "visible"}).stop().animate({"top": "47px", "opacity": 1}, 400);
 });
 $(".navi-under").mouseleave(function(){
-	$(this).find(".subs").stop().animate({"top": "143px", "opacity": 0}, 300, function(){
+	$(this).find(".subs").stop().animate({"top": "143px", "opacity": 0}, 200, function(){
 		$(this).css({"visibility": "hidden"});
 	});
 });
@@ -72,7 +82,7 @@ var mainBanner = new FxSlide({
 
 var bestBanner = new FxSlide({
 	slides : $(".best-items"), 
-	cnt:5, 
+	cnt:4, 
 	prev: $("#best-prev"),
 	next: $("#best-next"),
 	direction: "toRight",
@@ -83,7 +93,7 @@ var sellerBanner = new FxSlide({
 	cnt:3, 
 	prev: $("#seller-prev"),
 	next: $("#seller-next"),
-	direction: "toRight"
+	direction: "toLeft"
 });
 var sellerBanner2 = new FxSlide({
 	slides : $("#seller2"), 
@@ -98,13 +108,13 @@ var sellerBanner3 = new FxSlide({
 	next: $("#choice-next")
 });
 var sellerBanner3 = new FxSlide({
-	slides : $("#choice-wrap"), 
+	slides : $("#choice-wrap1"), 
 	cnt:5, 
 	prev: $("#choice-prev1"),
 	next: $("#choice-next1")
 });
 var sellerBanner3 = new FxSlide({
-	slides : $("#choice-wrap"), 
+	slides : $("#choice-wrap2"), 
 	cnt:5, 
 	prev: $("#choice-prev2"),
 	next: $("#choice-next2")
@@ -117,18 +127,7 @@ $(this).addClass("active");
 $(".choice-wrap").hide();
 $(".choice-wrap").eq(num).show();
 });
-var brandSlide = new FxSlide({
-	slides : $(".brand-items"), 
-	cnt:5, 
-	prev: $("#brand-prev"),
-	next: $("#brand-next")
-});
-var instaSlide = new FxSlide({
-	slides : $(".insta-items"), 
-	cnt:5, 
-	prev: $("#insta-prev"),
-	next: $("#insta-next")
-});
+
 
 /*
 // 배너 - (fade, slide(전체), slide(하나씩), slide(세로))

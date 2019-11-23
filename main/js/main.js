@@ -1,24 +1,4 @@
-window.addEventListener("wheel", wheelFn, {passive: false});
-function wheelFn(){
-	event.preventDefault();
-	event.stopPropagation();
-	var hei = $(window).outerHeight(); //한 페이지의 높이
-	var delta = event.deltaY; //휠 이벤트
-	var posY = event.pageY; 	// 모든 창의 값
-	var n = Math.floor(posY/hei); 
-	var tar = 0;
-	var pageCnt = $("section").length; //4
-	if(delta > 0) ( n < pageCnt - 1) ? wheelAni((n + 1) * hei, n, (n + 1)): "";
-	else (n > 0) ? wheelAni((n - 1) * hei, n, (n - 1)) : ""; 
-}
-function wheelAni(pos, prePage, nowPage) {
-	console.log(prePage, nowPage)
-	$("html, body").stop().animate({"scrollTop": pos}, 300, function(){
 
-	});
-}
-
-	
 
 $("#abme").click(function(){
 	$("html, body").stop().animate({"scrollTop": 900}, 300, function(){
@@ -158,52 +138,10 @@ function ani() {
 ;
 
 
-var workSlide = new FxSlide({
-	slides : $(".works"), 
-	cnt:1, 
-	speed : 1000,
-	delay : 4000,
-	prev: $("#work-prev"),
-	next: $("#work-next"),
-	autoplay: false,
-	pager: $(".pagers")
-	
-});
-
-$(".works").mouseover(function(){
-	$(this).find("img").css({"filter": "brightness(0.4)"});
-	$(this).find(".work-cont").css({"opacity": 1});
-});
-$(".works").mouseleave(function(){
-	$(this).find("img").css({"filter": "brightness(1)"});
-	$(this).find(".work-cont").css({"opacity": 0});
-});
-$("#work-prev", "#work-next").click(function(){
-	$(".works").find(".work-cont").hide();
-})
 
 
 
-wow = new WOW(
-	{
-	boxClass:     'lt1',      // default
-	animateClass: 'slideInRight', // default
-	offset:       5,          // default
-	mobile:       true,       // default
-	live:         true        // default
-  }
-  )
-  wow.init();
 
-wow = new WOW(
-	{
-	boxClass:     'lt2',      // default
-	animateClass: 'slideInRight', // default
-	offset:       5,          // default
-	mobile:       true,       // default
-	live:         true        // default
-  }
-  )
-  wow.init();
+
 
 new WOW().init();

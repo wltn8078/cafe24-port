@@ -278,32 +278,24 @@ body section {height: 100%; min-height: 700px;}
 	/* 작업 */
 .work3 { position: relative; width: 100%; height: 100%;}
 .work3-all { width: 100%;}
-.works-all { background-color: rgba(255, 255, 255, 0.664); width: 90%; margin: 0 auto; position: relative; padding: 1rem 1rem 3rem 1rem; z-index: 9999; }
+.works-all { background-color: rgba(255, 255, 255, 0.664); width: 90%; margin: 0 auto; position: relative; 
+	padding: 1rem 1rem 3rem 1rem; z-index: 9999; }
 .work-pager {max-width: 1000px; width: 100%; height: 100%; margin: 0 auto;  }
-	.works-chart { width: 100%; margin: 0 auto;}
-	.charts {display: flex; justify-content: space-around; align-items: center;} 
-	.chart {text-align: center; padding: 0.4rem; line-height: 1rem; min-height: 50px; font-size: 3vw; min-width:50px} 
-	.pager.active {background-color: #EEE;}
 	.works-cont { width: 100%; margin: 0 auto; max-height: 500px; position: relative;}
-	.work3 .works { width: 200%; position: relative; display: flex; max-height: 500px; }
-	.work3 .work {flex: 100% 1 1; position: relative; overflow: hidden;}
-	.pager-prev,
-	.pager-next {display: none; z-index: 999; cursor: pointer; position: absolute; width: 60px; height: 60px; color: #fff; text-shadow: 0 0 5px rgb(63, 63, 63); font-size: 2.5rem; line-height: 60px; text-align: center; top: 43%;  }
-	.pager-prev {left: 0%;}
-	.pager-next {right: 0%;}
-
-
-	.work3 .work-img {width: 100%; transition: all 0.5s; max-height: 500px; cursor: pointer;}
+	.work3 .works { position: relative; max-height: 500px; }
+	.work3 .work {margin: 5rem 0; display: flex; align-items: flex-end; justify-content: space-between;}
+	.work3 .work-img { transition: all 0.5s; max-width: 500px; cursor: pointer;}
 	.work3 .work-img  img {transition: all 0.5s}
 	/* .work3 .work-img:hover {filter: brightness(0.5);} */
 	.work3 .works-tit {position: relative; padding: 0.5rem; margin: 2rem auto; max-width: 400px;}
 	.work3 .tit-1 {font-size: 13vw; min-width: 300px; max-width: 400px;  width: 100%; font-weight: 600; color: #ddd; letter-spacing:3px;}
-	.work3 .tit-2 {font-size: 14vw; font-weight: 500; min-width: 200px; max-width: 250px; width: 100%; color: rgba(150, 29, 29, 0.945); font-family: 'Yellowtail', cursive; letter-spacing:1.5px;
+	.work3 .tit-2 {font-size: 14vw; font-weight: 500; min-width: 200px; max-width: 250px; width: 100%; color: rgba(150, 29, 29, 0.945); 
+		font-family: 'Yellowtail', cursive; letter-spacing:1.5px;
 	position: absolute; top: 10%; right: -5%; transform: rotate(-3deg);}
-	.work3 .work-cont {opacity: 0; transition: all 0.5s; position: absolute; z-index: 99998; text-align: right;
-		bottom: 5%; right: 0%; padding: 1vw; color: #FFF; max-width: 550px; min-width: 300px;  width: 100%;}
-	.work3 .cont-tit { font-weight: bold; font-size: 3vw; margin-bottom: 0.5rem; transition: all 1s;}
-	.work3 .cont-desc { font-weight: 300; font-size: 2vw; transition: all 1s;}
+	#weather .work-cont {padding: 1vw; color: #000; max-width: 550px; min-width: 300px;  width: 100%; text-align: right;}
+	#coex .work-cont {padding: 1vw; color: #000; max-width: 550px; min-width: 300px;  width: 100%; text-align: left;}
+	.work3 .cont-tit { font-weight: bold; font-size: 1.3rem; margin-bottom: 0.5rem;}
+	.work3 .cont-desc { font-weight: 300; font-size: 1rem; transition: all 1s;}
 
 	.work3 .side-rot-flower {transform: rotate(-10deg); transition: all 5s;}
 	.work3 .si1 {position: absolute; max-width: 315px; max-height: 600px; width: 100%; height: 100%; top: 50%; right: 0%; overflow: hidden;}
@@ -353,31 +345,21 @@ body section {height: 100%; min-height: 700px;}
 .work3 .tit-1 {font-size: 4rem;}
 .work3 .tit-2 {font-size: 4.5rem;} 
 .work-pager {height: 500px;}
-.chart {text-align: center; padding: 0.25rem; line-height: 1rem; min-height: 50px; font-size: 1rem; min-width:70px}
 }
 /* 768 ~ 991 - md - 태블릿 세로 */
 @media screen and (min-width: 768px) {
 	.work-pager {height: 600px;}
-	.chart {text-align: center; padding: 0.25rem; line-height: 1rem; min-height: 50px; font-size: 1rem; min-width:100px}
 	.aboutme2 .me-2, .aboutme2 .me-3  {display: none;}
 }
 /* 992 ~ 1199 - lg - 태블릿 가로 */
 @media screen and (min-width: 992px) {
 .about-cont1 {font-family: 'Yellowtail', cursive; font-size: 1.5rem;}
-.works-chart { width: 150px; margin-right: 1.5rem;}
-.chart {padding: 0.5rem 1rem; line-height: 3rem;}
-.charts {display: block; }
-.work-pager{display: flex; justify-content: space-between; overflow: hidden; }
-.pager-prev,
-.pager-next {display: block;}
 .works-all { background-color: rgba(255, 255, 255, 0);}
 .aboutme2 .si1 {top: 50%;}
 .aboutme2 .si2 {top: 5%;}
 .work3 .si1 {top: 30%;}
 .work3 .si2 {top: 10%;}
 .aboutme2 .me-1-2 {background-color: rgba(255, 255, 255, 0)} 
-.work3 .cont-tit { font-size: 2.2rem; margin-bottom: 1rem;}
-.work3 .cont-desc {font-size: 1.5rem;}
 .work3 .work-cont {bottom: 4%;}
 }
 

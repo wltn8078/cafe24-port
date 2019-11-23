@@ -36,7 +36,7 @@ var FxSlide = (function(){
 		this.width = this.tar * 2 + 100;
 		this.pagers = (obj.pager && this.cnt == 1) ? $(obj.pager) : false;
 		if(this.pagers) this.pager = this.pagers.children();
-		this.direction = obj.direction == "toRight" ? 0 : -1;
+		this.direction = obj.direction == "toLeft" ? 0 : -1;
 		this.dir = this.direction;
 		this.autoplay = obj.autoplay == false ? false : true;
 		this.interval = null;
