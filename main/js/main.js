@@ -1,9 +1,20 @@
+var lastScrollLeft = 0;
+$(window).scroll(function() {
+    var documentScrollLeft = $(document).scrollLeft();
+    if (lastScrollLeft != documentScrollLeft) {
+        console.log('scroll x');
+        lastScrollLeft = documentScrollLeft;
+    }
+});
 
 
-$("#abme").click(function(){
-	$("html, body").stop().animate({"scrollTop": 900}, 300, function(){
-	});
-})
+$(window).scroll(function(){
+	var scLef = $(this).scrollLeft();
+	if(scLef > 1300) {
+		$("#abme-1").addClass("abme-1"); }
+else{
+		$("#abme-1").removeClass("abme-1");}
+});
 
 
 $(window).scroll(function(){
@@ -25,11 +36,6 @@ $(".navs").mouseleave(function(){
 	$(this).find(".nav-tit").css({"transform": "scale(1)"});
 });
 
-// $("#btn3").click(function(){
-// 	$("#i2").slideToggle(1000);
-// 	$("#i3").slideToggle(100000);
-
-
 
 $(".tags").mouseover(function(){
 	$(this).stop().css({"transform": "translateX(50px)"});
@@ -38,40 +44,55 @@ $(".tags").mouseleave(function(){
 	$(this).stop().css({"transform": "translateX(100px)"});
 });
 
-$("#abme-next").click(function(){
-	$(this).hide();
-	$("#abme-prev").show();
-	$(".me-1").css({"transform": "translateX(0px)","background-color": "rgba(255, 255, 255, 0)"})
-	$(".me-2, .me-3").show("fast", function(){
-	$(".me-2, .me-3").css({"transform": "translateX(0)","opacity": 1});
-	$(".me-1-2").css({"background-color": "rgba(255, 255, 255, 0.705)", "padding": "3rem 1rem" })
-	})
+
+$(".work-page").mouseover(function(){
+	$(this).stop().css({"transform": "translateY(-20px)"});
+	$(this).find(".page-img").stop().css({"transform": "scale(1.03)"});
 });
-$("#abme-prev").click(function(){
-	$(this).hide();
-	$("#abme-next").show();
-	$(".me-1").css({"transform": "translateX(400px)"})
-	$(".me-2").css({"opacity": 0, "transform": "translateX(-35px)"});
-	$(".me-3").css({"opacity": 0, "transform": "translateX(-500px)"});
+$(".work-page").mouseleave(function(){
+	$(this).stop().css({"transform": "translateY(0px)"});
+	$(this).find(".page-img").stop().css({"transform": "scale(1)"});
 });
 
-$(window).resize(function() { 
-	if($(window).width() > 1300) { 
-		$("#abme-next").show();
-	}
-	 else {
-		$(".me-2, .me-3").css({"display": "none"});
-		$(".click").hide();
-		$(".me-1").css({"transform": "translateX(0px)"})
-	 }
-	});
 
 
+$(".pager-up").mouseover(function(){
+	$(this).css({"transform": "translateX(7px)"})
+});
+$(".pager-up").mouseleave(function(){
+	$(this).css({"transform": "translateX(0px)"})
+});
+$(".pager-down").mouseover(function(){
+	$(this).css({"transform": "translateX(-7px)"})
+});
+$(".pager-down").mouseleave(function(){
+	$(this).css({"transform": "translateX(0px)"})
+});
 
+$(".tit-3").stop().hide();
+$(".pager-down").stop().hide();
 
+$(".pager-up").click(function(){
+$("#pages-1").css({"transform": "translateY(-100%)", "opacity" : 0});
+$("#pages-2").css({"transform": "translateY(-122.5%)", "opacity" : 1});
+$(".tit-2").stop().fadeOut(300);
+$(".tit-3").stop().fadeIn(400);
+$(".pager-down").stop().show();
+$(this).stop().hide();
+
+})
+$(".pager-down").click(function(){
+	$("#pages-1").css({"transform": "translateY(0px)", "opacity" : 1});
+	$("#pages-2").css({"transform": "translateY(0px)", "opacity" : 0})
+	$(".tit-3").stop().fadeOut(300);
+	$(".tit-2").stop().fadeIn(400);
+	$(".pager-up").stop().show();
+	$(this).stop().hide();
+})
 	
 	
 	$(".tag-bar").click(function(){
+	$(".main1 .logo").css({"opacity" : 0});
 	$(".zees-logo").css({"stroke-dasharray": "2600", "stroke-dashoffset": "2600"})
 	$("#zees1").removeClass('zees-1-Out');
 	$("#zees2").removeClass('zees-2-Out');
@@ -98,44 +119,11 @@ $(window).resize(function() {
 		$(".navis-wrap").stop().css({"transform": "translateX(100%)"})
 		$(".navis-overlay").css({"transform": "translateX(100%)"})
 		$("body").css({ "overflow-y": "scroll"});
+		$(".main1 .logo").css({"opacity" : 1});
 		$(".navis-overlay").off('scroll touchmove mousewheel')},1400);
 });
 
 
-// $(".navis-hidden").mouseleave(function(){
-// 	$(this).stop().css({"transform": "translateX(320px)"});
-// });
-
-
-
-$(".aboutme2").find(".prog").mouseover(function(){
-	$(this).find("span").removeClass("d-none");
-})
-$(".aboutme2").find(".prog").mouseleave(function(){
-	$(this).find("span").addClass("d-none");
-})
-
-
-var now = 0;
-	$("#about-prev").click(function(){
-	if(now > 0) now--;
-	ani();
-}).hide();
-	$("#about-next").click(function(){
-	if(now < 1) now++;
-	ani();
-});
-function ani() {
-	$(".me-1-2").stop().animate({"left": (-100*now)+"%"}, 500);
-	if(now == 0) {
-		$("#about-prev").hide();
-		$("#about-next").show(); }
-	else {
-		$("#about-prev").show();
-		$("#about-next").hide();
-	}
-}
-;
 
 
 

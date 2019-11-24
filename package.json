@@ -1,0 +1,20 @@
+{
+  "name": "wltn8078.cafe.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wltn8078/cafe24-port.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wltn8078/cafe24-port/issues"
+  },
+  "homepage": "https://github.com/wltn8078/cafe24-port#readme",
+  "description": ""
+}

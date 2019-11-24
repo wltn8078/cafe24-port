@@ -22,11 +22,11 @@ th, td {vertical-align: middle! important;}
 .f-25{font-size: 2.5rem;}            /* 36px */
 .f-3{font-size: 3rem;}               /* 48px */
 
-.navi3 a {color: white; text-decoration: none}
-.navi3 a:link {color: white; text-decoration: none}
-.navi3 a:visited {color: white; text-decoration: none}
-.navi3 a:hover {color:rgb(255, 211, 170); text-decoration: none}
-.navi3 a:active {color: white; text-decoration: none}
+a {text-decoration: none!important; color: inherit!important;}
+a:link { text-decoration: none}
+a:visited { text-decoration: none}
+a:hover { text-decoration: none}
+a:active { text-decoration: none}
 
 .ta-5 {width: 50%}
 .ta-6 {width: 60%}
