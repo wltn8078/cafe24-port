@@ -27,11 +27,14 @@ function scrollBar(){
 
 
 //  1면
+
 $(".zees-logo").css({"stroke-dasharray": "2600", "stroke-dashoffset": "2600"})
 $("#zees2-1").addClass('zees-1');
 $("#zees2-2").addClass('zees-2');
 setTimeout(function(){
-$(".hello").css({"opacity": 1})}, 2500);
+$(".hello").css({"opacity": 1})}, 2000);
+setTimeout(function(){
+$(".main-indexs").css({"opacity": 1, "transform": "translateY(0px)"})}, 3000);
 
 $(".tags").mouseover(function(){
 	$(this).stop().css({"transform": "translateX(50px)"});
@@ -93,11 +96,11 @@ $(".navs").mouseleave(function(){
 //  2면
 $(".aboutme2 .me-2 .prog").mouseover(function(){
 	$(this).find("img").css({"transform": "scale(1.1)","	filter": "opacity(1) saturate(0.6)"});
-	$(this).parent().css({"box-shadow" : "1px 1px 4px #ccc"});
+	$(this).parent().css({"border" : "1px solid #ddd"});
 });
 $(".aboutme2 .me-2 .prog").mouseleave(function(){
 	$(this).find("img").css({"transform": "scale(1)","	filter": "opacity(0.8) saturate(0.7)"});
-	$(this).parent().css({"box-shadow" : "none"});
+	$(this).parent().css({"border" : "1px solid #fff"});
 });
 
 
