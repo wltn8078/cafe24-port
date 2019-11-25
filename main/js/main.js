@@ -1,14 +1,22 @@
-var lastScrollLeft = 0;
-$(window).scroll(function() {
-    var documentScrollLeft = $(document).scrollLeft();
-    if (lastScrollLeft != documentScrollLeft) {
-        console.log('scroll x');
-        lastScrollLeft = documentScrollLeft;
-    }
-});
+var secNow = 0;
+new WheelFn(document.querySelector(".sections"), mainCb);
+function mainCb(dir) {
+	console.log(dir);
+	if(dir == "toLeft") {
+		if(secNow < 3) secNow++;
+	}
+	else {
+		if(secNow > 0) secNow--;
+	}
+	secAni()
+}
+
+function secAni() {
+	$(".section-wrapper").stop().animate({"left": (secNow * -100) + "%"}, 500);
+}
+
 
 //  1면
-
 $(".zees-logo").css({"stroke-dasharray": "2600", "stroke-dashoffset": "2600"})
 $("#zees2-1").addClass('zees-1');
 $("#zees2-2").addClass('zees-2');
@@ -86,7 +94,6 @@ $(".aboutme2 .me-2 .prog").mouseleave(function(){
 
 
 //  3면
-
 $(".work-page").mouseover(function(){
 	$(this).stop().css({"transform": "translateY(-20px)"});
 	$(this).find(".page-img").stop().css({"transform": "scale(1.03)"});
@@ -131,12 +138,5 @@ $(".pager-down").click(function(){
 	$(".pager-up").stop().show();
 	$(this).stop().hide();
 })
-	
-	
-
-
-
-
-
 
 new WOW().init();
