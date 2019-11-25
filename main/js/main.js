@@ -9,10 +9,20 @@ function mainCb(dir) {
 		if(secNow > 0) secNow--;
 	}
 	secAni()
+	scrollBar()
 }
 
 function secAni() {
-	$(".section-wrapper").stop().animate({"left": (secNow * -100) + "%"}, 500);
+	$(".section-wrapper").stop().animate({"left": (secNow * -100) + "%"}, 700);
+}
+
+function scrollBar(){
+	if(secNow > 0) {
+		$(".main-bars .main-bar-now").stop().animate({"width": (secNow * 34) + "%"}, 750);
+	}
+	else {
+		$(".main-bars .main-bar-now").stop().animate({"width": "2%"},700);
+	}
 }
 
 
@@ -65,8 +75,8 @@ $(".tag-bar").click(function(){
 });
 
 $(".main-index").mouseover(function(){
-	$(this).css({"color": "rgb(73,0,0)"});
-	$(this).find(".index-line").css({"background-color":"rgb(73,0,0)"});
+	$(this).css({"color": "rgb(145, 20, 20)"});
+	$(this).find(".index-line").css({"background-color":"rgb(145, 20, 20)"});
 })
 $(".main-index").mouseleave(function(){
 	$(this).css({"transform": "translateY(0px)", "color": "#FFF"});

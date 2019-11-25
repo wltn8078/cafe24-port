@@ -4,7 +4,7 @@ var WheelFn = (function() {
 		var marker = true;
 		var delta;
 		var direction;
-		var interval = 50;
+		var interval = 100;
 		var counter1 = 0;
 		var counter2;
 		var now;
