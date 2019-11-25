@@ -147,7 +147,7 @@ html, body {font-family: 'Nanum Gothic', sans-serif; height: 100%; background-co
 	.sub-ad2 .prd-banner > img, 
 	.sub-ad3 .prd-banner > img {transition: all 1s;}
 	.sub-ad2 .prd-banner:hover > img, 
-	.sub-ad3 .prd-banner:hover > img {transform: scale(1.2);}
+	.sub-ad3 .prd-banner:hover > img {filter: brightness(0.8);}
 
 	.grid-card {display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem; height: 100%;}
 	.grid-card > ul > li {margin-bottom: 1rem;}
