@@ -28,6 +28,11 @@ function scrollBar(){
 
 //  1면
 
+
+$(".main-index").click(function(){
+	$(".section-wrapper").stop().animate({"left": ($(".main-index").index(this) * -100) + "%"}, 700);
+});
+
 $(".zees-logo").css({"stroke-dasharray": "2600", "stroke-dashoffset": "2600"})
 $("#zees2-1").addClass('zees-1');
 $("#zees2-2").addClass('zees-2');
