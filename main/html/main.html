@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/fa.min.css">
 	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
 	<link rel="stylesheet" href="../css/main.css">
 	<script src="../js/jquery-3.4.1.min.js"></script>
 	<script src="../js/jquery-ui.min.js"></script>
@@ -18,15 +19,111 @@
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="../js/wow.min.js"></script>
 	<script src="../js/imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+	<script type="text/javascript">
+			(function(){
+				 emailjs.init('user_k3S1oUvwsY2KaGrKGhKvR');
+			})();
+	</script>
+	<script type="text/javascript">
+			window.onload = function() {
+					document.getElementById('contact-form').addEventListener('submit', function(event) {
+							event.preventDefault();
+							// generate the contact number value
+							this.contact_number.value = Math.random() * 100000 | 0;
+							emailjs.sendForm('gmail', 'contact_me', this).
+							then(function(res){
+								if(res.status == 200) {
+									alert("연락해 주셔서 감사합니다. 확인 즉시 연락드리겠습니다.");
+									document.getElementById('contact-form').reset();
+									}
+								else {
+									alert("서버에 장애가 생겼습니다. 다시 시도해 주세요.")
+								}
+							});
+					});
+			}
+	</script>
 </head>
 
 <body>
 <!-- 작업 부분 슬라이드는 18.ella2/slide12 참고 -->
 
 <!-- 첫장 메인 부분 -->
-<div class="sections">
-	<div class="section-wrapper">
-		<section class="main1">
+<div class="sections swiper-container">
+	<div class="swiper-button-prev scr-wiper"></div>
+	<div class="swiper-button-next scr-wiper"></div>
+	<div class="main-bars">
+			<div class="main-bar">
+		<div class="main-bar-now"></div>
+	</div>
+	</div>
+	<div class="tag-fix">
+			<div class="tags">
+				<div class="tag-bar"><i class="fas fa-bars"></i></div>
+				<div class="tag"></div>
+			</div>
+		</div>
+		<div class="navis-hidden">
+		<div class="navis-overlay"></div>
+		<div class=" navis-wrap">
+			<div class="logo-white">
+				<svg class="zees-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+						 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="250px" height="131px"
+						 viewBox="0 0 250 131" enable-background="new 0 0 250 131" xml:space="preserve">
+												<image display="none" overflow="visible" width="1007" height="528" xlink:href="8F5E7EA9.png"
+															 transform="matrix(0.24 0 0 0.24 5 3)">
+												</image>
+					<path id="zees1" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round"
+								stroke-linejoin="round" stroke-miterlimit="10"
+								d="M38.365,33.85c0.004-0.001,49.089-13.688,67.542-27.028c0,0-23.686,54.856-52.234,86.338c-33.004,36.395-62.54,11.778-35.822-0.683
+															c10.229-4.771,22.023-4.685,44.171,3.172c24,8.514,56.207-5.183,70.265-16.422c16.477-13.173,14.077-34.72-8.893-17.032
+															c-23.072,17.767-19.39,46.768-3.087,45.053c0,0,21.508-2.297,35.566-27.669c0,0,21.132,0.697,33.662-13.525
+															c17.171-19.49-5.457-20.862-18.924-9.616c-8.064,6.735-13.957,16.359-14.738,25.141c-1.854,20.82,13.462,34.926,44.662-1.416"/>
+					<path id="zees2" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round"
+								stroke-linejoin="round" stroke-miterlimit="10" d=" M233.792,50.335c0,0-6.971-1.64-13.827,2.016c-7.63,4.068-13.606,15.487-3.749,20.171c7.642,3.632,20.75-9.442,25.919,3.546
+															c7.483,18.805-45.047,49.488-173.941,49.381"/>
+										</svg>
+			</div>
+			<div class="navis">
+				<div class="nav-bts">
+					<div class="navs">
+						<li class="nav-tit">About me</li>
+					</div>
+
+					<div class="navs">
+						<li class="nav-tit">Portfolio</li>
+					</div>
+
+					<div class="navs">
+						<li class="nav-tit">Contact</li>
+
+					</div>
+				</div>
+			</div>
+			<div class="wrap-img"><img src="../img/about-wrap.svg" alt="" class="img"></div>
+			<div class="wrap-img2"><img src="../img/about-wrap2.png" alt="" class="img"></div>
+			<div class="icons">
+				<div class="icon"><i class="fab fa-github"></i></div>
+				<div class="icon"><i class="fab fa-instagram"></i></div>
+			</div>
+			<div class="close-bt">
+				<svg class="side-close" id="close-bt" version="1.1" xmlns="http://www.w3.org/2000/svg"
+						 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px"
+						 viewBox="0 0 37 37" xml:space="preserve">
+												<polygon points="36.2,5.8 31.9,1.4 18.6,14.2 5.1,1.3 0.9,5.8 14.1,18.5 0.9,31.2 5.1,35.6 18.6,22.7 31.9,35.5 
+												36.2,31.1 23,18.5 "></polygon>
+					<rect x="15.5" y="-3" transform="matrix(0.6919 -0.722 0.722 0.6919 -7.6126 19.1248)"
+								width="6.1" height="43"></rect>
+					<rect x="15.5" y="-3" transform="matrix(-0.6919 -0.722 0.722 -0.6919 18.0718 44.8238)"
+								width="6.1" height="43"></rect>
+										</svg>
+			</div>
+		</div>
+
+	</div>
+	<div class="section-wrapper swiper-wrapper">
+		<section class="main1 swiper-slide">
 			<div class="tops">
 				<div class="logo-white">
 					<svg class="zees-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -48,70 +145,7 @@
 				</div>
 				<div class="hello">HEELO! Welcome to my Portfolio ㅡ</div>
 			</div>
-			<div class="navis-hidden">
-				<div class="tag-fix">
-					<div class="tags">
-						<div class="tag-bar"><i class="fas fa-bars"></i></div>
-						<div class="tag"></div>
-					</div>
-				</div>
-				<div class="navis-overlay"></div>
-				<div class=" navis-wrap">
-					<div class="logo-white">
-						<svg class="zees-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-						     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="250px" height="131px"
-						     viewBox="0 0 250 131" enable-background="new 0 0 250 131" xml:space="preserve">
-                            <image display="none" overflow="visible" width="1007" height="528" xlink:href="8F5E7EA9.png"
-                                   transform="matrix(0.24 0 0 0.24 5 3)">
-                            </image>
-							<path id="zees1" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round"
-							      stroke-linejoin="round" stroke-miterlimit="10"
-							      d="M38.365,33.85c0.004-0.001,49.089-13.688,67.542-27.028c0,0-23.686,54.856-52.234,86.338c-33.004,36.395-62.54,11.778-35.822-0.683
-    	                            c10.229-4.771,22.023-4.685,44.171,3.172c24,8.514,56.207-5.183,70.265-16.422c16.477-13.173,14.077-34.72-8.893-17.032
-    	                            c-23.072,17.767-19.39,46.768-3.087,45.053c0,0,21.508-2.297,35.566-27.669c0,0,21.132,0.697,33.662-13.525
-    	                            c17.171-19.49-5.457-20.862-18.924-9.616c-8.064,6.735-13.957,16.359-14.738,25.141c-1.854,20.82,13.462,34.926,44.662-1.416"/>
-							<path id="zees2" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round"
-							      stroke-linejoin="round" stroke-miterlimit="10" d=" M233.792,50.335c0,0-6.971-1.64-13.827,2.016c-7.63,4.068-13.606,15.487-3.749,20.171c7.642,3.632,20.75-9.442,25.919,3.546
-    	                            c7.483,18.805-45.047,49.488-173.941,49.381"/>
-                        </svg>
-					</div>
-					<div class="navis">
-						<div class="nav-bts">
-							<div class="navs">
-								<li class="nav-tit">About me</li>
-							</div>
-
-							<div class="navs">
-								<li class="nav-tit">Portfolio</li>
-							</div>
-
-							<div class="navs">
-								<li class="nav-tit">Contact</li>
-
-							</div>
-						</div>
-					</div>
-					<div class="wrap-img"><img src="../img/about-wrap.svg" alt="" class="img"></div>
-					<div class="wrap-img2"><img src="../img/about-wrap2.png" alt="" class="img"></div>
-					<div class="icons">
-						<div class="icon"><i class="fab fa-github"></i></div>
-						<div class="icon"><i class="fab fa-instagram"></i></div>
-					</div>
-					<div class="close-bt">
-						<svg class="side-close" id="close-bt" version="1.1" xmlns="http://www.w3.org/2000/svg"
-						     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px"
-						     viewBox="0 0 37 37" xml:space="preserve">
-                            <polygon points="36.2,5.8 31.9,1.4 18.6,14.2 5.1,1.3 0.9,5.8 14.1,18.5 0.9,31.2 5.1,35.6 18.6,22.7 31.9,35.5 
-                            36.2,31.1 23,18.5 "></polygon>
-							<rect x="15.5" y="-3" transform="matrix(0.6919 -0.722 0.722 0.6919 -7.6126 19.1248)"
-							      width="6.1" height="43"></rect>
-							<rect x="15.5" y="-3" transform="matrix(-0.6919 -0.722 0.722 -0.6919 18.0718 44.8238)"
-							      width="6.1" height="43"></rect>
-                        </svg>
-					</div>
-				</div>
-
-			</div>
+			
 			<div class="main-back"></div>
 			<div class="main-indexs">
 				<a href="/#/">
@@ -141,15 +175,11 @@
 					<!-- <li class="index-desc">123</li> -->
 				</ul>
 			</div>
-					<div class="main-bars">
-					<div class="main-bar">
-				<div class="main-bar-now"></div>
-			</div>
-			</div>
+				
 		</section>
 
 		<!-- 어바웃미  -->
-		<section class="aboutme2">
+		<section class="aboutme2 swiper-slide">
 			<div class="aboutme2-all">
 				<div class="sides">
 					<div class="side1">
@@ -242,7 +272,7 @@
 
 
 		<!-- 콘텐츠-작업  -->
-		<section class="work3">
+		<section class="work3 swiper-slide">
 			<div class="work3-all">
 				<div class="side1">
 					<div class="si1 ">
@@ -337,31 +367,31 @@
 							<div class="work-page page-2">
 								<div class="page-img"><img src="../img/graphic/cosmetic.png" alt="" class="img"></div>
 								<div class="page-conts">
-									<div class="page-tit f-175 mb-2">Wdsds</div>
+									<div class="page-tit f-125">라네즈 </div>
 								</div>
 							</div>
 							<div class="work-page page-2">
 								<div class="page-img"><img src="../img/graphic/event.png" alt="" class="img"></div>
 								<div class="page-conts">
-									<div class="page-tit f-175 mb-2">Food week</div>
+									<div class="page-tit f-125">편의점</div>
 								</div>
 							</div>
 							<div class="work-page page-2">
-								<div class="page-img"><img src="../img/weather.svg" alt="" class="img"></div>
+								<div class="page-img"><img src="../img/graphic/weather.png" alt="" class="img"></div>
 								<div class="page-conts">
-									<div class="page-tit f-175 mb-2">Weather</div>
-								</div>
-							</div>
-							<div class="work-page page-2">
-								<div class="page-img"><img src="../img/coex.svg" alt="" class="img"></div>
-								<div class="page-conts">
-									<div class="page-tit f-175 mb-2">Weather</div>
+									<div class="page-tit f-125">Weather</div>
 								</div>
 							</div>
 							<div class="work-page page-2">
 								<div class="page-img"><img src="../img/coex.svg" alt="" class="img"></div>
 								<div class="page-conts">
-									<div class="page-tit f-175 mb-2">Weather</div>
+									<div class="page-tit f-125">Weather</div>
+								</div>
+							</div>
+							<div class="work-page page-2">
+								<div class="page-img"><img src="../img/coex.svg" alt="" class="img"></div>
+								<div class="page-conts">
+									<div class="page-tit f-125">Weather</div>
 								</div>
 							</div>
 						</div>
@@ -374,38 +404,42 @@
 		</section>
 
 		<!-- 컨텍트-연락처  -->
-		<section class="contact4">
-			<div class="contacts wrap">
+		<section class="contact4 swiper-slide">
+			<div class="contacts wrap h-100">
 				<div class="contact-tit text-center">
 					<div class="tit-1">Contact</div>
 				</div>
-				<div class="contact-all">
-					<div class="cont-mails">
-						<div class="cont-mail">
-							<input type="text" class="form-control" placeholder="보내시는 분의 E-mail을 적어주세요">
+				<div class="contact-flex">
+					<form class="contact-all" id="contact-form">
+							<div>
+								<input class=" col-9 form-control" type="hidden" name="contact_number">
+							</div>
+							<label>Name & Email</label>
+								<div class="cont-NE d-flex justify-content-between mb-2">
+									<input class="mr-2 form-control" type="text" name="user_name" placeholder="이름">
+									<input class="col-8 form-control" type="email" name="user_email" placeholder="이메일 주소를 적어주세요">
+							</div>
+							<div class="cont-message d-flex justify-content-between mb-2">
+								<input class=" col-10 form-control" type="text" name="user_subject" placeholder="제목">
+								<button class="btn-light border form-control ml-2" type="submit" value="Send"><i class="fas fa-paper-plane"></i></button>
+							</div>
+							<div>
+								<textarea class="form-control" name="user_message" cols="20"
+								rows="6" placeholder="내용을 적어주세요"></textarea>
 						</div>
-						<div class="cont-send">
-                            <textarea class="form-control" name="Email-to-me" id="Email-to-me" cols="20"
-                                      rows="10"></textarea>
-							<div class="send-bts">
-								<button class="btn border-dark" type="reset">reset</button>
-								<button class="btn  border-dark" type="submit">send</button>
+						</form>
+						<div class="cont-infors ml-2 ">
+							<div class="infor-num bg-white">
+								<div class="num-name"><span>윤지수</span></div>
+								<div class="num-number">010 - 4739 - 5867</div>
+								<div class="num-Email">wltn8078@naver.com</div>
+							</div>
+							<div class="infor-addr bg-white">
+								<div class="address">Seoul, Eungam-dong / Korea</div>
 							</div>
 						</div>
-					</div>
-					<div class="cont-infors">
-						<div class="infor-num">
-							<div class="num-name"><span>윤지수</span><span>YOON JI SU</span></div>
-							<div class="num-number">010 - 4739 - 5867</div>
-							<div class="num-Email">wltn8078@naver.com</div>
-						</div>
-						<div class="infor-addr">
-							<div class="address">Seoul, Eungam-dong / Korea</div>
-						</div>
-					</div>
 				</div>
-
-			</div>
+				</div>
 			<div class="contact-sides">
 				<ul class="contact-side-lt">
 					<li class="side-lt lt1" id="side-lt1-0"><img src="../img/footer-left-1-0.png" alt=""></li>
@@ -421,13 +455,24 @@
 				</ul>
 			</div>
 		</section>
-		<div class="bt-top">
-			<i class="fas fa-angle-up"></i>
 		</div>
 	</div>
 </div>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script>
+		var mySwiper = new Swiper ('.swiper-container', {
+			// Optional parameters
+			direction: 'horizontal',
+			loop: false,
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			}
+			})
+	
+		</script>
 <script src="../js/wheel.js"></script>
-<script src="../js/fx-slide.js"></script>
 <script src="../js/main.js"></script>
 </body>
 

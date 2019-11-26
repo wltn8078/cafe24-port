@@ -34,7 +34,7 @@ $("#zees2-2").addClass('zees-2');
 setTimeout(function(){
 $(".hello").css({"opacity": 1})}, 2000);
 setTimeout(function(){
-$(".main-indexs").css({"opacity": 1, "transform": "translateY(0px)"})}, 3000);
+$(".main-indexs").css({"opacity": 1, "transform": "translateY(0px)"})}, 2600);
 
 $(".tags").mouseover(function(){
 	$(this).stop().css({"transform": "translateX(50px)"});
@@ -45,7 +45,7 @@ $(".tags").mouseleave(function(){
 
 $(".tag-bar").click(function(){
 	$(".tops").css({"opacity" : 0});
-	$(".main-indexs").css({"opacity" : 0});
+	$(".main-indexs").css({"opacity" : 0, "visibility":"hidden"});
 	$(".main-bar").css({"opacity" : 0});
 	$(".zees-logo").css({"stroke-dasharray": "2600", "stroke-dashoffset": "2600"})
 	$("#zees1").removeClass('zees-1-Out');
@@ -55,6 +55,8 @@ $(".tag-bar").click(function(){
 	$(".navis-overlay").stop().css({"transform": "translateX(0%)"});
 	setTimeout(function(){
 		$(".navis-wrap").css({"transform": "translateX(0%)"})},200);
+		$(".navis-hidden").stop().css({"z-index": "99999"});
+	$(".scr-wiper").css({"opacity" : 0});
 	$(".navis-overlay, .navis-wrap").on('scroll touchmove mousewheel', function(e){
 		e.preventDefault();
 		e.stopPropagation(); 
@@ -73,8 +75,11 @@ $(".tag-bar").click(function(){
 		$(".navis-wrap").stop().css({"transform": "translateX(100%)"})
 		$(".navis-overlay").css({"transform": "translateX(100%)"})
 		$(".tops").css({"opacity" : 1});
-		$(".main-indexs").css({"opacity" : 1});
+		$(".scr-wiper").css({"opacity" : 1});
+		$(".main-indexs").css({"opacity" : 1, "visibility": "visible"});
 		$(".navis-overlay").off('scroll touchmove mousewheel')},1400);
+		setTimeout(function(){
+		$(".navis-hidden").stop().css({"z-index": "1"})},1900);
 });
 
 $(".main-index").mouseover(function(){
@@ -96,11 +101,11 @@ $(".navs").mouseleave(function(){
 //  2면
 $(".aboutme2 .me-2 .prog").mouseover(function(){
 	$(this).find("img").css({"transform": "scale(1.1)","	filter": "opacity(1) saturate(0.6)"});
-	$(this).parent().css({"border" : "1px solid #ddd"});
+	$(this).parent().css({"border" : "1px dashed #ddd"});
 });
 $(".aboutme2 .me-2 .prog").mouseleave(function(){
 	$(this).find("img").css({"transform": "scale(1)","	filter": "opacity(0.8) saturate(0.7)"});
-	$(this).parent().css({"border" : "1px solid #fff"});
+	$(this).parent().css({"border" : "1px dashed #fff"});
 });
 
 
