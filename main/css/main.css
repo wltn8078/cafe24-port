@@ -184,8 +184,8 @@ cursor: pointer;}
 	left: 3%;
 }
 
-.main1 .logo {
-	width: 280px;
+.main1 .logo-white {
+	width: 300px;
 	cursor: pointer;
 	transition: all 0.5s;
 	
@@ -197,8 +197,8 @@ cursor: pointer;}
 	font-weight: bold;
 	transition: all 0.5s;
 	position: absolute;
-	bottom: -12%;
-	left: 13%;
+	bottom: -30%;
+	left: 10%;
 	color: #fff;
 	opacity: 0;
 }
@@ -232,10 +232,10 @@ cursor: pointer;}
 .tag-bar {
 	color: #fff;
 	position: absolute;
-	top: 5%;
+	top: 9%;
 	right: 48%;
 	z-index: 99999;
-	font-size: 1.05rem;
+	font-size: 1.1rem;
 	padding: 0.5rem;
 }
 
@@ -276,7 +276,7 @@ cursor: pointer;}
 	transition: all 0.5s;
 }
 
-.logo-white {
+.navis-wrap .logo-white {
 	max-width: 220px;
 	min-width: 150px;
 	width: 25vh;
@@ -338,9 +338,9 @@ cursor: pointer;}
 
 .navis-hidden .navis {
 	color: #888;
-	margin: 4rem;
+	margin: 5rem 4rem 4rem 4rem;
 	cursor: pointer;
-	line-height: 34rem;
+	line-height: 32rem;
 	position: absolute;
 	top: 18%;
 	left: 5%;
@@ -1109,15 +1109,28 @@ color: #666; margin-left: 1.5rem;
 
 
 /* 576 ~ 767 - sm - 스마트폰 가로 */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 300px) and (max-width: 576px) {
+.main1 .tops {width: 100%; text-align: center; margin: 0 auto;}
+.main1 .logo-white {width: 100%;margin: 0 auto; padding-right: 30px;}
+.main1 .hello {bottom: -25%; margin: 0 auto; width: 100%; left: 0; font-size: 4vw;}
+.main-indexs {max-width: 300px; width: 90%; margin: 0 auto; left: 0; right: 0;}
+.main-index {text-align: center;}
+.main-indexs .index-tit {font-size: 5vw; width: 50px; font-weight: bold;}
+.main-indexs .index-line {margin-top: 0.5rem; width: 50px; height: 2px; background-color: #FFF; transition: all 0.6s;}
+.main-indexs .index-sub {font-size: 2vw; margin-top: 0.5rem;}
+.bt-prev {left: 5px;}
+.bt-next {right: 5px;}
+.main-bars { bottom: 10%; }
+.navis-wrap .logo-white {margin: 2vh 1rem 5vh 1rem;}
+.navis-hidden .navs {margin: 2rem 0;}
+.navis-hidden .navis{padding-top: 1rem;}
 
-}
 /* 768 ~ 991 - md - 태블릿 세로 */
 @media screen and (max-width: 768px) {
 }
 
 /* 992 ~ 1199 - lg - 태블릿 가로 */
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
 	.aboutme2 .title {margin-bottom: 2vh}
 	.about-pr {display: none;}
 	.aboutme2 .me-1-2 {display: block; text-align: center;}
