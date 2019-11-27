@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/fa.min.css">
 	<link rel="stylesheet" href="../css/base.css">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
 	<link rel="stylesheet" href="../css/main.css">
 	<script src="../js/jquery-3.4.1.min.js"></script>
 	<script src="../js/jquery-ui.min.js"></script>
@@ -50,10 +49,14 @@
 <!-- 작업 부분 슬라이드는 18.ella2/slide12 참고 -->
 
 <!-- 첫장 메인 부분 -->
-<div class="sections swiper-container">
-	<div class="swiper-button-prev scr-wiper"></div>
-	<div class="swiper-button-next scr-wiper"></div>
+<div class="sections ">
 	<div class="main-bars">
+		<ul class="bar-rounds">
+		<li class="bar-round"><span>01</span><div class="round"></div></li>
+		<li class="bar-round"><span>02</span><div class="round"></div></li>
+		<li class="bar-round"><span>03</span><div class="round"></div></li>
+		<li class="bar-round"><span>04</span><div class="round"></div></li>
+		</ul>
 			<div class="main-bar">
 		<div class="main-bar-now"></div>
 	</div>
@@ -122,8 +125,10 @@
 		</div>
 
 	</div>
-	<div class="section-wrapper swiper-wrapper">
-		<section class="main1 swiper-slide">
+	<div class="bt-prev bts">〈</div>
+	<div class="bt-next bts">〉</div>
+	<div class="section-wrapper ">
+		<section class="main1 ">
 			<div class="tops">
 				<div class="logo-white">
 					<svg class="zees-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -179,7 +184,7 @@
 		</section>
 
 		<!-- 어바웃미  -->
-		<section class="aboutme2 swiper-slide">
+		<section class="aboutme2 ">
 			<div class="aboutme2-all">
 				<div class="sides">
 					<div class="side1">
@@ -272,7 +277,7 @@
 
 
 		<!-- 콘텐츠-작업  -->
-		<section class="work3 swiper-slide">
+		<section class="work3 ">
 			<div class="work3-all">
 				<div class="side1">
 					<div class="si1 ">
@@ -370,13 +375,6 @@
 									<div class="page-tit f-125">라네즈 </div>
 								</div>
 							</div>
-									<div class="popups">
-									<div class="pop-back">
-									</div>
-									<div class="pop-up">
-										
-									</div>
-									</div>
 							<div class="work-page page-2">
 								<div class="page-img"><img src="../img/graphic/event.png" alt="" class="img"></div>
 								<div class="page-conts">
@@ -402,6 +400,16 @@
 								</div>
 							</div>
 						</div>
+						<div class="popups">
+							<div class="popup-back"></div>	
+							<ul class="popup">
+									<li class="pop-up">	1</li>
+									<li class="pop-up">	2</li>
+									<li class="pop-up">	3</li>
+									<li class="pop-up">	4</li>
+									<li class="pop-up">	5</li>
+								</ul>
+								</div>
 						<div class="pagers">
 							<div class="pager-up">〉</div>
 							<div class="pager-down">〈</div>
@@ -411,7 +419,7 @@
 		</section>
 
 		<!-- 컨텍트-연락처  -->
-		<section class="contact4 swiper-slide">
+		<section class="contact4 ">
 			<div class="contacts wrap h-100">
 				<div class="contact-tit text-center">
 					<div class="tit-1">Contact</div>
@@ -465,20 +473,8 @@
 		</div>
 	</div>
 </div>
-<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-<script>
-		var mySwiper = new Swiper ('.swiper-container', {
-			// Optional parameters
-			direction: 'horizontal',
-			loop: false,
-			// Navigation arrows
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			}
-			})
-	
-		</script>
+
+<script src="../js/fx-slide.js"></script>
 <script src="../js/wheel.js"></script>
 <script src="../js/main.js"></script>
 </body>

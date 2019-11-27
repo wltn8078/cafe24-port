@@ -4,7 +4,10 @@
 html {
 	height: 100%;
 	width: 100%;
+	cursor: default;
+	
 }
+::selection { background-color: #e6d9d86b;}
 
 body {
 	height: 100%;
@@ -46,6 +49,10 @@ section {
 	margin: 0 auto;
 }
 
+.bt-prev, .bt-next {font-size: 2rem; font-weight: bold; position: absolute;  color: #ccc;  top: calc(50% - 25px); text-align: center; width: 50px; height: 50px; transition: all 0.5s; cursor: pointer;}
+.bt-prev {left: 20px;}
+.bt-next {right: 20px;}
+
 .aboutme2,
 .work3,
 .contact4 {
@@ -78,21 +85,62 @@ section {
 }
 
 .main-bars {
-	width: 50%;
-	height: 4px;
+	max-width: 800px;
+	min-width: 300px;
+	width: 100%;
+	height: 25px;
 	position: fixed;
 	bottom: 4%;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	border-radius: 5px;
-	overflow: hidden;
-	z-index: 5;
+	text-align: center;
+	
+	z-index: 10000;
+}
+
+.main-bars .bar-rounds{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin: 0 auto;
+	height: 20px;
+	margin-bottom: 0.4rem;
+}
+
+.main-bars .bar-round{
+	text-align: center;
+	width: 20px;
+}
+.main-bars .round{
+	width: 5px;
+	height: 10px;
+	border: 1px solid #fff;
+	border-top: 5px solid rgb(145, 20, 20, 0.87);
+	border-right: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	border-left: 3px solid transparent;
+	transition: all 0.3s;
+	text-align: center;
+	margin: 0 auto;
+	opacity: 0.7;
+}
+
+.bar-round span {
+	font-size: 0.875rem;
+	font-weight: bold;
+	color: #aaa;
+	opacity: 0;
+	transition: all 0.3s;
 }
 
 .main-bars .main-bar{
 	width: 100%; height: 100%;
 	background-color: rgb(216, 216, 216)!important;
+	overflow: hidden;
+	border-radius: 5px;
+	height: 4px;
 }
 .main-bars .main-bar-now {
 	width: 2%;
@@ -145,7 +193,6 @@ cursor: pointer;}
 	font-size: 1.4rem;
 	letter-spacing: 1.5px;
 	font-weight: bold;
-	cursor: pointer;
 	transition: all 0.5s;
 	position: absolute;
 	bottom: -12%;
@@ -472,15 +519,16 @@ cursor: pointer;}
 	position: relative;
 	width: 100%;
 	height: 100%;
+	padding: 5% 0;
 }
 
 .aboutme2 .me-1-2 {
 	transition: all 1s;
-	margin: 0 auto;
+	margin: auto;
+	padding:1rem;
 	background-color: rgba(255, 255, 255, 0.705);
 	position: relative;
 	z-index: 999;
-	padding-bottom: 3rem;
 	width: 100%;
 	display: flex;
 	align-items: flex-start;
@@ -503,7 +551,7 @@ cursor: pointer;}
 	font-size: 6rem;
 	text-align: center;
 	color: rgb(139, 23, 23);
-	margin: 5rem 0;
+	margin-bottom: 5rem;
 }
 
 
@@ -542,6 +590,8 @@ cursor: pointer;}
 .aboutme2 .me-2 {
 	transition: all 1s;
 	width: 100%;
+	padding: 1rem;
+
 }
 
 .me-2 .about-pr{
@@ -558,7 +608,6 @@ color: #666; margin-left: 1.5rem;
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-around;
-	margin-bottom: 2.5rem;
 	overflow: hidden;
 	flex-wrap: wrap;
 	transition: all 1s;
@@ -692,7 +741,7 @@ color: #666; margin-left: 1.5rem;
 	max-width: 1400px;
 	width: 100%;
 	height: 500px;
-	margin: auto;
+	margin: 0 auto;
 	overflow: hidden;
 }
 
@@ -710,7 +759,7 @@ color: #666; margin-left: 1.5rem;
 }
 
 .work-page {
-	margin: 0 2rem;
+	margin: 0 2vw;
 	margin-top: 2rem;
 	border: 1px solid #ddd;
 	background-color: #fff;
@@ -718,17 +767,19 @@ color: #666; margin-left: 1.5rem;
 	flex: 18% 0 0;
 	padding:1.4rem;
 	transition: all 0.5s;
+	
 }
 .page-1{
 	max-width: 230px;
 	height: 330px;
+	cursor: pointer;
 }
 .page-2{
 	max-width: 250px;
 	height: 300px;
-	flex: 18% 0 0!important;
 	margin: 0 0.5rem!important;
 	padding:0.8rem!important;
+	cursor: pointer;
 }
 
 .work-page:hover{
@@ -746,6 +797,7 @@ color: #666; margin-left: 1.5rem;
 	top: 5%;
 	left: -30%;
 	transition: all 0.3s;
+	cursor: pointer;
 }
 
 .page-1 .page-tit {
@@ -860,9 +912,26 @@ color: #666; margin-left: 1.5rem;
 	top: 10%;
 	left: 10%;
 }
-.work3 .popups {
-	position: absolute; background-color: aquamarine; z-index: 99998;
-	width: 100%; height: 100%; top: 0; left: 0;
+.work3 .popups {transition: all 0.7s;
+	position: absolute; z-index: 99998;
+	width: 120%; height: 100%; top: 0; left: -10%; border: 1px solid #000;
+}
+
+.work3 .popup-back {
+	background-color: rgba(0, 0, 0, 0.527); z-index: 99998;
+	width: 100%; height: 100%;
+	cursor: url(../img/close.cur), pointer;
+}
+
+.work3 .popup {opacity: 0;
+	position: absolute; background-color: rgb(255, 255, 255); z-index: 99999;
+	width: 65%; height: 85%; top: 80px; bottom: 0; left: 0; right: 0; margin: auto;
+}
+
+.work3 .pop-up {opacity: 0; transition: all 0.4s; z-index: 99999; position: absolute;
+	width: 100%; height: 100%; padding: 4rem; background-color: rgb(255, 255, 255);
+	top: 0; bottom: 0; left: 0; right: 0; margin: auto; 
+	cursor: url(../img/flower.cur), pointer;
 }
 
 
@@ -941,7 +1010,9 @@ color: #666; margin-left: 1.5rem;
 	color: #578f6a;
 	font-family: 'Yellowtail', cursive;
 	letter-spacing: 1.5px; margin: 5.5rem auto;
-	font-size: ;
+}
+.contact4 .contact-sides{
+	width: 100%; height: 100%; position: absolute;
 }
 
 .contact4 .contact-sides img {
@@ -1038,17 +1109,55 @@ color: #666; margin-left: 1.5rem;
 /* 576 ~ 767 - sm - 스마트폰 가로 */
 @media screen and (min-width: 576px) {
 
-
+}
 /* 768 ~ 991 - md - 태블릿 세로 */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
 }
 
 /* 992 ~ 1199 - lg - 태블릿 가로 */
-@media screen and (min-width: 992px) {
-	
+@media screen and (max-width: 991px) {
+	.aboutme2 .title {margin-bottom: 2vh}
+	.about-pr {display: none;}
+	.aboutme2 .me-1-2 {display: block; text-align: center;}
+	.aboutme2 .me-1 {max-width: 600px;}
+	.aboutme2 .me-1 .about-cont {	display: flex;
+		align-items: flex-end;
+		justify-content: space-evenly;}
+	.aboutme2 .me-2 {text-align: left;}
+	.about-illu {display: none;}
+	.about-main .cont {margin-bottom: 0; margin-right: 1rem;}
+	.about-main {width: 100%;}
+	.aboutme2  .about-skill-prog {height: 100%;}
+	.work-pages-all {	height: 380px;}
+	.work3 .works-tit {margin: 4vh auto 4vh auto;}
+	.work-page {flex: 50% 0 0; margin-top: 0; margin: 0 5vw;}
+	.work-pages{margin-bottom: 5rem;}
+	.contact4 .contact-sides img {
+		width: 50%;
+	}
+	#side-rt1-1 {right: -30%;}
+	#side-rt1-2 {right: -47%;}
+	#side-rt2-2 {right: -47%;}
 
+}
 /* 1200 ~ - xl - PC */
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 991px) and (max-width: 1300px) {
+	.aboutme2 .title {margin-bottom: 2vh}
+	.work3 .works-tit {margin: 4vh auto 4vh auto;}
+	.work-pages-all {	height: 400px;padding: 1.6rem;}
+	.page-1{height: 300px;}
+	.page-1 .page-img {
+		width: 100px;
+		height: 100px;}
+	.page-1 .page-tit {font-size: 2vw;}
+	.work-pages{margin-bottom: 5rem;}
+	#side-rt1-1 {right: -10%;}
+	#side-rt1-2 {right: -17%;}
+	#side-rt2-2 {right: -17%;}
+	.contact4 .contact-sides img {
+		width: 75%;
+	}
+}
 	
 
 
