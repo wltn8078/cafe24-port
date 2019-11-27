@@ -19,72 +19,57 @@
 	<script src="../js/wow.min.js"></script>
 	<script src="../js/imagesloaded.pkgd.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
-	<script type="text/javascript">
-			(function(){
-				 emailjs.init('user_k3S1oUvwsY2KaGrKGhKvR');
-			})();
-	</script>
-	<script type="text/javascript">
-			window.onload = function() {
-					document.getElementById('contact-form').addEventListener('submit', function(event) {
-							event.preventDefault();
-							// generate the contact number value
-							this.contact_number.value = Math.random() * 100000 | 0;
-							emailjs.sendForm('gmail', 'contact_me', this).
-							then(function(res){
-								if(res.status == 200) {
-									alert("연락해 주셔서 감사합니다. 확인 즉시 연락드리겠습니다.");
-									document.getElementById('contact-form').reset();
-									}
-								else {
-									alert("서버에 장애가 생겼습니다. 다시 시도해 주세요.")
-								}
-							});
-					});
-			}
-	</script>
 </head>
 
 <body>
-<!-- 작업 부분 슬라이드는 18.ella2/slide12 참고 -->
 
 <!-- 첫장 메인 부분 -->
 <div class="sections ">
+	<div class="bt-prev bts">〈</div>
+	<div class="bt-next bts">〉</div>
 	<div class="main-bars">
 		<ul class="bar-rounds">
-		<li class="bar-round"><span>01</span><div class="round"></div></li>
-		<li class="bar-round"><span>02</span><div class="round"></div></li>
-		<li class="bar-round"><span>03</span><div class="round"></div></li>
-		<li class="bar-round"><span>04</span><div class="round"></div></li>
+			<li class="bar-round"><span>01</span>
+				<div class="round"></div>
+			</li>
+			<li class="bar-round"><span>02</span>
+				<div class="round"></div>
+			</li>
+			<li class="bar-round"><span>03</span>
+				<div class="round"></div>
+			</li>
+			<li class="bar-round"><span>04</span>
+				<div class="round"></div>
+			</li>
 		</ul>
-			<div class="main-bar">
-		<div class="main-bar-now"></div>
-	</div>
+		<div class="main-bar">
+			<div class="main-bar-now"></div>
+		</div>
 	</div>
 	<div class="tag-fix">
-			<div class="tags">
-				<div class="tag-bar"><i class="fas fa-bars"></i></div>
-				<div class="tag"></div>
-			</div>
+		<div class="tags">
+			<div class="tag-bar"><i class="fas fa-bars"></i></div>
+			<div class="tag"></div>
 		</div>
-		<div class="navis-hidden">
+	</div>
+	<div class="navis-hidden">
 		<div class="navis-overlay"></div>
 		<div class=" navis-wrap">
 			<div class="logo-white">
 				<svg class="zees-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-						 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="250px" height="131px"
-						 viewBox="0 0 250 131" enable-background="new 0 0 250 131" xml:space="preserve">
+				     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="250px" height="131px"
+				     viewBox="0 0 250 131" enable-background="new 0 0 250 131" xml:space="preserve">
 												<image display="none" overflow="visible" width="1007" height="528" xlink:href="8F5E7EA9.png"
-															 transform="matrix(0.24 0 0 0.24 5 3)">
+												       transform="matrix(0.24 0 0 0.24 5 3)">
 												</image>
 					<path id="zees1" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round"
-								stroke-linejoin="round" stroke-miterlimit="10"
-								d="M38.365,33.85c0.004-0.001,49.089-13.688,67.542-27.028c0,0-23.686,54.856-52.234,86.338c-33.004,36.395-62.54,11.778-35.822-0.683
+					      stroke-linejoin="round" stroke-miterlimit="10"
+					      d="M38.365,33.85c0.004-0.001,49.089-13.688,67.542-27.028c0,0-23.686,54.856-52.234,86.338c-33.004,36.395-62.54,11.778-35.822-0.683
 															c10.229-4.771,22.023-4.685,44.171,3.172c24,8.514,56.207-5.183,70.265-16.422c16.477-13.173,14.077-34.72-8.893-17.032
 															c-23.072,17.767-19.39,46.768-3.087,45.053c0,0,21.508-2.297,35.566-27.669c0,0,21.132,0.697,33.662-13.525
 															c17.171-19.49-5.457-20.862-18.924-9.616c-8.064,6.735-13.957,16.359-14.738,25.141c-1.854,20.82,13.462,34.926,44.662-1.416"/>
 					<path id="zees2" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round"
-								stroke-linejoin="round" stroke-miterlimit="10" d=" M233.792,50.335c0,0-6.971-1.64-13.827,2.016c-7.63,4.068-13.606,15.487-3.749,20.171c7.642,3.632,20.75-9.442,25.919,3.546
+					      stroke-linejoin="round" stroke-miterlimit="10" d=" M233.792,50.335c0,0-6.971-1.64-13.827,2.016c-7.63,4.068-13.606,15.487-3.749,20.171c7.642,3.632,20.75-9.442,25.919,3.546
 															c7.483,18.805-45.047,49.488-173.941,49.381"/>
 										</svg>
 			</div>
@@ -112,21 +97,19 @@
 			</div>
 			<div class="close-bt">
 				<svg class="side-close" id="close-bt" version="1.1" xmlns="http://www.w3.org/2000/svg"
-						 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px"
-						 viewBox="0 0 37 37" xml:space="preserve">
+				     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px"
+				     viewBox="0 0 37 37" xml:space="preserve">
 												<polygon points="36.2,5.8 31.9,1.4 18.6,14.2 5.1,1.3 0.9,5.8 14.1,18.5 0.9,31.2 5.1,35.6 18.6,22.7 31.9,35.5 
 												36.2,31.1 23,18.5 "></polygon>
 					<rect x="15.5" y="-3" transform="matrix(0.6919 -0.722 0.722 0.6919 -7.6126 19.1248)"
-								width="6.1" height="43"></rect>
+					      width="6.1" height="43"></rect>
 					<rect x="15.5" y="-3" transform="matrix(-0.6919 -0.722 0.722 -0.6919 18.0718 44.8238)"
-								width="6.1" height="43"></rect>
+					      width="6.1" height="43"></rect>
 										</svg>
 			</div>
 		</div>
 
 	</div>
-	<div class="bt-prev bts">〈</div>
-	<div class="bt-next bts">〉</div>
 	<div class="section-wrapper ">
 		<section class="main1 ">
 			<div class="tops">
@@ -150,7 +133,7 @@
 				</div>
 				<div class="hello">HEELO! Welcome to my Portfolio ㅡ</div>
 			</div>
-			
+
 			<div class="main-back"></div>
 			<div class="main-indexs">
 				<a href="/#/">
@@ -180,7 +163,7 @@
 					<!-- <li class="index-desc">123</li> -->
 				</ul>
 			</div>
-				
+
 		</section>
 
 		<!-- 어바웃미  -->
@@ -209,6 +192,7 @@
 									<ul class="about-cont">
 										<li class="cont ">
 											<span class="name">윤지수 </span><span class="cont birth">/ 1996. 05. 01</span></span>
+										</li>
 										<li class="cont num">010 - 4739 - 5867</li>
 										<li class="cont email">wltn8078@naver.com</li>
 									</ul>
@@ -222,7 +206,7 @@
 									어떤 것이든 끝을 보고야 마는 사람,<br>
 									실력이 뛰어나지 않는다 해도 열심히 배우고자 하는 사람,
 									모두 다 제 자신을 나타내는 말이라고 생각합니다.<br>
-									항상 끈질기고 집요하게 또한 
+									항상 끈질기고 집요하게 또한
 									감각적이며 완벽한 디자인을 만들기 위해 항상 노력하겠습니다.
 
 
@@ -254,25 +238,26 @@
 													<div class="progress-bar bg-dark"
 													     style="width:70%; height:12px"></div>
 												</div>
-													<div class="mb-2">Graphic Design | 그래픽 디자인</div>
-													<div class="progress mb-3" style="height:12px">
-														<div class="progress-bar bg-dark"
-															 style="width:80%; height:12px"></div>
-													</div>
-													<div class="mb-2">Office Program | 문서 업무</div>
-													<div class="progress mb-3" style="height:12px">
-														<div class="progress-bar bg-dark"
-															 style="width:70%; height:12px"></div>
-													</div>
-												</li>
+												<div class="mb-2">Graphic Design | 그래픽 디자인</div>
+												<div class="progress mb-3" style="height:12px">
+													<div class="progress-bar bg-dark"
+													     style="width:80%; height:12px"></div>
+												</div>
+												<div class="mb-2">Office Program | 문서 업무</div>
+												<div class="progress mb-3" style="height:12px">
+													<div class="progress-bar bg-dark"
+													     style="width:70%; height:12px"></div>
+												</div>
+											</li>
 											</li>
 										</ul>
 									</div>
-
-
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 
 
@@ -372,7 +357,7 @@
 							<div class="work-page page-2">
 								<div class="page-img"><img src="../img/graphic/cosmetic.png" alt="" class="img"></div>
 								<div class="page-conts">
-									<div class="page-tit f-125">라네즈 </div>
+									<div class="page-tit f-125">라네즈</div>
 								</div>
 							</div>
 							<div class="work-page page-2">
@@ -401,21 +386,22 @@
 							</div>
 						</div>
 						<div class="popups">
-							<div class="popup-back"></div>	
+							<div class="popup-back"></div>
 							<ul class="popup">
-									<li class="pop-up">	1</li>
-									<li class="pop-up">	2</li>
-									<li class="pop-up">	3</li>
-									<li class="pop-up">	4</li>
-									<li class="pop-up">	5</li>
-								</ul>
-								</div>
+								<li class="pop-up"> 1</li>
+								<li class="pop-up"> 2</li>
+								<li class="pop-up"> 3</li>
+								<li class="pop-up"> 4</li>
+								<li class="pop-up"> 5</li>
+							</ul>
+						</div>
 						<div class="pagers">
 							<div class="pager-up">〉</div>
 							<div class="pager-down">〈</div>
 						</div>
 					</div>
 				</div>
+			</div>
 		</section>
 
 		<!-- 컨텍트-연락처  -->
@@ -426,35 +412,36 @@
 				</div>
 				<div class="contact-flex">
 					<form class="contact-all" id="contact-form">
-							<div>
-								<input class=" col-9 form-control" type="hidden" name="contact_number">
-							</div>
-							<label>Name & Email</label>
-								<div class="cont-NE d-flex justify-content-between mb-2">
-									<input class="mr-2 form-control" type="text" name="user_name" placeholder="이름">
-									<input class="col-8 form-control" type="email" name="user_email" placeholder="이메일 주소를 적어주세요">
-							</div>
-							<div class="cont-message d-flex justify-content-between mb-2">
-								<input class=" col-10 form-control" type="text" name="user_subject" placeholder="제목">
-								<button class="btn-light border form-control ml-2" type="submit" value="Send"><i class="fas fa-paper-plane"></i></button>
-							</div>
-							<div>
+						<div>
+							<input class=" col-9 form-control" type="hidden" name="contact_number">
+						</div>
+						<label>Name & Email</label>
+						<div class="cont-NE d-flex justify-content-between mb-2">
+							<input class="mr-2 form-control" type="text" name="user_name" placeholder="이름">
+							<input class="col-8 form-control" type="email" name="user_email" placeholder="이메일 주소를 적어주세요">
+						</div>
+						<div class="cont-message d-flex justify-content-between mb-2">
+							<input class=" col-10 form-control" type="text" name="user_subject" placeholder="제목">
+							<button class="btn-light border form-control ml-2" type="submit" value="Send">
+								<i class="fas fa-paper-plane"></i></button>
+						</div>
+						<div>
 								<textarea class="form-control" name="user_message" cols="20"
-								rows="6" placeholder="내용을 적어주세요"></textarea>
+								          rows="6" placeholder="내용을 적어주세요"></textarea>
 						</div>
-						</form>
-						<div class="cont-infors ml-2 ">
-							<div class="infor-num bg-white">
-								<div class="num-name"><span>윤지수</span></div>
-								<div class="num-number">010 - 4739 - 5867</div>
-								<div class="num-Email">wltn8078@naver.com</div>
-							</div>
-							<div class="infor-addr bg-white">
-								<div class="address">Seoul, Eungam-dong / Korea</div>
-							</div>
+					</form>
+					<div class="cont-infors ml-2 ">
+						<div class="infor-num bg-white">
+							<div class="num-name"><span>윤지수</span></div>
+							<div class="num-number">010 - 4739 - 5867</div>
+							<div class="num-Email">wltn8078@naver.com</div>
 						</div>
+						<div class="infor-addr bg-white">
+							<div class="address">Seoul, Eungam-dong / Korea</div>
+						</div>
+					</div>
 				</div>
-				</div>
+			</div>
 			<div class="contact-sides">
 				<ul class="contact-side-lt">
 					<li class="side-lt lt1" id="side-lt1-0"><img src="../img/footer-left-1-0.png" alt=""></li>
@@ -470,8 +457,8 @@
 				</ul>
 			</div>
 		</section>
-		</div>
 	</div>
+</div>
 </div>
 
 <script src="../js/fx-slide.js"></script>

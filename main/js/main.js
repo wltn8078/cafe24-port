@@ -1,61 +1,57 @@
 var secNow = 0;
-new WheelFn(document.querySelector(".sections"), mainCb);
-function mainCb(dir) {
-	console.log(dir);
-	if(dir == "toLeft") {
-		if(secNow < 3) secNow++;
-	}
-	else {
-		if(secNow > 0) secNow--;
-	}
-	secAni()
-	scrollBar()
-	clickAni()
-}
-function secAni() {
-	$(".section-wrapper").stop().animate({"left": (secNow * -100) + "%"}, 700);
-}
 
-function scrollBar(){
-	if(secNow > 0) {
-		$(".main-bars .main-bar-now").stop().animate({"width": (secNow * 33.5) + "%"}, 750);
-	}
-	else {
-		$(".main-bars .main-bar-now").stop().animate({"width": "2%"},700);
-	}
-}
-function clickAni(){
-	$(".main-index").click(function(){
-		$(".section-wrapper").stop().animate({"left": ($(".main-index").index(this) * -100) + "%"}, 700);
-	});
-}
+$(".main-index").click(function(){
+	secNow = $(this).index();
+	secAni();
+	scrollBar();
+});
 
-
+$(".bar-round").click(function(){
+	secNow = $(this).index();
+	secAni();
+	scrollBar();
+});
 
 $(".bt-prev").click(function(){
 	if(secNow > 0) secNow--;
-	ani();
-}).hide();
+	secAni();
+	scrollBar();
+});
 $(".bt-next").click(function(){
 	if(secNow < 3) secNow++;
-	ani();
+	secAni();
+	scrollBar();
 });
 
-	function ani() {
-		$(".section-wrapper").stop().animate({"left": (secNow * -100) + "%"}, 700);
-		if(secNow == 0) {
-			$(".bt-prev").hide();
-			$(".bt-next").show();
-		}
-		else if(secNow == 3) {
-			$(".bt-prev").show();
-			$(".bt-next").hide();
-		}
-		else {
-			$(".bt-prev").show();
-			$(".bt-next").show();
-		}
-	};
+new WheelFn(document.querySelector(".sections"), mainCb);
+function mainCb(dir) {
+	console.log(dir);
+	if(dir == "toLeft") { if(secNow < 3) secNow++; }
+	else { if(secNow > 0) secNow--; }
+	secAni();
+	scrollBar();
+}
+function secAni() {
+	console.log(secNow);
+	$(".section-wrapper").stop().animate({"left": (secNow * -100) + "%"}, 700);
+	if(secNow == 0) {
+		$(".bt-prev").hide();
+		$(".bt-next").show();
+	}
+	else if(secNow == 3) {
+		$(".bt-prev").show();
+		$(".bt-next").hide();
+	}
+	else {
+		$(".bt-prev").show();
+		$(".bt-next").show();
+	}
+}
+
+function scrollBar(){
+	$(".main-bars .main-bar-now").stop().animate({"width": (secNow * 33.5) + "%"}, 750);
+}
+
 
 
 	$(".round").mouseover(function(){
@@ -225,3 +221,25 @@ $(".popup-back").click(function(e){
 
 
 new WOW().init();
+
+
+
+emailjs.init('user_k3S1oUvwsY2KaGrKGhKvR');
+
+window.onload = function() {
+	document.getElementById('contact-form').addEventListener('submit', function(event) {
+		event.preventDefault();
+		// generate the contact number value
+		this.contact_number.value = Math.random() * 100000 | 0;
+		emailjs.sendForm('gmail', 'contact_me', this).
+		then(function(res){
+			if(res.status == 200) {
+				alert("연락해 주셔서 감사합니다. 확인 즉시 연락드리겠습니다.");
+				document.getElementById('contact-form').reset();
+			}
+			else {
+				alert("서버에 장애가 생겼습니다. 다시 시도해 주세요.")
+			}
+		});
+	});
+}
