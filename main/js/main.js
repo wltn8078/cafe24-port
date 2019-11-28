@@ -1,4 +1,5 @@
 var secNow = 0;
+	$(".bt-prev").hide();
 
 $(".main-index").click(function(){
 	secNow = $(this).index();
@@ -49,18 +50,18 @@ function secAni() {
 }
 
 function scrollBar(){
-	$(".main-bars .main-bar-now").stop().animate({"width": (secNow * 33.5) + "%"}, 750);
+	$(".main-bars .main-bar-now").stop().animate({"width": (secNow * 33.5) + "%"}, 600);
 }
 
 
 
-	$(".round").mouseover(function(){
-		$(this).css({"transform":"scale(1.3)", "opacity": 1});
-		$(this).parent().find("span").css({"opacity": 1});
+	$(".bar-round").mouseover(function(){
+		$(this).find(".round").css({"transform":"scale(1.3)", "opacity": 1});
+		$(this).find("span").css({"opacity": 1});
 	})
-	$(".round").mouseleave(function(){
-		$(this).css({"transform":"scale(1)", "opacity": 0.7});
-		$(this).parent().find("span").css({"opacity": 0});
+	$(".bar-round").mouseleave(function(){
+		$(this).find(".round").css({"transform":"scale(1)", "opacity": 0.7});
+		$(this).find("span").css({"opacity": 0});
 	})
 
 
@@ -84,7 +85,7 @@ $(".tags").mouseleave(function(){
 $(".tag-bar").click(function(){
 	$(".tops").css({"opacity" : 0});
 	$(".main-indexs").css({"opacity" : 0, "visibility":"hidden"});
-	$(".main-bar").css({"opacity" : 0});
+	$(".main-bars").css({"opacity" : 0});
 	$(".zees-logo").css({"stroke-dasharray": "2600", "stroke-dashoffset": "2600"})
 	$("#zees1").removeClass('zees-1-Out');
 	$("#zees2").removeClass('zees-2-Out');
@@ -109,7 +110,7 @@ $(".tag-bar").click(function(){
 		$("#zees1").addClass('zees-1-Out');
 		$("#zees2").addClass('zees-2-Out');
 		setTimeout(function(){
-		$(".main-bar").css({"opacity" : 1});
+		$(".main-bars").css({"opacity" : 1});
 		$(".navis-wrap").stop().css({"transform": "translateX(100%)"})
 		$(".navis-overlay").css({"transform": "translateX(100%)"})
 		$(".tops").css({"opacity" : 1});
@@ -200,7 +201,9 @@ $(".popups").hide()
 
 $(".page-2").click(function(){
 	$(".popups").stop().show();
-	$(".tag-fix").css({"display": "none"});
+	$(".tag-fix").stop().hide();
+	$(".main-bars").stop().hide();
+	$(".bts").css({"opacity" : 0});
 	$(".popup").stop().animate({"top": "0px", "opacity": 1},500)
 	$(".pop-up").eq($(".page-2").index(this)).css({"opacity":1});
 	$(".popups").on('scroll touchmove mousewheel', function(e){
@@ -212,11 +215,12 @@ $(".page-2").click(function(){
 $(".popup-back").click(function(e){
 	$(".popup").stop().animate({"top": "80px", "opacity": 0},500)
 	setTimeout(function(){
+		$(".main-bars").stop().fadeIn(1000);
+		$(".bts").css({"opacity" : 1});
 		$(".pop-up").css({"opacity":0});
 		$(".popups").stop().hide(600);
 		$(".popups").off('scroll touchmove mousewheel'), 700});
-		setTimeout(function(){
-				$(".tag-fix").css({"display": "block"}), 1500});
+		$(".tag-fix").stop().fadeIn(1200);
 })
 
 

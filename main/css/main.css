@@ -116,13 +116,13 @@ section {
 	width: 20px;
 }
 .main-bars .round{
-	width: 5px;
+	width: 6px;
 	height: 10px;
 	border: 1px solid #fff;
-	border-top: 5px solid rgb(145, 20, 20, 0.87);
-	border-right: 3px solid transparent;
-	border-bottom: 3px solid transparent;
-	border-left: 3px solid transparent;
+	border-top: 6px solid rgb(145, 20, 20, 0.87);
+	border-right: 4px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-left: 4px solid transparent;
 	transition: all 0.3s;
 	text-align: center;
 	margin: 0 auto;
@@ -180,7 +180,7 @@ cursor: pointer;}
 
 .main1 .tops {
 	position: absolute;
-	top: 18%;
+	top: 20%;
 	left: 3%;
 }
 
@@ -197,7 +197,7 @@ cursor: pointer;}
 	font-weight: bold;
 	transition: all 0.5s;
 	position: absolute;
-	bottom: -30%;
+	bottom: -35%;
 	left: 10%;
 	color: #fff;
 	opacity: 0;
@@ -529,11 +529,16 @@ cursor: pointer;}
 	margin: auto;
 	padding:1rem;
 	background-color: rgba(255, 255, 255, 0.705);
-	position: relative;
+	position: absolute;
+	top: 20%;
+	bottom: 0;
+	max-height: 550px;
+	min-height: 450px;
+	height: 100%;
 	z-index: 999;
 	width: 100%;
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: space-between;
 }
 
@@ -740,11 +745,12 @@ color: #666; margin-left: 1.5rem;
 }
 
 .work-pages-all{
-	max-width: 1400px;
 	width: 100%;
 	height: 500px;
-	margin: 0 auto;
+	margin: auto;
 	overflow: hidden;
+	position: absolute;
+	top:27%
 }
 
 .work-pages {
@@ -755,14 +761,13 @@ color: #666; margin-left: 1.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 7rem;
+	margin-bottom: 6rem;
 	transition: all 0.6s;
 	padding-bottom: 2rem;
 }
 
 .work-page {
 	margin: 0 2vw;
-	margin-top: 2rem;
 	border: 1px solid #ddd;
 	background-color: #fff;
 	position: relative;
@@ -840,7 +845,7 @@ color: #666; margin-left: 1.5rem;
 	font-size: 2rem;
 	padding: 10px;
 	font-weight: bold;
-	bottom: 12%;
+	bottom: -3%;
 	left: 0; right: 0;
 	margin: 0 auto;
 	transform: rotate(90deg);
@@ -927,13 +932,14 @@ color: #666; margin-left: 1.5rem;
 
 .work3 .popup {opacity: 0;
 	position: absolute; background-color: rgb(255, 255, 255); z-index: 99999;
-	width: 65%; height: 85%; top: 80px; bottom: 0; left: 0; right: 0; margin: auto;
+	width: 60%; height: 85%; top: 80px; bottom: 0; left: 0; right: 0; margin: auto;
 }
+.work3 .up-img {min-height: 300px; max-height: 650px; height: 100%;}
+.work3 .up-img img {height: 100%;}
 
 .work3 .pop-up {opacity: 0; transition: all 0.4s; z-index: 99999; position: absolute;
 	width: 100%; height: 100%; padding: 4rem; background-color: rgb(255, 255, 255);
 	top: 0; bottom: 0; left: 0; right: 0; margin: auto; 
-	cursor: url(../img/flower.cur), pointer;
 }
 
 
@@ -1015,73 +1021,114 @@ color: #666; margin-left: 1.5rem;
 }
 .contact4 .contact-sides{
 	width: 100%; height: 100%; position: absolute;
+	display: flex;
+	justify-content: space-between;
 }
 
 .contact4 .contact-sides img {
 	width: 90%;
 }
-
-.contact4 .side-lt,
-.contact4 .side-rt {
+.contact4 .contact-side-lt {
 	position: absolute;
-}
-
-.contact4 .side-lt {
-	left: -3%;
-}
-
-.contact4 .side-rt {
-	right: 0%;
+	width: 100%;
+	height: 100%;
+	left: -2%;
+	top: 0;
+	overflow: hidden;
 }
 
 #side-lt1-0 {
+	max-width: 130px;
+	min-width: 90px;
+	width: 55vw;
+	position: absolute;
 	top: 40%;
-	left: -2%;
+	left: 0%;
 	z-index: -1;
 }
-
 #side-lt1-1 {
+	max-width: 400px;
+	min-width: 280px;
+	width: 55vw;
+	position: absolute;
 	top: 5%;
+	left: -1%;
 	z-index: -1;
 }
-
 #side-lt1-2 {
+	max-width: 610px;
+	min-width: 530px;
+	width: 55vw;
+	position: absolute;
 	top: 5%;
-	left: -7%;
+	left: -5%;
 	z-index: -2;
 }
 
 #side-lt2 {
-	bottom: -7%;
-	left: -3%;
-	transform: rotate(10deg);
+	max-width: 660px;
+	min-width: 600px;
+	width: 55vw;
+	position: absolute;
+	bottom: -2%;
+	left: 0;
 	z-index: -2;
+	transform: rotate(10deg);
 }
 
+
+
+.contact4 .contact-side-rt  {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0%;
+	overflow: hidden;
+}
+
+
 #side-rt1-1 {
-	bottom: 30%;
+	max-width: 330px;
+	min-width: 280px;
+	width: 55vw;
+	position: absolute;
 	z-index: -1;
+	bottom: 30%;
 	right: 0%;
 	transform: rotate(-15deg);
 	
 }
 
 #side-rt1-2 {
+	max-width: 580px;
+	min-width: 400px;
+	width: 55vw;
+	position: absolute;
 	top: 5%;
 	right: -7%;
 	z-index: -2;
 }
 
 #side-rt2-1 {
+	max-width: 400px;
+	min-width: 350px;
+	width: 55vw;
+	position: absolute;
 	bottom: -5%;
 	right: 10%;
 	z-index: -1;
 }
 
 #side-rt2-2 {
+	max-width: 600px;
+	min-width: 520px;
+	width: 55vw;
+	position: absolute;
 	bottom: 0%;
 	right: -8%;
 	z-index: -2;
+	transform: rotate(10deg);
 }
 
 .bt-top {
@@ -1110,20 +1157,71 @@ color: #666; margin-left: 1.5rem;
 
 /* 576 ~ 767 - sm - 스마트폰 가로 */
 @media screen and (min-width: 300px) and (max-width: 576px) {
+/* 1면 */
 .main1 .tops {width: 100%; text-align: center; margin: 0 auto;}
-.main1 .logo-white {width: 100%;margin: 0 auto; padding-right: 30px;}
-.main1 .hello {bottom: -25%; margin: 0 auto; width: 100%; left: 0; font-size: 4vw;}
-.main-indexs {max-width: 300px; width: 90%; margin: 0 auto; left: 0; right: 0;}
+.main1 .logo-white {width: 100%;margin: 0 auto; padding-right: 8vw;}
+.main1 .hello {bottom: -30%; padding-right: 5vw; margin: 0 auto; width: 100%; left: 0; font-size: 4vw;}
+.main-indexs { max-width: 300px; width: 90%; margin: 0 auto; left: 0; right: 0; bottom: 25%;}
 .main-index {text-align: center;}
 .main-indexs .index-tit {font-size: 5vw; width: 50px; font-weight: bold;}
 .main-indexs .index-line {margin-top: 0.5rem; width: 50px; height: 2px; background-color: #FFF; transition: all 0.6s;}
 .main-indexs .index-sub {font-size: 2vw; margin-top: 0.5rem;}
 .bt-prev {left: 5px;}
 .bt-next {right: 5px;}
-.main-bars { bottom: 10%; }
+.main-bars { bottom: 6%; }
 .navis-wrap .logo-white {margin: 2vh 1rem 5vh 1rem;}
 .navis-hidden .navs {margin: 2rem 0;}
 .navis-hidden .navis{padding-top: 1rem;}
+/* 2면 */
+.aboutme2 .si1 {top: 55%; 	max-width: 215px;
+	max-height: 400px; width: 100%;}
+.aboutme2 .si1 .pic1 {max-width: 150px; min-width: 130px;
+		width: 55vw;position: absolute;
+		z-index: 99;	top: 10%; left: -15%;}
+	.aboutme2 .si1 .pic2 {max-width: 150px;	min-width: 130px;	width: 50vw;}
+.aboutme2 .si2 {position: absolute;
+		max-width: 215px;max-height: 400px;
+		width: 100%;height: 100%; top: 7%; z-index: 0;	}
+	.aboutme2 .si2 .pic2 {max-width: 200px;	min-width: 150px;width: 70vw;z-index: 0;	}
+	.aboutme2 .si2 .pic1 {max-width: 110px; min-width: 100px;	width: 35vw; position: absolute;
+		z-index: 1;top: 10%; right: 18%;}
+	.aboutme2 .title {font-size: 4rem; margin-bottom: 2rem;}
+	.aboutme2 .me-1-2 {min-height: 460px; max-height: 600px; height: 60vh; top: 8%; display: block; overflow: hidden; overflow-y: scroll; }
+.aboutme2 .me-1 { max-width: 300px;}
+.aboutme2 .me-1 .about-illu {margin-bottom: 2rem!important;}
+.aboutme2  .about-skill-prog {display: block;}
+.aboutme2 .about-skill {flex: 100% 0 0!important; max-width: 100%;}
+.aboutme2 .me-2 .about-pr {min-width: 280px; max-width: 550px; margin-left: 0; width: 100%; margin: 0 auto;}
+.aboutme2 .me-2 .program {margin: 0 auto 2rem auto; min-width: 250px; width: 100%; height: 100%;}
+.aboutme2 .me-2 .prog {flex: 32% 0 0; padding: 0.5rem; }
+/* 3면 */
+.work3 .tit-1 {font-size:1rem; text-align: center;}
+.work3 .tit-2 {font-size:3.5rem; text-align: center; margin: 0 auto;	right: 0%; left: 0; top: 0;}
+.work3 .tit-3 {font-size:3.5rem; text-align: center; margin: 0 auto;	right: 0%; left: 0; top: 0;}
+.works-all {	width: 100%;	padding: 5% 0; height: 100%;}
+.work3 .works-tit {width: 100%;	margin: 1rem auto 2rem auto; padding: 0rem; height: 100px; }
+.work3 .work-pages-all {background-color: rgba(255, 255, 255, 0.705); margin: auto; min-height: 460px; max-height: 500px; height: 60vh; top: 19%; width: 100%;}
+.work-pages {overflow-x: scroll; width: 70vw; height: 95%;
+	 min-width: 290px; max-width: 550px;  padding-bottom: 1rem;}
+.work-page {flex: 95% 0 0; margin: 0 15vw;}
+.work3 .pagers {bottom: 7%;}
+.page-1 .page-img {width: 125px; height: 125px; left: -25%;}
+.page-2{margin: 0 0.5rem!important; }
+.work3 .popup {	width: 85%; height: 70%;}
+.work3 .up-img {width: 280px; height: 300px;}
+.work3 .pop-up {padding: 2rem;}
+/* 4면 */
+.contact4 .contact-tit {font-size: 4rem; margin: 2rem auto 0 auto;}
+.contact4 .contact-sides img {width: 80%;}
+#side-rt1-1, #side-rt1-2, #side-lt1-0, #side-lt2 {display: none;} 
+#side-rt2-1 {right: -30%; min-width: 320px;}
+#side-rt2-2 {right: -30%; min-width: 400px; bottom: 10%;}
+.contact-flex{margin: auto; min-height: 460px; position: absolute; max-height: 500px; height: 60vh; top: 19%; display: block; width: 100%; padding: 0 1rem;} 
+.contact4 .contact-all {max-width: 450px; margin: 0 auto; padding: 1rem 2rem; background-color: rgba(255, 255, 255, 0.856);}
+.contact4 .cont-infors {margin-top: 1rem; background-color: rgba(255, 255, 255, 0.856); max-width: 450px; margin: 0 auto!important; width: 100%;}
+.contact4 .infor-addr {display: none;}
+
+}
 
 /* 768 ~ 991 - md - 태블릿 세로 */
 @media screen and (max-width: 768px) {

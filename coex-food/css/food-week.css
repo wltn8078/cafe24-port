@@ -28,7 +28,7 @@ body {
 	font-weight: 800;
 }
 
-section { min-height: 600px; margin: auto 0; align-items: center;}
+section { min-height: 600px; height: 100%; align-items: center;}
 
 .bt-top {position:fixed; border-radius: 50%; background-color: brown; bottom: -4.5rem; right: 1.6rem; z-index: 9999; color: white; transition: all 0.5s; cursor: pointer; padding: 1rem 1.5rem 1rem 1.5rem; }
 .bt-top:hover {background-color: rgb(196, 86, 86); padding:0.8rem 1.5rem 1.2rem 1.5rem;}
@@ -147,7 +147,7 @@ transition: all 0.5s;
 	flex: 100% 0 0; width: 100%; height: 550px;
 	position: absolute;
 	background-color: brown;
-	right: 0%; bottom: -180px;
+	right: 0%; bottom: -240px;
 	color: white;
 	padding: 3rem 2rem;
 	font-size: 2rem;
@@ -247,10 +247,10 @@ background-color: white; border: 1px solid #999; padding: 1rem; border-radius: 5
 	.navis {display: none;}
 	.icons {display: none}
 	.ban-tit {max-height: 300px;}
-	.band { margin-top: 6rem;
+	.band { 
 		 padding-bottom: 2rem; 
 		}
-	section { min-height: 900px;}
+
 	
 }
 /* 1200 ~ - xl - PC */
@@ -267,8 +267,9 @@ background-color: white; border: 1px solid #999; padding: 1rem; border-radius: 5
 	.pagers { display: flex;}
 	.ban-tit {top: 25%!important;}
 	.map {flex: 45% 0 0; margin: 0 auto;}
-	.band { margin-top: 8rem;
+	.band {
 		display: flex; justify-content:space-between; align-items: flex-start; 
 		}
 	.band-main {padding-left: 1.5rem; padding-right: 0;}
+	section { min-height: 940px;}
 }
