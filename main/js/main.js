@@ -204,8 +204,7 @@ $(".page-2").click(function(){
 	$(".tag-fix").stop().hide();
 	$(".main-bars").stop().hide();
 	$(".bts").css({"opacity" : 0});
-	$(".popup").stop().animate({"top": "0px", "opacity": 1},500)
-	$(".pop-up").eq($(".page-2").index(this)).css({"opacity":1});
+	$(".pop-up").eq($(".page-2").index(this)).stop().animate({"opacity":1, "top": "0px"});
 	$(".popups").on('scroll touchmove mousewheel', function(e){
 		e.preventDefault();
 		e.stopPropagation(); 
@@ -213,11 +212,10 @@ $(".page-2").click(function(){
 	})
 })
 $(".popup-back").click(function(e){
-	$(".popup").stop().animate({"top": "80px", "opacity": 0},500)
+	$(".pop-up").stop().animate({"top": "80px", "opacity": 0},500);
 	setTimeout(function(){
 		$(".main-bars").stop().fadeIn(1000);
 		$(".bts").css({"opacity" : 1});
-		$(".pop-up").css({"opacity":0});
 		$(".popups").stop().hide(600);
 		$(".popups").off('scroll touchmove mousewheel'), 700});
 		$(".tag-fix").stop().fadeIn(1200);
