@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/wltn8078/zees-new#readme",
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lodash": "^4.17.15",
     "underscore": "^1.9.1"
   }
